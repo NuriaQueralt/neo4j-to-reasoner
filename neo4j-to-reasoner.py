@@ -28,49 +28,43 @@ a.relationships
 # into this YAML
 '''
 --- 
-Path: 
+- 
   Nodes: 
     - 
-      Node: 
-        labels: "Chemicals & Drugs"
-        name: chlorcyclizine
+      label: "Chemicals & Drugs"
+      name: chlorcyclizine
     - 
-      Node: 
-        labels: "Chemicals & Drugs"
-        name: Atropine
+      label: "Chemicals & Drugs"
+      name: Atropine
     - 
-      Node: 
-        labels: "Chemicals & Drugs"
-        name: Potassium
+      label: "Chemicals & Drugs"
+      name: Potassium
     - 
-      Node: 
-        labels: Disorders
-        name: Asthma
-  Relationships: 
+      label: Disorders
+      name: Asthma
+  Edges: 
     - 
-      Edge: 
-        n_pmids: 1
-        pmids: 
-          - 35784
-        type: ASSOCIATED_WITH_CDawCD
+      n_pmids: 1
+      pmids: 
+        - 35784
+      type: ASSOCIATED_WITH_CDawCD
     - 
-      Edge: 
-        n_pmids: 2
-        pmids: 
-          - 2804636
-          - 7508351
-        type: ASSOCIATED_WITH_CDawCD
+      n_pmids: 2
+      pmids: 
+        - 2804636
+        - 7508351
+      type: ASSOCIATED_WITH_CDawCD
     - 
-      Edge: 
-        n_pmids: 8
-        pmids: 
-          - 11882918
-          - 8777958
-          - 4008616
-          - 6364906
-          - 10639760
-          - 13208020
-          - 9602294
-          - 2772863
-        type: ASSOCIATED_WITH_CDawDO
+      n_pmids: 8
+      pmids: 
+        - 11882918
+        - 8777958
+        - 4008616
+        - 6364906
+        - 10639760
+        - 13208020
+        - 9602294
+        - 2772863
+      type: ASSOCIATED_WITH_CDawDO
+--- 
 '''
