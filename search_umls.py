@@ -63,29 +63,9 @@ if(debug):
 if( apikey == None ):
     exit("No apikey specified. Exiting.")
 
-
-if( inputFile ):
-    data = pd.read_csv( inputFile, header=header, sep="\t" )
-    dataCUI = pd.DataFrame().reindex_like(data)
-
-    colNames = list(data)
-
-    for index, row in data.iterrows():
-        for col in colNames:
-            print(index, col, row[col])
-
-    if(debug):
-        print(list(data))
-        print(data.head())
-    
-exit()
-
-##get at ticket granting ticket for the session
-AuthClient = Authentication(apikey)
-tgt = AuthClient.gettgt()
-
-while True:
+def getUMLSid(string):
     ##generate a new service ticket for each page if needed
+
     ticket = AuthClient.getst(tgt)
     query = {'string':string,'ticket':ticket, 'pageNumber':'1'}
     #query['includeObsolete'] = 'true'
@@ -102,6 +82,7 @@ while True:
     
     for result in jsonData["results"]:
         
+      '''
       try:
         print("ui: " + result["ui"])
       except:
@@ -110,20 +91,69 @@ while True:
         print("uri: " + result["uri"])
       except:
         NameError
+      '''
       try:
-        print("name: " + result["name"])
+        name = result["name"]
       except:
         NameError
+      if( debug ):
+        print("name: " + result["name"])
+      if( string.strip('.,- ').lower() == name.strip('.,- ').lower() ): 
+        if( debug ):
+          print("MATCHED!")
+        try:
+          ui = result["ui"]
+        except:
+          print("NO URI ERROR")
+          ui = None
+        return(ui)  
+      '''
       try:
         print("Source Vocabulary: " + result["rootSource"])
       except:
         NameError
-      
-      print("")
-        
+      '''
     
     ##Either our search returned nothing, or we're at the end
+    if(debug):
+        print("NO MATCH FOUND")
     if jsonData["results"][0]["ui"] == "NONE":
-        break
-    print("*********")
-    exit()
+        return(None)
+    return(None)
+
+
+##get at ticket granting ticket for the session
+AuthClient = Authentication(apikey)
+tgt = AuthClient.gettgt()
+
+
+if( inputFile ):
+    data = pd.read_csv( inputFile, header=header, sep="\t" )
+    dataCUI = pd.DataFrame().reindex_like(data)
+    dataCUI.is_copy = False
+
+    colNames = list(data)
+
+    for index, row in data.iterrows():
+        for col in colNames:
+            if(debug):
+               print(index, col, row[col])
+            #dataCUI.set_value(index,col, getUMLSid( row[col] ))
+            dataCUI[col][index] = getUMLSid( row[col] )
+
+    if(debug):
+        print(list(data))
+        print(data.head(10))
+        print(dataCUI.head(10))
+
+    dataCUI.columns = dataCUI.columns+"CUI"
+    outputDF = pd.concat([data.reset_index(drop=True), dataCUI], axis=1)
+    if(outputFile):
+        outputDF.to_csv(outputFile, sep="\t")
+    else:
+        print(outputDF)
+
+elif( string ):
+    print(getUMLSid( string ))
+else:
+    print("Specify either inputFile or string as query")
