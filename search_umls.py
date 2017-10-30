@@ -139,6 +139,8 @@ if( inputFile ):
             if(debug):
                print(index, col, row[col])
             #dataCUI.set_value(index,col, getUMLSid( row[col] ))
+            ### TODO: create a local cache so same term does not 
+            ### need to be repeatedly looked up
             dataCUI[col][index] = getUMLSid( row[col] )
 
     if(debug):
@@ -149,6 +151,8 @@ if( inputFile ):
     dataCUI.columns = dataCUI.columns+"CUI"
     outputDF = pd.concat([data.reset_index(drop=True), dataCUI], axis=1)
     if(outputFile):
+        ### TODO: change to write output file iteratively so errors do 
+        ### not require restarting from the beginning
         outputDF.to_csv(outputFile, sep="\t")
     else:
         print(outputDF)
