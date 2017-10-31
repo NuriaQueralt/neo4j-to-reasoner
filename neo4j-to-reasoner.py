@@ -2,8 +2,11 @@
 # trying official python client
 
 from neo4j.v1 import GraphDatabase, basic_auth
-from yaml import dump
+import yaml
+import json
 import re
+import argparse
+import sys
 
 def parsePath( path ):
     out = {}
@@ -25,6 +28,14 @@ def parsePath( path ):
         out['Edges'].append(e)
     return out
 
+parser = argparse.ArgumentParser(description='process user given parameters')
+parser.add_argument("-f", "--format", required = False, dest = "format", help = "yaml/json", default="yaml")
+args = parser.parse_args()
+
+if(args.format not in ["json","yaml","json_text"]):
+   sys.stderr.write("Invalid format. Exiting.\n")
+   exit()
+
 
 driver = GraphDatabase.driver("bolt://localhost:7690")
 session = driver.session()
@@ -38,9 +49,14 @@ for record in result:
     z = parsePath(record)
     output.append(z)
 
+### print output 
 
-#f = open('out.yaml','w')
-#f.write(dump(output, default_flow_style=False))
-#f.close()
-print(dump(output, default_flow_style=False))
-
+if(args.format == "yaml"): 
+    print(yaml.dump(output, default_flow_style=False))
+elif(args.format == "json"):
+    print(json.dumps(output))
+elif(args.format == "json_text"):
+    for record in output:
+        print(json.dumps(record))
+else:
+    sys.stderr.write("Error.\n")
