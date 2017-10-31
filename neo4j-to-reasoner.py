@@ -11,6 +11,7 @@ def parsePath( path ):
     for node in path["Path"].nodes:
         n = {}
         n["name"] = node.properties['name']
+        n["umlscui"] = node.properties['umlscui']
         n["label"] = list(node.labels)[0]
         out['Nodes'].append(n)
     out['Edges'] = []
@@ -18,7 +19,7 @@ def parsePath( path ):
         e = {}
         e["n_pmids"] = list(map(int, edge.properties['n_pmids']))[0]
         s_pmids = edge.properties['pmids']
-        a_pmids = re.sub("{|}| ","",s_pmids).split(",")
+        a_pmids = re.sub(".*pubmed/","",s_pmids).split(",")
         e["pmids"] = list(map(int, a_pmids))
         e["type"] = edge.type
         out['Edges'].append(e)
