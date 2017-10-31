@@ -1,3 +1,4 @@
 *.swp
 temp/
 output/neo4j_output_full.txt
+settings_private.yaml
