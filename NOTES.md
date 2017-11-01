@@ -24,7 +24,7 @@ on t1.medium, first query is ???, second query is 3885ms
 on avalanche, first query is ???, second query is 43753ms
 
 ```
-MATCH (source { name:"chlorcyclizine"}), (target { name: "Asthma"}), path=(source)-[*..2]-(target) WITH source, target, path, [r IN relationships(path) | type(r)] AS types RETURN path AS Path;
+MATCH (source { name:"chlorcyclizine"}), (target { name: "Asthma"}), path=(source)-[*..3]-(target) WITH source, target, path, [r IN relationships(path) | type(r)] AS types RETURN path AS Path;
 ```
 
 ```
