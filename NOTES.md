@@ -109,3 +109,7 @@ ask kevin to explode translator network
 ### convert terms to UMLS
 python search_umls.py -S settings_private.yaml -H -i data/q1-disease-list -d -o results/q1-disease-list-cui.txt
 python search_umls.py -S settings_private.yaml -H -i data/q2-drugandcondition-list -d -o results/q2-drugandcondition-list-cui.txt
+
+
+# imatinib example
+time python3 neo4j-to-reasoner.py -s imatinib -e Asthma -f json_text -p 2 > output/imatinib_asthma_full2.txt

@@ -30,6 +30,11 @@ def parsePath( path ):
 
 parser = argparse.ArgumentParser(description='process user given parameters')
 parser.add_argument("-f", "--format", required = False, dest = "format", help = "yaml/json", default="yaml")
+parser.add_argument("-s", "--start", required = True, dest = "start", help = "starting node label")
+parser.add_argument("-e", "--end", required = True, dest = "end", help = "ending node label")
+parser.add_argument("-l", "--limit", required = False, dest = "limit", help = "limit on number of records", default=None)
+parser.add_argument("-p", "--pathlength", required = False, dest = "pathlength", help = "max path length", default=2)
+
 args = parser.parse_args()
 
 if(args.format not in ["json","yaml","json_text"]):
@@ -40,7 +45,11 @@ if(args.format not in ["json","yaml","json_text"]):
 driver = GraphDatabase.driver("bolt://localhost:7690")
 session = driver.session()
 
-query = 'MATCH path=(source)-[*..3]-(target) where source.name="chlorcyclizine" AND target.name="Asthma" return path limit 10;'
+query = 'MATCH path=(source)-[*..'+args.pathlength+']-(target) where lower(source.name)=~"'+args.start.lower()+'.*" AND lower(target.name)=~"'+args.end.lower()+'.*" return path'
+if args.limit is not None:
+    query = query + ' limit ' + args.limit
+
+sys.stderr.write("QUERY: "+query+"\n")
 
 result = session.run(query)
 
