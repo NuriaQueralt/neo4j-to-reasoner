@@ -113,3 +113,22 @@ python search_umls.py -S settings_private.yaml -H -i data/q2-drugandcondition-li
 
 # imatinib example
 time python3 neo4j-to-reasoner.py -s imatinib -e Asthma -f json_text -p 2 > output/imatinib_asthma_full2.txt
+
+# imatinib-asthma, with the ids enumerated
+time cypher-shell -a bolt://localhost:7690 'PROFILE MATCH path=(source)-[*..3]-(target) where id(source) in [20391,33498,37483,37996,108238] AND id(target) in [58305,81336,116957,120975,126685,126831,128515,139148,145350,148806,153169,153693,154436,159046,160389,161676,237245,244566,245913,249204,255830] return path' > t3
+real    241m13.127s
+user    65m15.588s
+
+
+# find imatinib-asthma path?
+MATCH path=((source)-[r1]-(i1)-[r2]-(i2)-[r3]-(target)) where lower(source.name)=~"imatinib.*" AND lower(target.name)=~"asthma.*" AND lower(i1.name)=~".*kit.*" AND lower(i2.name)=~".*mast.*" return path
+
+# filter based on PMID count
+MATCH path=((source)-[r1]-(i1)-[r2]-(i2)-[r3]-(target)) where lower(source.name)=~"imatinib.*" AND lower(target.name)=~"asthma.*" AND lower(i1.name)=~".*kit.*" AND lower(i2.name)=~".*mast.*" and toInt(r2.n_pmids)>4 return path
+
+MATCH path=((source)-[r1]-(i1)-[r2]-(i2)-[r3]-(target)) where lower(source.name)=~"imatinib.*" AND lower(target.name)=~"asthma.*" AND lower(i1.name)=~".*kit.*" AND lower(i2.name)=~".*mast.*" and toInt(r3.n_pmids)+toInt(r2.n_pmids)>4 return path
+
+
+### request to mike for data loading changes
+n_pmid cast to int
+set all names to lowercase
