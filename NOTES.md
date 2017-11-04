@@ -128,7 +128,30 @@ MATCH path=((source)-[r1]-(i1)-[r2]-(i2)-[r3]-(target)) where lower(source.name)
 
 MATCH path=((source)-[r1]-(i1)-[r2]-(i2)-[r3]-(target)) where lower(source.name)=~"imatinib.*" AND lower(target.name)=~"asthma.*" AND lower(i1.name)=~".*kit.*" AND lower(i2.name)=~".*mast.*" and toInt(r3.n_pmids)+toInt(r2.n_pmids)>4 return path
 
+MATCH path=((source)-[rels*..3]-(target)) with path, reduce(t=0, r IN rels | t + toint(r.n_pmids)) AS total where lower(source.name)=~"imatinib.*" AND lower(target.name)=~"asthma.*" AND total>2 return path limit 10;
 
-### request to mike for data loading changes
-n_pmid cast to int
-set all names to lowercase
+
+### Changes to input files from mike
+# copied edges_condensed_filtered_neo4j.csv and nodes_condensed_filtered_neo4j.csv from ~mmayers/projects/semmed/data/
+
+# lowercase node labels
+cat input/nodes_condensed_filtered_neo4j.csv | gawks '{$2=tolower($2);print $0}' > input/nodes_2017-11-03.csv
+
+# delete nodes of type Living Beings, Anatomy, Procedures
+match (n:`Living Beings`) detach delete n
+match (n:Procedures) detach delete n
+match (n:Anatomy) detach delete n
+
+#create indexes
+CREATE INDEX ON :Disorders(name)
+CREATE INDEX ON :`Chemicals & Drugs`(name)
+
+# find true imatinib-asthma path
+MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with "asthma" AND i1.name=~".*kit.*" AND i2.name=~".*mast.*" return path
+
+# finishes almost instantly
+explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with "asthma" return path,reduce(t=0, r IN rels | t + r.n_pmids) AS total limit 10
+
+# very long to finish
+explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) with path, reduce(t=0, r IN rels | t + r.n_pmids) AS total  where source.name starts with "imatinib" AND target.name starts with "asthma" return path, total limit 10
+
