@@ -136,6 +136,12 @@ MATCH path=((source)-[rels*..3]-(target)) with path, reduce(t=0, r IN rels | t +
 
 # lowercase node labels
 cat input/nodes_condensed_filtered_neo4j.csv | gawks '{$2=tolower($2);print $0}' > input/nodes_2017-11-03.csv
+cat input/edges_condensed_filtered_neo4j.csv | gawks '$4>1' > input/edges_2017-11-05.csv
+
+# to load new data
+sudo ./reset_database.sh
+sudo ./import-command.sh
+sudo /home/mmayers/software/neo4j-community-3.1.3/bin//neo4j start
 
 # delete nodes of type Living Beings, Anatomy, Procedures
 match (n:`Living Beings`) detach delete n
@@ -147,7 +153,9 @@ CREATE INDEX ON :Disorders(name)
 CREATE INDEX ON :`Chemicals & Drugs`(name)
 
 # find true imatinib-asthma path
-MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with "asthma" AND i1.name=~".*kit.*" AND i2.name=~".*mast.*" return path
+MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) 
+where source.name starts with "imatinib" AND target.name starts with "asthma" AND i1.name=~".*kit.*" AND i2.name=~".*mast.*" 
+return path
 
 # finishes almost instantly
 explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) 
