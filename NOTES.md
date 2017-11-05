@@ -150,8 +150,21 @@ CREATE INDEX ON :`Chemicals & Drugs`(name)
 MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with "asthma" AND i1.name=~".*kit.*" AND i2.name=~".*mast.*" return path
 
 # finishes almost instantly
-explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with "asthma" return path,reduce(t=0, r IN rels | t + r.n_pmids) AS total limit 10
+explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) 
+where source.name starts with "imatinib" AND target.name starts with "asthma" 
+return path,reduce(t=0, r IN rels | t + r.n_pmids) AS total limit 10
 
 # very long to finish
-explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) with path, reduce(t=0, r IN rels | t + r.n_pmids) AS total  where source.name starts with "imatinib" AND target.name starts with "asthma" return path, total limit 10
+explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) 
+with path, reduce(t=0, r IN rels | t + r.n_pmids) AS total  
+where source.name starts with "imatinib" AND target.name starts with "asthma" 
+return path, total limit 10
 
+# quick to finish
+explain MATCH path=((source:`Chemicals & Drugs`)-[rels*..2]-(target:Disorders)) 
+where source.name starts with "imatinib" AND target.name starts with "asthma" 
+with path, reduce(t=0, r IN rels | t + r.n_pmids) AS total  
+return path, total limit 10
+
+# get imatinib -> asthma path>4
+time cypher-shell -a bolt://localhost:7690 'MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) where source.name starts with "imatinib" AND target.name = "asthma" with path, reduce(t=0, r IN rels | t + r.n_pmids) AS total where total > 4 return path' > projects/neo4j-to-reasoner/output/imatinib_asthma_path4
