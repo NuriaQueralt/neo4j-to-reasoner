@@ -34,7 +34,7 @@ parser.add_argument("-f", "--format", required = False, dest = "format", help = 
 parser.add_argument("-s", "--start", required = True, dest = "start", help = "starting node")
 parser.add_argument("-e", "--end", required = True, dest = "end", help = "ending node")
 parser.add_argument("-t", "--nodetype", required = False, dest = "nodetype", help = "node type (name/cui)", default="name")
-parser.add_argument("-l", "--limit", required = False, dest = "limit", help = "limit on number of records", default=None)
+parser.add_argument("-l", "--limit", required = False, dest = "limit", help = "limit on number of records", default=1000000)
 parser.add_argument("-p", "--pathlength", required = False, dest = "pathlength", help = "max path length", default=2)
 
 args = parser.parse_args()
@@ -56,7 +56,7 @@ else :
     exit()
 
 if args.limit is not None:
-    query = query + ' limit ' + args.limit
+    query = query + ' limit ' + str(args.limit)
 
 sys.stderr.write("QUERY: "+query+"\n")
 

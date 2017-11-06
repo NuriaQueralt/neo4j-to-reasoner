@@ -151,6 +151,8 @@ match (n:Anatomy) detach delete n
 #create indexes
 CREATE INDEX ON :Disorders(name)
 CREATE INDEX ON :`Chemicals & Drugs`(name)
+CREATE INDEX ON :Disorders(cui)
+CREATE INDEX ON :`Chemicals & Drugs`(cui)
 
 # find true imatinib-asthma path
 MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) 
@@ -176,3 +178,20 @@ return path, total limit 10
 
 # get imatinib -> asthma with edge n_pmids > 1 (took 162 minutes, 822087 paths)
 time cypher-shell -a bolt://localhost:7690 'MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) where source.name starts with "imatinib" AND target.name = "asthma" return path' > output/imatinib_asthma_path3
+
+# explicitly use name of imatinib (took 39 minutes, 616221 paths)
+time cypher-shell -a bolt://localhost:7690 'MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) where source.name = "imatinib" AND target.name = "asthma" return path' > output/imatinib_asthma_path3.2
+
+# use CUIs instead of names
+time cypher-shell -a bolt://localhost:7690 'MATCH path=(source:`Chemicals & Drugs`)-[*..3]-(target:Disorders) where source.cui = "C0935989" AND target.cui = "C0004096" return path' > output/imatinib_asthma_path3.3
+
+
+# use neo4j-to-reasoner.py
+time python3 neo4j-to-reasoner.py -s C0935989 -e C0004096 -t cui -f json_text -p 2 > t4
+
+### automate path finding
+
+head data/q2-drugandcondition-list > data/q2-drugandcondition-list.head
+python3 search_umls.py -S settings_private.yaml -H -i data/q2-drugandcondition-list.head -o tt1
+
+python3 driver_q2.py
