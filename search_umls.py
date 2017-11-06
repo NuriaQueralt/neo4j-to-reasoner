@@ -153,7 +153,7 @@ if( inputFile ):
     if(outputFile):
         ### TODO: change to write output file iteratively so errors do 
         ### not require restarting from the beginning
-        outputDF.to_csv(outputFile, sep="\t")
+        outputDF.to_csv(outputFile, sep="\t", index=False)
     else:
         print(outputDF)
 
