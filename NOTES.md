@@ -155,7 +155,7 @@ CREATE INDEX ON :Disorders(cui)
 CREATE INDEX ON :`Chemicals & Drugs`(cui)
 
 # find true imatinib-asthma path
-MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) 
+MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) 
 where source.name starts with "imatinib" AND target.name starts with "asthma" AND i1.name=~".*kit.*" AND i2.name=~".*mast.*" 
 return path
 
@@ -182,12 +182,28 @@ time cypher-shell -a bolt://localhost:7690 'MATCH path=((source:`Chemicals & Dru
 # explicitly use name of imatinib (took 39 minutes, 616221 paths)
 time cypher-shell -a bolt://localhost:7690 'MATCH path=((source:`Chemicals & Drugs`)-[rels*..3]-(target:Disorders)) where source.name = "imatinib" AND target.name = "asthma" return path' > output/imatinib_asthma_path3.2
 
-# use CUIs instead of names
+# use CUIs instead of names (43 minutes, 616221 paths)
 time cypher-shell -a bolt://localhost:7690 'MATCH path=(source:`Chemicals & Drugs`)-[*..3]-(target:Disorders) where source.cui = "C0935989" AND target.cui = "C0004096" return path' > output/imatinib_asthma_path3.3
 
+# use explicit path length instead of variable length 
+#   path 3: (1.3 mins, 615826 paths)
+#   path 2: (<1s, 396 paths)
+#   total: 616222 paths
+time cypher-shell -a bolt://localhost:7690 'match path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" AND target.cui="C0004096" return path' > output/imatinib_asthma_path3.4
+time cypher-shell -a bolt://localhost:7690 'match path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(target:Disorders) where source.cui="C0935989" AND target.cui="C0004096" return path' > output/imatinib_asthma_path3.4b
+
+# constrain the paths by intermediate node types (1 s, 2843 paths)
+time cypher-shell -a bolt://localhost:7690 'match path=(source:`Chemicals & Drugs`)-[r1]-(i1:`Genes & Molecular Sequences`)-[r2]-(i2:Physiology)-[r3]-(target:Disorders) where source.cui="C0935989" AND target.cui="C0004096" return path' > output/imatinib_asthma_path3_semtypes.1
+
+# constrain the paths by intermediate node types (73 mins, 45008 paths)
+time cypher-shell -a bolt://localhost:7690 'match path=(source:`Chemicals & Drugs`)-[*..3]-(target:Disorders) where source.cui="C0935989" AND target.cui="C0004096" and all (n IN nodes(path)[1..-1] WHERE "Genes & Molecular Sequences" IN labels(n) OR "Physiology" IN labels(n) ) return path' > output/imatinib_asthma_path3_semtypes.2
+
+# constrain the paths by intermediate node types (6 s, 44909 paths)
+time cypher-shell -a bolt://localhost:7690 'match path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" AND target.cui="C0004096" and ( "Genes & Molecular Sequences" IN labels(i1) OR "Physiology" IN labels(i1) ) AND ( "Genes & Molecular Sequences" IN labels(i2) OR "Physiology" IN labels(i2) ) return path' > output/imatinib_asthma_path3_semtypes.3
 
 # use neo4j-to-reasoner.py
 time python3 neo4j-to-reasoner.py -s C0935989 -e C0004096 -t cui -f json_text -p 2 > t4
+
 
 ### automate path finding
 
@@ -195,3 +211,4 @@ head data/q2-drugandcondition-list > data/q2-drugandcondition-list.head
 python3 search_umls.py -S settings_private.yaml -H -i data/q2-drugandcondition-list.head -o tt1
 
 python3 driver_q2.py
+
