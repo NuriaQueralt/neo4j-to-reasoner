@@ -17,7 +17,7 @@ for index, row in df.iterrows():
     print(str(row))
     a = row
     output_filename = "output/"+str(index)+"_"+row.Drug.replace(" ","")+"_"+row.Condition.replace(" ","")+"_path3.yaml"
-    cmd = "python3 neo4j-to-reasoner.py -s "+row.DrugCUI+"  -e "+row.ConditionCUI+"  -t cui -f yaml -p 3 > "+output_filename
+    cmd = "python3 q2-neo4j-to-reasoner.py -s "+row.DrugCUI+"  -e "+row.ConditionCUI+"  -t cui -f yaml -p 3 > "+output_filename
 
     if( Path(output_filename).exists() ):
         sys.stderr.write("Skipping " + output_filename +"\n")
