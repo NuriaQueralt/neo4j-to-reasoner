@@ -1,22 +1,22 @@
 Disease	DiseaseCUI
 Osteoporosis	C0029456
-Human Immunodeficiency Virus Infection	
+Human Immunodeficiency Virus Infection	C0019693
 Cholera	C0008354
-Ebola Virus Infection	
+Ebola Virus Infection	C0282687
 Malaria	C0024530
 Osteomalacia	C0029442
 Hypercholesterolemia	C0020443
-Diabetes Mellitus, Type 2	
+Diabetes Mellitus, Type 2	C0011860
 Asthma	C0004096
-Chronic Pancreatitis	
-Alzheimer Disease	
+Chronic Pancreatitis	C0149521
+Alzheimer Disease	C0002395
 Myocardial Infarction	C0027051
-Duchenne Muscular Dystrophy	
+Duchenne Muscular Dystrophy	C0013264
 Deficiency of N-glycanase 1	
-Alcohol Dependence	
-Major Depression	
-Niemann Pick Type C	
+Alcohol Dependence	C0001973
+Major Depression	C1269683
+Niemann Pick Type C	C0220756
 Huntington Disease	C0020179
 Alkaptonuria	C0002066
-Sickle Cell Disease	
+Sickle Cell Disease	C0002895
 Post-Traumatic Stress Disorder	C0038436
