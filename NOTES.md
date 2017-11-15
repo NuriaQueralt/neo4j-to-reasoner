@@ -156,7 +156,7 @@ CREATE INDEX ON :`Chemicals & Drugs`(cui)
 
 # find true imatinib-asthma path
 MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) 
-where source.name starts with "imatinib" AND target.name starts with "asthma" AND i1.name=~".*kit.*" AND i2.name=~".*mast.*" 
+where source.name = "imatinib" AND target.name = "asthma" AND i1.name=~".*kit.*" AND i2.name="mast cell activation" 
 return path
 
 # finishes almost instantly
@@ -212,3 +212,25 @@ python3 search_umls.py -S settings_private.yaml -H -i data/q2-drugandcondition-l
 
 python3 driver_q2.py
 
+
+### Q1 ###
+
+match (n) where n.name starts with "sickle cell" return n;
+match (n) where n.name starts with "malaria" return n;
+
+# sickle cell trait is C0037054
+# malaria is C0024530
+
+# find true positive
+match path=(source:Disorders)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0024530" AND target.cui="C0037054" AND (i1.name starts with "heme" OR i2.name starts with "heme") return path
+
+
+# find paths from a specific disease to any disease
+match path=(source:Disorders)-[r1]-(i1)-[r2]-(target:Disorders) where source.cui="C0037054" return count(path)
+match path=(source:Disorders)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0037054" return count(path)
+
+# get UMLS CUIs from Orphanet
+python3 orphadata2cui.py > results/orphadata2cui.txt
+
+# to get comma-separated string
+gawkt '{print $2}' results/orphadata2cui.txt | paste -d, -s

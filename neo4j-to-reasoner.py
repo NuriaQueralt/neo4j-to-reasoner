@@ -21,7 +21,6 @@ def parsePath( path ):
     out['Edges'] = []
     for edge in path["path"].relationships:
         e = {}
-        #e["n_pmids"] = list(map(int, edge.properties['n_pmids']))[0]
         e["n_pmids"] = edge.properties['n_pmids']
         s_pmids = edge.properties['pmids']
         a_pmids = re.sub(".*pubmed/","",s_pmids).split(",")
@@ -73,7 +72,7 @@ for pathLength in range(1,int(args.pathlength)):
         z = parsePath(record)
         output.append(z)
         counter = counter + 1
-        if(counter%1000==0):
+        if(counter%100000==0):
             sys.stderr.write("Processed "+str(counter)+"\n")
 
 ### print output 
