@@ -25,4 +25,3 @@ for index, row in df.iterrows():
 
     print(cmd)
     subprocess.call(cmd, shell=True)
-    break
