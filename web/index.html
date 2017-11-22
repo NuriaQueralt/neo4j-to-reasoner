@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+
+  <style>
+    @import url("//unpkg.com/element-ui@2.0.5/lib/theme-chalk/index.css");
+    h1 {
+      text-align: left;
+      margin: 5px;
+      display: block;
+    }
+    h5 {
+      text-align: left;
+      margin: 5px;
+      display: block;
+    }
+    .el-header, .el-footer {
+      /*background-color: #B3C0D1;*/
+      color: #333;
+      text-align: center;
+      line-height: 60px;
+    }
+
+    .el-aside {
+      /*background-color: #D3DCE6;*/
+      color: #333;
+      text-align: center;
+      line-height: 200px;
+    }
+
+    .el-main {
+      background-color: #E9EEF3;
+      color: #333;
+      text-align: center;
+      line-height: 160px;
+    }
+    body > .el-container {
+      /*margin-bottom: 40px;*/
+    }
+
+    .el-container:nth-child(5) .el-aside,
+    .el-container:nth-child(6) .el-aside {
+      line-height: 260px;
+    }
+
+    .el-container:nth-child(7) .el-aside {
+      line-height: 320px;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="app">
+  <el-container style="height: 100vh;">
+    <el-header>
+
+      <el-row>
+        <el-col :span="6">
+          <div class="grid-content bg-purple">
+            <h1>TraPP (a NCATS Reasoner) Prototype</h1>
+          </div>
+        </el-col>
+        <el-col :span="18">
+          <div class="grid-content bg-purple-light">
+            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+              <el-menu-item index="1">Explore Q1</el-menu-item>
+              <el-menu-item index="2">Explore Q2</el-menu-item>
+            </el-menu>
+          </div>
+        </el-col>
+      </el-row>
+
+    </el-header>
+
+    <el-container>
+
+      <el-aside width="400px">
+
+        <el-menu
+              default-active="1"
+              class="el-menu-vertical">
+              <!-- @open="handleOpen"
+              @close="handleClose"> -->
+
+              <el-menu-item v-for="(item, index) in leftpanel_list">
+                <span>{{item}}</span>
+              </el-menu-item>
+            </el-menu>
+
+      </el-aside>
+
+
+      <el-main>
+
+        <el-row  :gutter="150">
+          <el-col :span="10">
+            <h5>Filter by paths:</h5>
+        <div style="text-align: left">
+          <el-radio-group v-model="table1_selctor" v-on:change="change_selector">
+            <el-radio-button label="By Node Name" name="node_name"></el-radio-button>
+            <el-radio-button label="By Node Type" name="node_type"></el-radio-button>
+            <el-radio-button label="By Edge Type" name="edge_type"></el-radio-button>
+          </el-radio-group>
+        </div>
+
+        <div>
+          <template>
+            <el-table
+              :data="table1_data"
+              border
+              style="width: 100%">
+              <el-table-column
+                prop="value"
+                label="Name"
+                width="180">
+              </el-table-column>
+              <el-table-column
+                prop="count"
+                label="Count"
+                width="180">
+              </el-table-column>
+              <el-table-column
+                prop=""
+                label="">Filter it
+              </el-table-column>
+            </el-table>
+          </template>
+          </div>
+        </el-col>
+
+        <el-col :span="10">
+          <div v-if="current_q=='q1'">
+          <h5>Filter by end nodes:</h5>
+          <div style="text-align: left">
+            <el-radio-group v-model="table2_selctor">
+              <el-radio-button label="By Node Name"></el-radio-button>
+              <el-radio-button label="By Node Type"></el-radio-button>
+            </el-radio-group>
+          </div>
+          <div>
+            <template>
+              <el-table
+                :data="table2_data"
+                border
+                style="width: 100%">
+                <el-table-column
+                  prop="value"
+                  label="Name"
+                  width="180">
+                </el-table-column>
+                <el-table-column
+                  prop="count"
+                  label="Count"
+                  width="180">
+                </el-table-column>
+                <el-table-column
+                  prop=""
+                  label="">Filter it
+                </el-table-column>
+              </el-table>
+            </template>
+            </div>
+          </div>
+        </el-col>
+
+        </el-row>
+
+
+
+
+      </el-main>
+    </el-container>
+  </el-container>
+  </div>
+</body>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="./data.js"></script>
+  <script src="./q1_results.js"></script>
+  <script src="./q2_results.js"></script>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        leftpanel_list: [],
+        current_q: "q1",
+        current_item: "",
+        table1_selctor: "By Node Name",
+        table1_data: [],
+        table2_selctor: "By Node Name",
+        table2_data: [],
+        tableData: [
+                 {name: 'antibiotics', count: 18730},
+                 {name: 'inflammation', count: 9549},
+                 {name: 'microbicides', count: 8894},
+                 {name: 'tumor necrosis factor-alpha', count: 8286},
+                 {name: 'dna', count: 6712},
+                 {name: 'pathogenesis', count: 5279},
+                 {name: 'tnf gene', count: 5273},
+                 {name: 'anti-bacterial agents', count: 4959},
+                 {name: 'iron', count: 4815},
+                 {name: 'septicemia', count: 4685}]
+      // function() {
+      //   return { visible: false }
+      },
+      methods: {
+        render_item: function(){
+          //called when an item from side panel is clicked
+          if (this.current_q == 'q1'){
+
+          }
+        },
+        render_table: function(event){
+          var res = this.current_q=='q1'?q1res:q2res;
+          var key = "q1_0_Osteoporosis_path3b.txt.gz";
+
+          this.table1_data = res[key]['middle_nodes']['name'].slice(0,100);
+        },
+        change_selector: function(){
+          console.log(this.table1_selctor);
+        }
+      },
+      created: function(){
+        this.leftpanel_list = q1_list;
+        this.render_table();
+      }
+
+    })
+  </script>
+</html>
