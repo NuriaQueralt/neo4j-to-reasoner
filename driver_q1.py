@@ -16,8 +16,8 @@ for index, row in df.iterrows():
         continue
     print(str(row))
     a = row
-    output_filename = "output/q1_"+str(index)+"_"+row.Disease.replace(" ","")+"_path3.yaml"
-    cmd = "python3 q1-neo4j-to-reasoner.py -s "+row.DiseaseCUI+"  -t cui -f yaml -p 3 > "+output_filename
+    output_filename = "output/q1_"+str(index)+"_"+row.Disease.replace(" ","")+"_path3b.txt"
+    cmd = "python3 q1-neo4j-to-reasoner.py -s "+row.DiseaseCUI+"  -t cui -f json_text -p 3 > "+output_filename
 
     if( Path(output_filename).exists() ):
         sys.stderr.write("Skipping " + output_filename +"\n")
