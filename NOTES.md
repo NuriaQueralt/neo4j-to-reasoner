@@ -154,7 +154,6 @@ MATCH (a)<-->() with a,count(*) as degree where degree > 5000 detach delete a
 MATCH (a)<-->() with a,count(*) as degree where degree > 2500 AND not "Disorders" in labels(a) RETURN a.name, degree ORDER BY degree DESC
 MATCH (a)<-->() with a,count(*) as degree where degree > 2500 AND not "Disorders" in labels(a) detach delete a
 
-
 #create indexes
 CREATE INDEX ON :Disorders(name)
 CREATE INDEX ON :`Chemicals & Drugs`(name)
@@ -275,3 +274,15 @@ python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
+
+
+### exploring alternate versions of imatinib-asthma gold standard
+
+# original
+MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) where source.name = "imatinib" AND target.name = "asthma" AND i1.name=~".*kit.*" AND i2.name="mast cell activation" return path
+
+# broadening match?
+MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with"asthma" AND i1.name=~".*kit.*" AND i2.name starts with "mast cell" return path
+
+# longer path? -- taking too long to finish...
+MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(i3)-[r4]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with"asthma" AND (i1.name=~".*kit.*" OR i2.name=~".*kit.*" OR i3.name=~".*kit.*") AND (i1.name starts with "mast cell" OR i2.name starts with "mast cell" OR i3.name starts with "mast cell") return path
