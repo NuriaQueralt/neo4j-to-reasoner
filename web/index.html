@@ -116,12 +116,12 @@
               <el-table-column
                 prop="value"
                 label="Name"
-                width="200">
+                width="220">
               </el-table-column>
               <el-table-column
                 prop="count"
                 label="Count"
-                width="180">
+                width="100">
               </el-table-column>
               <el-table-column
                 prop=""
@@ -136,7 +136,7 @@
           <div v-if="current_q=='q1'">
           <h5>Filter by end nodes:</h5>
           <div style="text-align: left">
-            <el-radio-group v-model="table2_selector">
+            <el-radio-group v-model="table2_selector" v-on:change="render_end_table">
               <el-radio-button label="By Node Name"></el-radio-button>
               <el-radio-button label="By Node Type"></el-radio-button>
             </el-radio-group>
@@ -150,12 +150,12 @@
                 <el-table-column
                   prop="value"
                   label="Name"
-                  width="180">
+                  width="220">
                 </el-table-column>
                 <el-table-column
                   prop="count"
                   label="Count"
-                  width="180">
+                  width="100">
                 </el-table-column>
                 <el-table-column
                   prop=""
@@ -214,11 +214,12 @@
           this.current_item = this.leftpanel_list[item_idx];
           this.render_middle_table();
           if (this.current_q == 'q1'){
+            this.render_end_table();
           }
         },
         render_table: function(){
           var res = this.current_q=='q1'?q1res:q2res;
-          var table_selector = this.current_q=='q1'?this.table1_selector:this.table2_selector;
+          var table_selector = (this.current_q=='q1' && this.current_table=="end")?this.table2_selector:this.table1_selector;
           //var key = "q1_0_Osteoporosis_path3b.txt.gz";
           var key = this.computed_key;
           var datatype = this.computed_datatype;
@@ -226,23 +227,24 @@
           console.log(key, datatype, table_selector);
           if (table_selector == 'By Node Name'){
             table_data = res[key][datatype]['name'];
-            console.log(1, "table_data", table_data.length);
           }else if (table_selector == 'By Node Type'){
             table_data = res[key][datatype]['type'];
-            console.log(2, "table_data", table_data.length);
           }else if (table_selector == 'By Edge Type'){
             table_data = res[key][datatype];
-            console.log(3, "table_data", table_data.length);
           }
-
-          this.table1_data = table_data.slice(0,100);
+          if (this.current_table == "middle"){
+            this.table1_data = table_data.slice(0,100);
+          }else {
+            this.table2_data = table_data.slice(0,100);
+          }
         },
         render_middle_table: function(){
             this.current_table = "middle";
             this.render_table();
         },
-        change_selector: function(){
-          console.log(this.table1_selector);
+        render_end_table: function(){
+            this.current_table = "end";
+            this.render_table();
         }
       },
       created: function(){
