@@ -9,4004 +9,1004 @@ q1_list = ["Osteoporosis", "Human Immunodeficiency Virus Infection",
 
 
 q2_list =  [
-            {
-              "condition": "Abdominal Pain",
-              "name": "BUTYLSCOPOLAMINE"
-            },
-            {
-              "condition": "Acne Vulgaris",
-              "name": "ADAPALENE"
-            },
-            {
-              "condition": "Acne Vulgaris",
-              "name": "NADIFLOXACIN"
-            },
-            {
-              "condition": "Acne Vulgaris",
-              "name": "TAZAROTENE"
-            },
-            {
-              "condition": "Acute Coronary Syndrome",
-              "name": "TICAGRELOR"
-            },
-            {
-              "condition": "Acute Coronary Syndrome",
-              "name": "TIROFIBAN"
-            },
-            {
-              "condition": "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
-              "name": "MERCAPTOPURINE"
-            },
-            {
-              "condition": "Leukemia, Myeloid, Acute",
-              "name": "IDARUBICIN"
-            },
-            {
-              "condition": "Acute Pain",
-              "name": "NIMESULIDE"
-            },
-            {
-              "condition": "Leukemia, Promyelocytic, Acute",
-              "name": "TAMIBAROTENE"
-            },
-            {
-              "condition": "Addison Disease",
-              "name": "FLUDROCORTISONE"
-            },
-            {
-              "condition": "Addison Disease",
-              "name": "DESOXYCORTONE"
-            },
-            {
-              "condition": "Alcoholism",
-              "name": "ACAMPROSATE"
-            },
-            {
-              "condition": "Hepatitis, Alcoholic",
-              "name": "METADOXINE"
-            },
-            {
-              "condition": "Alcoholism",
-              "name": "NALMEFENE"
-            },
-            {
-              "condition": "Conjunctivitis, Allergic",
-              "name": "NEDOCROMIL"
-            },
-            {
-              "condition": "Conjunctivitis, Allergic",
-              "name": "PROMETHAZINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic",
-              "name": "PYRILAMINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic",
-              "name": "RUPATADINE"
-            },
-            {
-              "condition": "Hypersensitivity",
-              "name": "TRIPROLIDINE"
-            },
-            {
-              "condition": "Hypersensitivity",
-              "name": "METHSCOPOLAMINE"
-            },
-            {
-              "condition": "Hypersensitivity",
-              "name": "BAMIPINE"
-            },
-            {
-              "condition": "Hypersensitivity",
-              "name": "PHENINDAMINE"
-            },
-            {
-              "condition": "Hypersensitivity",
-              "name": "DEXCHLORPHENIRAMINE"
-            },
-            {
-              "condition": "Alzheimer Disease",
-              "name": "TACRINE"
-            },
-            {
-              "condition": "Alzheimer Disease",
-              "name": "MEMANTINE"
-            },
-            {
-              "condition": "Alzheimer Disease",
-              "name": "CYCLANDELATE"
-            },
-            {
-              "condition": "Alzheimer Disease",
-              "name": "GALANTAMINE"
-            },
-            {
-              "condition": "Amenorrhea",
-              "name": "PROGESTERONE"
-            },
-            {
-              "condition": "Amenorrhea",
-              "name": "GONADORELIN"
-            },
-            {
-              "condition": "Amyotrophic Lateral Sclerosis",
-              "name": "RILUZOLE"
-            },
-            {
-              "condition": "Alopecia",
-              "name": "ALFATRADIOL"
-            },
-            {
-              "condition": "Anemia, Megaloblastic",
-              "name": "FOLIC ACID"
-            },
-            {
-              "condition": "Anesthesia, General",
-              "name": "SEVOFLURANE"
-            },
-            {
-              "condition": "Anesthetics, Local",
-              "name": "PIPEROCAINE"
-            },
-            {
-              "condition": "Angina Pectoris",
-              "name": "ESATENOLOL"
-            },
-            {
-              "condition": "Angina Pectoris",
-              "name": "ETAFENONE"
-            },
-            {
-              "condition": "Angina Pectoris",
-              "name": "TROLNITRATE"
-            },
-            {
-              "condition": "Angina Pectoris",
-              "name": "OXYFEDRINE"
-            },
-            {
-              "condition": "Angina Pectoris",
-              "name": "PROPRANOLOL"
-            },
-            {
-              "condition": "Angina Pectoris",
-              "name": "EFONIDIPINE"
-            },
-            {
-              "condition": "Angioedema",
-              "name": "GLUTODINE"
-            },
-            {
-              "condition": "Angioedema",
-              "name": "STANOZOLOL"
-            },
-            {
-              "condition": "Angioedemas, Hereditary",
-              "name": "ICATIBANT"
-            },
-            {
-              "condition": "Anorexia",
-              "name": "DRONABINOL"
-            },
-            {
-              "condition": "Antimetabolites, Antineoplastic",
-              "name": "URIDINE"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "TRYPTOPHAN"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "MEPROBAMATE"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "CHLORDIAZEPOXIDE"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "HALOXAZOLAM"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "PRAZEPAM"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "FLUDIAZEPAM"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "OXYMORPHONE"
-            },
-            {
-              "condition": "Anxiety",
-              "name": "BARBEXACLONE"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "ESCITALOPRAM"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "LORAZEPAM"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "TRIFLUOPERAZINE"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "BUSPIRONE"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "ALPRAZOLAM"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "DOXEPIN"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "NORDAZEPAM"
-            },
-            {
-              "condition": "Anxiety Disorders",
-              "name": "XYLAZINE"
-            },
-            {
-              "condition": "Anemia, Aplastic",
-              "name": "ELTROMBOPAG"
-            },
-            {
-              "condition": "Appendicitis",
-              "name": "MORINIDAZOLE"
-            },
-            {
-              "condition": "Arrhythmias, Cardiac",
-              "name": "SPARTEINE"
-            },
-            {
-              "condition": "Arrhythmias, Cardiac",
-              "name": "DESLANOSIDE"
-            },
-            {
-              "condition": "Arrhythmias, Cardiac",
-              "name": "FLECAINIDE"
-            },
-            {
-              "condition": "Arrhythmias, Cardiac",
-              "name": "VERAPAMIL"
-            },
-            {
-              "condition": "Arrhythmias, Cardiac",
-              "name": "DISOPYRAMIDE"
-            },
-            {
-              "condition": "Arthritis",
-              "name": "INDOMETHACIN"
-            },
-            {
-              "condition": "Arthritis, Gouty",
-              "name": "PROBENECID"
-            },
-            {
-              "condition": "Arthritis, Gouty",
-              "name": "SULFINPYRAZONE"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "KETOPROFEN"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "PIROXICAM"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "IGURATIMOD"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "TOFACITINIB"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "SULFASALAZINE"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "CELECOXIB"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "MELOXICAM"
-            },
-            {
-              "condition": "Ascites",
-              "name": "MERETHOXYLLINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "CHLORCYCLIZINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "HEXOPRENALINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "SERATRODAST"
-            },
-            {
-              "condition": "Asthma",
-              "name": "BITOLTEROL"
-            },
-            {
-              "condition": "Asthma",
-              "name": "OXITROPIUM"
-            },
-            {
-              "condition": "Asthma",
-              "name": "PROXYPHYLLINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "CLENBUTEROL"
-            },
-            {
-              "condition": "Asthma",
-              "name": "TRETOQUINOL"
-            },
-            {
-              "condition": "Asthma",
-              "name": "ZILEUTON"
-            },
-            {
-              "condition": "Asthma",
-              "name": "CLORPRENALINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "DYPHYLLINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "DOXOFYLLINE"
-            },
-            {
-              "condition": "Asthma",
-              "name": "REPIRINAST"
-            },
-            {
-              "condition": "Asthma",
-              "name": "SALMETEROL"
-            },
-            {
-              "condition": "Atherosclerosis",
-              "name": "CLOPIDOGREL"
-            },
-            {
-              "condition": "Atherosclerosis",
-              "name": "PYRICARBATE"
-            },
-            {
-              "condition": "Tinea Pedis",
-              "name": "SULCONAZOLE"
-            },
-            {
-              "condition": "Atrial Fibrillation",
-              "name": "EDOXABAN"
-            },
-            {
-              "condition": "Atrial Fibrillation",
-              "name": "OUABAIN"
-            },
-            {
-              "condition": "Atrial Fibrillation",
-              "name": "DIGOXIN"
-            },
-            {
-              "condition": "Atrial Fibrillation",
-              "name": "IBUTILIDE"
-            },
-            {
-              "condition": "Atrial Fibrillation",
-              "name": "VERNAKALANT"
-            },
-            {
-              "condition": "Attention Deficit Disorder with Hyperactivity",
-              "name": "ATOMOXETINE"
-            },
-            {
-              "condition": "Attention Deficit Disorder with Hyperactivity",
-              "name": "DEXMETHYLPHENIDATE"
-            },
-            {
-              "condition": "Back Pain",
-              "name": "IBUPROFEN"
-            },
-            {
-              "condition": "Back Pain",
-              "name": "PELUBIPROFEN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "ROLITETRACYCLINE"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "TETRACYCLINE"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CEFPIRAMIDE"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "ISEPAMICIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CEFADROXIL"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CEFUROXIME"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "SISOMICIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CYCLACILLIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "LATAMOXEF"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CEFTERAM"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "LENAMPICILLIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "FLEROXACIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "MEZLOCILLIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "AZLOCILLIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CEPHALEXIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "LORACARBEF"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "AMPICILLIN"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "SULFAMERAZINE"
-            },
-            {
-              "condition": "Bacterial Infections",
-              "name": "CEFALONIUM"
-            },
-            {
-              "condition": "Vaginosis, Bacterial",
-              "name": "SECNIDAZOLE"
-            },
-            {
-              "condition": "Binge-Eating Disorder",
-              "name": "LISDEXAMFETAMINE"
-            },
-            {
-              "condition": "Bipolar Disorder",
-              "name": "ZUCLOPENTHIXOL"
-            },
-            {
-              "condition": "Bipolar Disorder",
-              "name": "LITHIUM"
-            },
-            {
-              "condition": "Urinary Bladder Neoplasms",
-              "name": "CISPLATIN"
-            },
-            {
-              "condition": "Blepharitis",
-              "name": "FRAMYCETIN"
-            },
-            {
-              "condition": "Blepharitis",
-              "name": "PRANOPROFEN"
-            },
-            {
-              "condition": "Blood Coagulation",
-              "name": "DICUMAROL"
-            },
-            {
-              "condition": "Bovine Respiratory Disease Complex",
-              "name": "GAMITHROMYCIN"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "TRILOSTANE"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "TESTOLACTONE"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "ELLIPTINIUM"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "EPIRUBICIN"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "THIOTEPA"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "LAPATINIB"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "METHOTREXATE"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "ANASTROZOLE"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "PALBOCICLIB"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "LETROZOLE"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "MEPITIOSTANE"
-            },
-            {
-              "condition": "Breast Neoplasms",
-              "name": "EPITIOSTANOL"
-            },
-            {
-              "condition": "Asthma",
-              "name": "TULOBUTEROL"
-            },
-            {
-              "condition": "Asthma",
-              "name": "METAPROTERENOL"
-            },
-            {
-              "condition": "Bronchiectasis",
-              "name": "FUDOSTEINE"
-            },
-            {
-              "condition": "Bronchitis",
-              "name": "SULFALENE"
-            },
-            {
-              "condition": "Bronchitis",
-              "name": "JOSAMYCIN"
-            },
-            {
-              "condition": "Bronchitis, Chronic",
-              "name": "PRULIFLOXACIN"
-            },
-            {
-              "condition": "Bronchitis, Chronic",
-              "name": "ETAFEDRINE"
-            },
-            {
-              "condition": "Bulimia Nervosa",
-              "name": "FLUOXETINE"
-            },
-            {
-              "condition": "Bursitis",
-              "name": "SUXIBUZONE"
-            },
-            {
-              "condition": "Neoplasms",
-              "name": "PD173955"
-            },
-            {
-              "condition": "Candidiasis",
-              "name": "HELVOLIC ACID"
-            },
-            {
-              "condition": "Candidiasis",
-              "name": "POSACONAZOLE"
-            },
-            {
-              "condition": "Candidiasis",
-              "name": "FLUCONAZOLE"
-            },
-            {
-              "condition": "Carcinoid Tumor",
-              "name": "OCTREOTIDE"
-            },
-            {
-              "condition": "Carcinoma, Basal Cell",
-              "name": "SONIDEGIB"
-            },
-            {
-              "condition": "Carcinoma, Basal Cell",
-              "name": "VISMODEGIB"
-            },
-            {
-              "condition": "Carcinoma, Basal Cell",
-              "name": "IMIQUIMOD"
-            },
-            {
-              "condition": "Carcinoma, Hepatocellular",
-              "name": "GOLVATINIB"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "OSIMERTINIB"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "VINORELBINE"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "ALECTINIB"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "CERITINIB"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "GEFITINIB"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "AFATINIB"
-            },
-            {
-              "condition": "Carcinoma, Renal Cell",
-              "name": "SORAFENIB"
-            },
-            {
-              "condition": "Carcinoma, Renal Cell",
-              "name": "SAVOLITINIB"
-            },
-            {
-              "condition": "Carcinoma, Renal Cell",
-              "name": "AXITINIB"
-            },
-            {
-              "condition": "Carcinoma, Renal Cell",
-              "name": "PAZOPANIB"
-            },
-            {
-              "condition": "Carcinoma, Renal Cell",
-              "name": "TEMSIROLIMUS"
-            },
-            {
-              "condition": "Carcinoma, Transitional Cell",
-              "name": "VINFLUNINE"
-            },
-            {
-              "condition": "Heart Arrest",
-              "name": "NOREPINEPHRINE"
-            },
-            {
-              "condition": "Cardiovascular Diseases",
-              "name": "SIMVASTATIN"
-            },
-            {
-              "condition": "Cardiovascular Diseases",
-              "name": "PANTETHINE"
-            },
-            {
-              "condition": "Cataract",
-              "name": "BENDAZAC"
-            },
-            {
-              "condition": "Cataract",
-              "name": "PIRENOXINE"
-            },
-            {
-              "condition": "Chagas Disease",
-              "name": "BENZNIDAZOLE"
-            },
-            {
-              "condition": "Chagas Disease",
-              "name": "NIFURTIMOX"
-            },
-            {
-              "condition": "Cholecystitis",
-              "name": "TIEMONIUM"
-            },
-            {
-              "condition": "Cholelithiasis",
-              "name": "TREPIBUTONE"
-            },
-            {
-              "condition": "Cholestasis",
-              "name": "DEHYDROCHOLIC ACID"
-            },
-            {
-              "condition": "Choroidal Neovascularization",
-              "name": "VERTEPORFIN"
-            },
-            {
-              "condition": "Bronchitis, Chronic",
-              "name": "ISOETHARINE"
-            },
-            {
-              "condition": "Bronchitis, Chronic",
-              "name": "GEMIFLOXACIN"
-            },
-            {
-              "condition": "Bronchitis, Chronic",
-              "name": "CEFDINIR"
-            },
-            {
-              "condition": "Hepatitis C, Chronic",
-              "name": "GLYCAMIL"
-            },
-            {
-              "condition": "Hepatitis C, Chronic",
-              "name": "DACLATASVIR"
-            },
-            {
-              "condition": "Hepatitis C, Chronic",
-              "name": "ELBASVIR"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "FLUTROPIUM"
-            },
-            {
-              "condition": "Pancreatitis, Chronic",
-              "name": "CAMOSTAT"
-            },
-            {
-              "condition": "Clostridium Infections",
-              "name": "AVILAMYCIN"
-            },
-            {
-              "condition": "Coccidiosis",
-              "name": "SEMDURAMICIN"
-            },
-            {
-              "condition": "Coccidiosis",
-              "name": "NITROMIDE"
-            },
-            {
-              "condition": "Coccidiosis",
-              "name": "ETHOPABATE"
-            },
-            {
-              "condition": "Coccidiosis",
-              "name": "ROBENIDINE"
-            },
-            {
-              "condition": "Coccidiosis",
-              "name": "NICARBAZIN"
-            },
-            {
-              "condition": "Cognition Disorders",
-              "name": "NOOPEPT"
-            },
-            {
-              "condition": "Colic",
-              "name": "VALETHAMATE"
-            },
-            {
-              "condition": "Colorectal Neoplasms",
-              "name": "JNJ-38877605"
-            },
-            {
-              "condition": "Colorectal Neoplasms",
-              "name": "RALTITREXED"
-            },
-            {
-              "condition": "Colorectal Neoplasms",
-              "name": "REGORAFENIB"
-            },
-            {
-              "condition": "Common Cold",
-              "name": "BROMPHENIRAMINE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "METOLAZONE"
-            },
-            {
-              "condition": "Conjunctivitis",
-              "name": "NORFLOXACIN"
-            },
-            {
-              "condition": "Conjunctivitis, Allergic",
-              "name": "EPINASTINE"
-            },
-            {
-              "condition": "Conjunctivitis, Allergic",
-              "name": "MEDRYSONE"
-            },
-            {
-              "condition": "Conjunctivitis, Allergic",
-              "name": "LEVOCABASTINE"
-            },
-            {
-              "condition": "Constipation",
-              "name": "PRUCALOPRIDE"
-            },
-            {
-              "condition": "Constipation",
-              "name": "NALOXONE"
-            },
-            {
-              "condition": "Constipation",
-              "name": "PHENOLPHTHALEIN"
-            },
-            {
-              "condition": "Constipation",
-              "name": "LUBIPROSTONE"
-            },
-            {
-              "condition": "Coronary Artery Disease",
-              "name": "PERINDOPRIL"
-            },
-            {
-              "condition": "Coronary Artery Disease",
-              "name": "CHROMONAR"
-            },
-            {
-              "condition": "Coronary Disease",
-              "name": "DOCONEXENT"
-            },
-            {
-              "condition": "Cough",
-              "name": "ETHYLMORPHINE"
-            },
-            {
-              "condition": "Cough",
-              "name": "PHOLCODINE"
-            },
-            {
-              "condition": "Pituitary ACTH Hypersecretion",
-              "name": "PASIREOTIDE"
-            },
-            {
-              "condition": "Candidiasis, Cutaneous",
-              "name": "KETOCONAZOLE"
-            },
-            {
-              "condition": "Cystic Fibrosis",
-              "name": "IVACAFTOR"
-            },
-            {
-              "condition": "Cystitis",
-              "name": "FLAVOXATE"
-            },
-            {
-              "condition": "Cystitis",
-              "name": "MICRONOMICIN"
-            },
-            {
-              "condition": "Cytomegalovirus Retinitis",
-              "name": "VALGANCICLOVIR HCL"
-            },
-            {
-              "condition": "Cytomegalovirus Retinitis",
-              "name": "GANCICLOVIR"
-            },
-            {
-              "condition": "Cytomegalovirus Retinitis",
-              "name": "CIDOFOVIR"
-            },
-            {
-              "condition": "Cytomegalovirus Retinitis",
-              "name": "FOSCARNET"
-            },
-            {
-              "condition": "Deep Sedation",
-              "name": "ATIPAMEZOLE"
-            },
-            {
-              "condition": "Dementia",
-              "name": "OXIRACETAM"
-            },
-            {
-              "condition": "Dental Caries",
-              "name": "XYLITOL"
-            },
-            {
-              "condition": "Stomatognathic Diseases",
-              "name": "PHENTOLAMINE"
-            },
-            {
-              "condition": "Depression",
-              "name": "DIBENZEPIN"
-            },
-            {
-              "condition": "Depression",
-              "name": "IMIPRAMINE"
-            },
-            {
-              "condition": "Depression",
-              "name": "ISOCARBOXAZID"
-            },
-            {
-              "condition": "Depression",
-              "name": "LOFEPRAMINE"
-            },
-            {
-              "condition": "Depressive Disorder",
-              "name": "AMITRIPTYLINE"
-            },
-            {
-              "condition": "Depressive Disorder, Major",
-              "name": "ORVEPITANT"
-            },
-            {
-              "condition": "Depressive Disorder, Major",
-              "name": "ARIPIPRAZOLE"
-            },
-            {
-              "condition": "Depressive Disorder, Major",
-              "name": "VILAZODONE"
-            },
-            {
-              "condition": "Depressive Disorder, Major",
-              "name": "VORTIOXETINE"
-            },
-            {
-              "condition": "Dermatitis",
-              "name": "CLOBETASOL"
-            },
-            {
-              "condition": "Dermatitis",
-              "name": "UFENAMATE"
-            },
-            {
-              "condition": "Dermatitis Herpetiformis",
-              "name": "DAPSONE"
-            },
-            {
-              "condition": "Dermatitis Herpetiformis",
-              "name": "SULFOXONE"
-            },
-            {
-              "condition": "Dermatitis, Atopic",
-              "name": "THENALIDINE"
-            },
-            {
-              "condition": "Dermatomycoses",
-              "name": "AMOROLFINE"
-            },
-            {
-              "condition": "Tinea",
-              "name": "TOLNAFTATE"
-            },
-            {
-              "condition": "Skin Diseases",
-              "name": "HYDROCORTAMATE"
-            },
-            {
-              "condition": "Diabetes Insipidus",
-              "name": "LYPRESSIN"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "CANAGLIFLOZIN"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "GLYBURIDE"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "EMPAGLIFLOZIN"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "MIGLITOL"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "TOLBUTAMIDE"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "GLIPIZIDE"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "TOFOGLIFLOZIN"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "GLIMEPIRIDE"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "ALOGLIPTIN"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "TENELIGLIPTIN"
-            },
-            {
-              "condition": "Diabetic Neuropathies",
-              "name": "EPALRESTAT"
-            },
-            {
-              "condition": "Diarrhea",
-              "name": "UZARIN"
-            },
-            {
-              "condition": "Diarrhea",
-              "name": "UZARIGENIN"
-            },
-            {
-              "condition": "Diarrhea",
-              "name": "FIDAXOMICIN"
-            },
-            {
-              "condition": "Diarrhea",
-              "name": "RIFAXIMIN"
-            },
-            {
-              "condition": "Diarrhea",
-              "name": "LOPERAMIDE"
-            },
-            {
-              "condition": "Diarrhea",
-              "name": "DIFENOXIN"
-            },
-            {
-              "condition": "Dilatation and Curettage",
-              "name": "GEMEPROST"
-            },
-            {
-              "condition": "Substance-Related Disorders",
-              "name": "LEVLOFEXIDINE"
-            },
-            {
-              "condition": "Drug Overdose",
-              "name": "FLUMAZENIL"
-            },
-            {
-              "condition": "Dry Eye Syndromes",
-              "name": "DIQUAFOSOL"
-            },
-            {
-              "condition": "Dry Eye Syndromes",
-              "name": "OXIGLUTATIONE"
-            },
-            {
-              "condition": "Duodenal Ulcer",
-              "name": "PIRENZEPINE"
-            },
-            {
-              "condition": "Duodenal Ulcer",
-              "name": "LEVOLANSOPRAZOLE"
-            },
-            {
-              "condition": "Duodenal Ulcer",
-              "name": "BENZILONIUM"
-            },
-            {
-              "condition": "Duodenal Ulcer",
-              "name": "RABEPRAZOLE"
-            },
-            {
-              "condition": "Hyperlipoproteinemia Type III",
-              "name": "ROSUVASTATIN"
-            },
-            {
-              "condition": "Dysentery",
-              "name": "VALNEMULIN"
-            },
-            {
-              "condition": "Metrorrhagia",
-              "name": "ORMELOXIFENE"
-            },
-            {
-              "condition": "Dyskinesias",
-              "name": "TIAPRIDE"
-            },
-            {
-              "condition": "Echinococcosis",
-              "name": "ALBENDAZOLE"
-            },
-            {
-              "condition": "Eczema",
-              "name": "OXATOMIDE"
-            },
-            {
-              "condition": "Endocarditis, Bacterial",
-              "name": "VANCOMYCIN"
-            },
-            {
-              "condition": "Endometriosis",
-              "name": "NAFARELIN"
-            },
-            {
-              "condition": "Endometriosis",
-              "name": "BUSERELIN"
-            },
-            {
-              "condition": "Endometriosis",
-              "name": "DYDROGESTERONE"
-            },
-            {
-              "condition": "Endometriosis",
-              "name": "GESTRINONE"
-            },
-            {
-              "condition": "Endoscopy, Gastrointestinal",
-              "name": "PRIFINIUM"
-            },
-            {
-              "condition": "Epilepsy",
-              "name": "ETHOTOIN"
-            },
-            {
-              "condition": "Epilepsy",
-              "name": "METHARBITAL"
-            },
-            {
-              "condition": "Epilepsy",
-              "name": "FELBAMATE"
-            },
-            {
-              "condition": "Epilepsy",
-              "name": "METHSUXIMIDE"
-            },
-            {
-              "condition": "Epilepsy",
-              "name": "BRIVARACETAM"
-            },
-            {
-              "condition": "Epilepsy",
-              "name": "VIGABATRIN"
-            },
-            {
-              "condition": "Erectile Dysfunction",
-              "name": "MIRODENAFIL"
-            },
-            {
-              "condition": "Escherichia coli Infections",
-              "name": "SULFOMYXIN"
-            },
-            {
-              "condition": "Escherichia coli Infections",
-              "name": "IMIPENEM"
-            },
-            {
-              "condition": "Estrous Cycle",
-              "name": "CLOPROSTENOL"
-            },
-            {
-              "condition": "Eye Infections, Bacterial",
-              "name": "SULFACETAMIDE"
-            },
-            {
-              "condition": "Eye Infections, Bacterial",
-              "name": "BACITRACIN"
-            },
-            {
-              "condition": "Fabry Disease",
-              "name": "MIGALASTAT"
-            },
-            {
-              "condition": "Amyloid Neuropathies, Familial",
-              "name": "TAFAMIDIS"
-            },
-            {
-              "condition": "Familial Mediterranean Fever",
-              "name": "COLCHICINE"
-            },
-            {
-              "condition": "Feeding and Eating Disorders",
-              "name": "CAPROMORELIN"
-            },
-            {
-              "condition": "Fever",
-              "name": "CP 154526 HYDROCHLORIDE"
-            },
-            {
-              "condition": "Fever",
-              "name": "ACETAMINOPHEN"
-            },
-            {
-              "condition": "Fish Diseases",
-              "name": "NIFURPIRINOL"
-            },
-            {
-              "condition": "Friedreich Ataxia",
-              "name": "IDEBENONE"
-            },
-            {
-              "condition": "Gallbladder Diseases",
-              "name": "OXAPIUM"
-            },
-            {
-              "condition": "Gastritis",
-              "name": "REVAPRAZAN"
-            },
-            {
-              "condition": "Gastritis",
-              "name": "TIQUIZIUM"
-            },
-            {
-              "condition": "Gastritis",
-              "name": "TROXIPIDE"
-            },
-            {
-              "condition": "Gastritis",
-              "name": "ROXATIDINE"
-            },
-            {
-              "condition": "Gastritis",
-              "name": "REBAMIPIDE"
-            },
-            {
-              "condition": "Gastritis",
-              "name": "ITOPRIDE"
-            },
-            {
-              "condition": "Gastrointestinal Diseases",
-              "name": "MEPREDNISONE"
-            },
-            {
-              "condition": "Gastrointestinal Neoplasms",
-              "name": "FLOXURIDINE"
-            },
-            {
-              "condition": "Gastroparesis",
-              "name": "METOCLOPRAMIDE"
-            },
-            {
-              "condition": "Gaucher Disease",
-              "name": "MIGLUSTAT"
-            },
-            {
-              "condition": "Gaucher Disease",
-              "name": "ELIGLUSTAT"
-            },
-            {
-              "condition": "Reproductive Tract Infections",
-              "name": "TICARCILLIN"
-            },
-            {
-              "condition": "Glaucoma",
-              "name": "ACECLIDINE"
-            },
-            {
-              "condition": "Glaucoma",
-              "name": "PHYSOSTIGMINE"
-            },
-            {
-              "condition": "Glaucoma",
-              "name": "RIPASUDIL"
-            },
-            {
-              "condition": "Glaucoma",
-              "name": "BUPRANOLOL"
-            },
-            {
-              "condition": "Glaucoma",
-              "name": "METHAZOLAMIDE"
-            },
-            {
-              "condition": "Glaucoma, Open-Angle",
-              "name": "LATANOPROST"
-            },
-            {
-              "condition": "Glaucoma, Open-Angle",
-              "name": "ACETAZOLAMIDE"
-            },
-            {
-              "condition": "Glaucoma, Open-Angle",
-              "name": "DIPIVEFRIN"
-            },
-            {
-              "condition": "Glaucoma, Open-Angle",
-              "name": "BRIMONIDINE"
-            },
-            {
-              "condition": "Glaucoma, Open-Angle",
-              "name": "DEMECARIUM"
-            },
-            {
-              "condition": "Glioblastoma",
-              "name": "ML299"
-            },
-            {
-              "condition": "Glioblastoma",
-              "name": "VELIPARIB"
-            },
-            {
-              "condition": "Goiter",
-              "name": "LEVOTHYROXINE"
-            },
-            {
-              "condition": "Gonorrhea",
-              "name": "CEFOTAXIME"
-            },
-            {
-              "condition": "Gout",
-              "name": "ALLOPURINOL"
-            },
-            {
-              "condition": "Gram-Negative Bacterial Infections",
-              "name": "KANAMYCIN"
-            },
-            {
-              "condition": "Gram-Positive Bacterial Infections",
-              "name": "PROFLAVINE"
-            },
-            {
-              "condition": "Granulomatosis with Polyangiitis",
-              "name": "GUSPERIMUS"
-            },
-            {
-              "condition": "Hand Dermatoses",
-              "name": "ALCLOMETASONE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "CROMOLYN"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "MEQUITAZINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "CHLORPHENIRAMINE"
-            },
-            {
-              "condition": "Head and Neck Neoplasms",
-              "name": "TEGAFUR"
-            },
-            {
-              "condition": "Headache",
-              "name": "ASPIRIN"
-            },
-            {
-              "condition": "Headache Disorders, Secondary",
-              "name": "FONAZINE"
-            },
-            {
-              "condition": "Heart Diseases",
-              "name": "DOBUTAMINE"
-            },
-            {
-              "condition": "Heart Diseases",
-              "name": "TRAPIDIL"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "DERENOFYLLINE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "ENALAPRIL"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "IVABRADINE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "INAMRINONE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "XAMOTEROL"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "NITROGLYCERIN"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "DENOPAMINE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "LOSARTAN"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "PIMOBENDAN"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "OLPRINONE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "CARVEDILOL"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "VESNARINONE"
-            },
-            {
-              "condition": "Heart Failure",
-              "name": "ENOXIMONE"
-            },
-            {
-              "condition": "Heart Failure, Diastolic",
-              "name": "SITAXENTAN"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "HALOXON"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "THENIUM"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "DICHLORVOS"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "FAMPHUR"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "CYCLOBENDAZOLE"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "TICARBODINE"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "EMODEPSIDE"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "TIOXIDAZOLE"
-            },
-            {
-              "condition": "Helminthiasis",
-              "name": "CAMBENDAZOLE"
-            },
-            {
-              "condition": "Hemorrhage",
-              "name": "ORNIPRESSIN"
-            },
-            {
-              "condition": "Hemorrhage",
-              "name": "ETHAMSYLATE"
-            },
-            {
-              "condition": "Hepatic Encephalopathy",
-              "name": "PAROMOMYCIN"
-            },
-            {
-              "condition": "Hepatic Encephalopathy",
-              "name": "NEOMYCIN"
-            },
-            {
-              "condition": "Hepatitis B",
-              "name": "ENTECAVIR"
-            },
-            {
-              "condition": "Hepatitis B",
-              "name": "ADEFOVIR"
-            },
-            {
-              "condition": "Hepatitis B, Chronic",
-              "name": "CLEVUDINE"
-            },
-            {
-              "condition": "Hepatitis B, Chronic",
-              "name": "TELBIVUDINE"
-            },
-            {
-              "condition": "Hepatitis C",
-              "name": "VELPATASVIR"
-            },
-            {
-              "condition": "Hepatitis C, Chronic",
-              "name": "DASABUVIR"
-            },
-            {
-              "condition": "Hepatitis C, Chronic",
-              "name": "BOCEPREVIR"
-            },
-            {
-              "condition": "Hepatitis C, Chronic",
-              "name": "TELAPREVIR"
-            },
-            {
-              "condition": "Carcinoma, Hepatocellular",
-              "name": "VX-11E"
-            },
-            {
-              "condition": "Herpes Labialis",
-              "name": "PENCICLOVIR"
-            },
-            {
-              "condition": "Herpes Labialis",
-              "name": "DOCOSANOL"
-            },
-            {
-              "condition": "Herpes Simplex",
-              "name": "ACYCLOVIR"
-            },
-            {
-              "condition": "Hirsutism",
-              "name": "EFLORNITHINE"
-            },
-            {
-              "condition": "Histoplasmosis",
-              "name": "ITRACONAZOLE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "COBICISTAT"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "EFAVIRENZ"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "LAMIVUDINE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "INDINAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "RALTEGRAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "TIPRANAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "ETRAVIRINE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "DIDANOSINE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "LOPINAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "MARAVIROC"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "ZALCITABINE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "NELFINAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "ABACAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "STAVUDINE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "EMTRICITABINE"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "ATAZANAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "RITONAVIR"
-            },
-            {
-              "condition": "HIV Infections",
-              "name": "AMPRENAVIR"
-            },
-            {
-              "condition": "Hodgkin Disease",
-              "name": "MECHLORETHAMINE"
-            },
-            {
-              "condition": "Hot Flashes",
-              "name": "BAZEDOXIFENE"
-            },
-            {
-              "condition": "Hot Flashes",
-              "name": "VERALIPRIDE"
-            },
-            {
-              "condition": "Huntington Disease",
-              "name": "PF-2545920"
-            },
-            {
-              "condition": "Huntington Disease",
-              "name": "TETRABENAZINE"
-            },
-            {
-              "condition": "Hymenolepiasis",
-              "name": "NICLOSAMIDE"
-            },
-            {
-              "condition": "Hypercalcemia",
-              "name": "CINACALCET"
-            },
-            {
-              "condition": "Hypercholesterolemia",
-              "name": "COLESTIPOL"
-            },
-            {
-              "condition": "Hypercholesterolemia",
-              "name": "LOMITAPIDE"
-            },
-            {
-              "condition": "Hypercholesterolemia",
-              "name": "PROBUCOL"
-            },
-            {
-              "condition": "Hypercholesterolemia",
-              "name": "FENOFIBRATE"
-            },
-            {
-              "condition": "Hypereosinophilic Syndrome",
-              "name": "IMATINIB"
-            },
-            {
-              "condition": "Hyperlipidemias",
-              "name": "BEZAFIBRATE"
-            },
-            {
-              "condition": "Hyperlipidemias",
-              "name": "CIPROFIBRATE"
-            },
-            {
-              "condition": "Hyperlipidemias",
-              "name": "ATORVASTATIN"
-            },
-            {
-              "condition": "Hyperlipidemias",
-              "name": "SIMFIBRATE"
-            },
-            {
-              "condition": "Hyperlipidemias",
-              "name": "LOVASTATIN"
-            },
-            {
-              "condition": "Hyperlipidemias",
-              "name": "GEMFIBROZIL"
-            },
-            {
-              "condition": "Hyperparathyroidism, Secondary",
-              "name": "PARICALCITOL"
-            },
-            {
-              "condition": "Hyperparathyroidism, Secondary",
-              "name": "DOXERCALCIFEROL"
-            },
-            {
-              "condition": "Hypersensitivity",
-              "name": "METHDILAZINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "IRBESARTAN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "BETAXOLOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "TOCOPHEROL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "PENTOLINIUM"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "PRAZOSIN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "FIMASARTAN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "SPIRONOLACTONE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "CELIPROLOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "MERSALYL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "DILEVALOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "TELMISARTAN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "MEFRUSIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "MOEXIPRIL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "TRICHLORMETHIAZIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "NADOLOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "AMOSULALOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "LABETALOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "INDORAMIN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "PINDOLOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "GUANETHIDINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "FUROSEMIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "HYDROFLUMETHIAZIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "AMILORIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "RESCINNAMINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "BOPINDOLOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "CLEVIDIPINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "LISINOPRIL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "DESERPIDINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "CILNIDIPINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "SPIRAPRIL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "GALLOPAMIL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "FELODIPINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "TALINOLOL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "VALSARTAN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "BUDRALAZINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "GUANABENZ"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "QUINETHAZONE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "GUANADREL"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "PARGYLINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "EPLERENONE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "EPROSARTAN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "BUNAZOSIN"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "CAPOZIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "INDAPAMIDE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "FENOLDOPAM"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "CANRENONE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "GUANFACINE"
-            },
-            {
-              "condition": "Hypertension",
-              "name": "LERCANIDIPINE"
-            },
-            {
-              "condition": "Hypertension, Pulmonary",
-              "name": "TREPROSTINIL"
-            },
-            {
-              "condition": "Hypertension, Pulmonary",
-              "name": "SELEXIPAG"
-            },
-            {
-              "condition": "Hypertension, Pulmonary",
-              "name": "AMBRISENTAN"
-            },
-            {
-              "condition": "Hypertension, Pulmonary",
-              "name": "SILDENAFIL"
-            },
-            {
-              "condition": "Hypertension, Pulmonary",
-              "name": "MACITENTAN"
-            },
-            {
-              "condition": "Fever",
-              "name": "DIPYRONE"
-            },
-            {
-              "condition": "Hyperthyroidism",
-              "name": "LIOTHYRONINE"
-            },
-            {
-              "condition": "Hypertriglyceridemia",
-              "name": "ETOFIBRATE"
-            },
-            {
-              "condition": "Hypertriglyceridemia",
-              "name": "ICOSAPENT"
-            },
-            {
-              "condition": "Gastritis, Hypertrophic",
-              "name": "AMINOPENTAMIDE"
-            },
-            {
-              "condition": "Hypnotics and Sedatives",
-              "name": "TALBUTAL"
-            },
-            {
-              "condition": "Hypocalcemia",
-              "name": "CALCITRIOL"
-            },
-            {
-              "condition": "Hyponatremia",
-              "name": "CONIVAPTAN"
-            },
-            {
-              "condition": "Hyponatremia",
-              "name": "TOLVAPTAN"
-            },
-            {
-              "condition": "Hypotension",
-              "name": "EPHEDRINE"
-            },
-            {
-              "condition": "Hypotension",
-              "name": "AMEZINIUM"
-            },
-            {
-              "condition": "Hypotension",
-              "name": "NORFENEFRINE"
-            },
-            {
-              "condition": "Hypotension, Orthostatic",
-              "name": "MIDODRINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "RASAGILINE"
-            },
-            {
-              "condition": "Idiopathic Pulmonary Fibrosis",
-              "name": "NINTEDANIB"
-            },
-            {
-              "condition": "Immune System Diseases",
-              "name": "DEFLAZACORT"
-            },
-            {
-              "condition": "Infertility, Female",
-              "name": "CLOMIPHENE"
-            },
-            {
-              "condition": "Infertility, Male",
-              "name": "MESTEROLONE"
-            },
-            {
-              "condition": "Inflammation",
-              "name": "TINORIDINE"
-            },
-            {
-              "condition": "Inflammation",
-              "name": "BROMFENAC"
-            },
-            {
-              "condition": "Influenza, Human",
-              "name": "LANINAMIVIR"
-            },
-            {
-              "condition": "Influenza, Human",
-              "name": "PERAMIVIR"
-            },
-            {
-              "condition": "Influenza, Human",
-              "name": "OSELTAMIVIR"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "CLOTIAZEPAM"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "FLUNITRAZEPAM"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "NITRAZEPAM"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "ZOPICLONE"
-            },
-            {
-              "condition": "Intermittent Claudication",
-              "name": "CILOSTAZOL"
-            },
-            {
-              "condition": "Intestinal Diseases, Parasitic",
-              "name": "FENBENDAZOLE"
-            },
-            {
-              "condition": "Abdominal Abscess",
-              "name": "CASPOFUNGIN"
-            },
-            {
-              "condition": "Intraabdominal Infections",
-              "name": "CEFTRIAXONE"
-            },
-            {
-              "condition": "Intraabdominal Infections",
-              "name": "CEFOTETAN"
-            },
-            {
-              "condition": "Intraabdominal Infections",
-              "name": "PAZUFLOXACIN"
-            },
-            {
-              "condition": "Intraabdominal Infections",
-              "name": "DORIPENEM"
-            },
-            {
-              "condition": "Invasive Pulmonary Aspergillosis",
-              "name": "ISAVUCONAZOLE"
-            },
-            {
-              "condition": "Iron Overload",
-              "name": "DEFERIPRONE"
-            },
-            {
-              "condition": "Iron, Dietary",
-              "name": "FERROCHOLINATE"
-            },
-            {
-              "condition": "Irritable Bowel Syndrome",
-              "name": "LINACLOTIDE"
-            },
-            {
-              "condition": "Irritable Bowel Syndrome",
-              "name": "ALOSETRON"
-            },
-            {
-              "condition": "Irritable Bowel Syndrome",
-              "name": "ELUXADOLINE"
-            },
-            {
-              "condition": "Irritable Bowel Syndrome",
-              "name": "DICYCLOMINE"
-            },
-            {
-              "condition": "Irritable Bowel Syndrome",
-              "name": "CIMETROPIUM"
-            },
-            {
-              "condition": "Leiomyoma",
-              "name": "LEUPROLIDE"
-            },
-            {
-              "condition": "Lennox Gastaut Syndrome",
-              "name": "RUFINAMIDE"
-            },
-            {
-              "condition": "Leprosy, Lepromatous",
-              "name": "THALIDOMIDE"
-            },
-            {
-              "condition": "Leprosy, Lepromatous",
-              "name": "CLOFAZIMINE"
-            },
-            {
-              "condition": "Leukemia",
-              "name": "RN-1"
-            },
-            {
-              "condition": "Leukemia",
-              "name": "NIMUSTINE"
-            },
-            {
-              "condition": "Leukemia-Lymphoma, Adult T-Cell",
-              "name": "AZ-960"
-            },
-            {
-              "condition": "Leukemia, Hairy Cell",
-              "name": "PENTOSTATIN"
-            },
-            {
-              "condition": "Leukemia, Hairy Cell",
-              "name": "CLADRIBINE"
-            },
-            {
-              "condition": "Leukemia, Lymphocytic, Chronic, B-Cell",
-              "name": "IDELALISIB"
-            },
-            {
-              "condition": "Leukemia, Lymphocytic, Chronic, B-Cell",
-              "name": "CHLORAMBUCIL"
-            },
-            {
-              "condition": "Leukemia, Lymphocytic, Chronic, B-Cell",
-              "name": "FLUDARABINE"
-            },
-            {
-              "condition": "Leukemia, Lymphocytic, Chronic, B-Cell",
-              "name": "VENETOCLAX"
-            },
-            {
-              "condition": "Leukemia, Lymphoid",
-              "name": "VINCRISTINE"
-            },
-            {
-              "condition": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
-              "name": "BOSUTINIB"
-            },
-            {
-              "condition": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
-              "name": "BUSULFAN"
-            },
-            {
-              "condition": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
-              "name": "DASATINIB"
-            },
-            {
-              "condition": "Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
-              "name": "NILOTINIB"
-            },
-            {
-              "condition": "Leukemia, Myeloid",
-              "name": "TIAZOFURIN"
-            },
-            {
-              "condition": "Leukemia, Myeloid, Acute",
-              "name": "THIOGUANINE"
-            },
-            {
-              "condition": "Leukemia, Myeloid, Acute",
-              "name": "ENOCITABINE"
-            },
-            {
-              "condition": "Leukopenia",
-              "name": "ROMURTIDE"
-            },
-            {
-              "condition": "Lice Infestations",
-              "name": "TEFLUBENZURON"
-            },
-            {
-              "condition": "Liver Diseases",
-              "name": "LUSUTROMBOPAG"
-            },
-            {
-              "condition": "Liver Diseases",
-              "name": "PROTOPORPHYRIN"
-            },
-            {
-              "condition": "Low Back Pain",
-              "name": "LOXOPROFEN"
-            },
-            {
-              "condition": "Lupus Erythematosus, Systemic",
-              "name": "HYDROXYCHLOROQUINE"
-            },
-            {
-              "condition": "Lymphoma, Non-Hodgkin",
-              "name": "NSC-350625"
-            },
-            {
-              "condition": "Depressive Disorder, Major",
-              "name": "TRANYLCYPROMINE"
-            },
-            {
-              "condition": "Depressive Disorder, Major",
-              "name": "TRAZODONE"
-            },
-            {
-              "condition": "Malaria",
-              "name": "MEFLOQUINE"
-            },
-            {
-              "condition": "Malaria",
-              "name": "ARTEMETHER"
-            },
-            {
-              "condition": "Malaria, Falciparum",
-              "name": "ARTEMISININ"
-            },
-            {
-              "condition": "Malaria, Falciparum",
-              "name": "QUININE"
-            },
-            {
-              "condition": "Mastitis, Bovine",
-              "name": "CEFQUINOME"
-            },
-            {
-              "condition": "Mastitis, Bovine",
-              "name": "EPIHETACILLIN"
-            },
-            {
-              "condition": "Mastocytoma",
-              "name": "MASITINIB"
-            },
-            {
-              "condition": "Melanoma",
-              "name": "DABRAFENIB"
-            },
-            {
-              "condition": "Melanoma",
-              "name": "VEMURAFENIB"
-            },
-            {
-              "condition": "Meningitis",
-              "name": "CYTARABINE"
-            },
-            {
-              "condition": "Meningitis, Haemophilus",
-              "name": "CEFTIZOXIME"
-            },
-            {
-              "condition": "Menopause",
-              "name": "TIBOLONE"
-            },
-            {
-              "condition": "Menstrual Cycle",
-              "name": "NORETHYNODREL"
-            },
-            {
-              "condition": "Mental Disorders",
-              "name": "CLOTHIAPINE"
-            },
-            {
-              "condition": "Mercury Poisoning",
-              "name": "UNITHIOL"
-            },
-            {
-              "condition": "Methicillin-Resistant Staphylococcus aureus",
-              "name": "ARBEKACIN"
-            },
-            {
-              "condition": "Migraine Disorders",
-              "name": "ALMOTRIPTAN"
-            },
-            {
-              "condition": "Migraine without Aura",
-              "name": "SUMATRIPTAN"
-            },
-            {
-              "condition": "Migraine without Aura",
-              "name": "FROVATRIPTAN"
-            },
-            {
-              "condition": "Migraine without Aura",
-              "name": "ZOLMITRIPTAN"
-            },
-            {
-              "condition": "Moraxella (Branhamella) catarrhalis",
-              "name": "SULBACTAM"
-            },
-            {
-              "condition": "Motion Sickness",
-              "name": "BUCLIZINE"
-            },
-            {
-              "condition": "Motion Sickness",
-              "name": "FLUNARIZINE"
-            },
-            {
-              "condition": "Motion Sickness",
-              "name": "CINNARIZINE"
-            },
-            {
-              "condition": "Motion Sickness",
-              "name": "PHENIRAMINE"
-            },
-            {
-              "condition": "Motion Sickness",
-              "name": "MECLIZINE"
-            },
-            {
-              "condition": "Motion Sickness",
-              "name": "MAROPITANT"
-            },
-            {
-              "condition": "Movement Disorders",
-              "name": "TRIHEXYPHENIDYL"
-            },
-            {
-              "condition": "Movement Disorders",
-              "name": "BENZTROPINE"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "CPI203"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "CARMUSTINE"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "IXAZOMIB"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "LENALIDOMIDE"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "MELPHALAN"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "POMALIDOMIDE"
-            },
-            {
-              "condition": "Multiple Myeloma",
-              "name": "PANOBINOSTAT"
-            },
-            {
-              "condition": "Multiple Sclerosis, Relapsing-Remitting",
-              "name": "LAQUINIMOD"
-            },
-            {
-              "condition": "Muscle Contraction",
-              "name": "TRIETHYLGALLAMINE"
-            },
-            {
-              "condition": "Muscle Relaxation",
-              "name": "ATRACURIUM"
-            },
-            {
-              "condition": "Muscle Relaxation",
-              "name": "CISATRACURIUM"
-            },
-            {
-              "condition": "Spasm",
-              "name": "TIMEPIDIUM"
-            },
-            {
-              "condition": "Spasm",
-              "name": "PRIDINOL"
-            },
-            {
-              "condition": "Muscle Spasticity",
-              "name": "TIZANIDINE"
-            },
-            {
-              "condition": "Muscular Diseases",
-              "name": "CARISOPRODOL"
-            },
-            {
-              "condition": "Musculoskeletal Manipulations",
-              "name": "MIVACURIUM"
-            },
-            {
-              "condition": "Musculoskeletal Pain",
-              "name": "ORPHENADRINE"
-            },
-            {
-              "condition": "Myasthenia Gravis",
-              "name": "AMBENONIUM"
-            },
-            {
-              "condition": "Mycobacterium tuberculosis",
-              "name": "VIOMYCIN"
-            },
-            {
-              "condition": "Mycobacterium tuberculosis",
-              "name": "STREPTOMYCIN"
-            },
-            {
-              "condition": "Mycoses",
-              "name": "GRISEOFULVIN"
-            },
-            {
-              "condition": "Mycoses",
-              "name": "CLOTRIMAZOLE"
-            },
-            {
-              "condition": "Mycoses",
-              "name": "BIFONAZOLE"
-            },
-            {
-              "condition": "Mydriasis",
-              "name": "DAPIPRAZOLE"
-            },
-            {
-              "condition": "Myelodysplastic Syndromes",
-              "name": "VATALANIB"
-            },
-            {
-              "condition": "Myelodysplastic Syndromes",
-              "name": "DECITABINE"
-            },
-            {
-              "condition": "Myelodysplastic Syndromes",
-              "name": "AZACITIDINE"
-            },
-            {
-              "condition": "Myocardial Infarction",
-              "name": "RAMIPRIL"
-            },
-            {
-              "condition": "Myoclonic Epilepsy, Juvenile",
-              "name": "LEVETIRACETAM"
-            },
-            {
-              "condition": "Narcolepsy",
-              "name": "MODAFINIL"
-            },
-            {
-              "condition": "Nasal Obstruction",
-              "name": "TETRAHYDROZOLINE"
-            },
-            {
-              "condition": "Nausea",
-              "name": "INDISETRON"
-            },
-            {
-              "condition": "Nausea",
-              "name": "NABILONE"
-            },
-            {
-              "condition": "Neck Pain",
-              "name": "EPERISONE"
-            },
-            {
-              "condition": "Neoplasms",
-              "name": "GNE-493"
-            },
-            {
-              "condition": "Neoplasms",
-              "name": "PCI-34051"
-            },
-            {
-              "condition": "Neoplasms",
-              "name": "OMIPALISIB"
-            },
-            {
-              "condition": "Cystinosis",
-              "name": "CYSTEAMINE"
-            },
-            {
-              "condition": "Neuralgia",
-              "name": "ISOMETHEPTENE"
-            },
-            {
-              "condition": "Neuralgia, Postherpetic",
-              "name": "CAPSAICIN"
-            },
-            {
-              "condition": "Neurasthenia",
-              "name": "FABOMOTIZOLE"
-            },
-            {
-              "condition": "Neuroblastoma",
-              "name": "I-BET726"
-            },
-            {
-              "condition": "Urinary Bladder, Neurogenic",
-              "name": "METHANTHELINE"
-            },
-            {
-              "condition": "Lymphoma, Non-Hodgkin",
-              "name": "PIXANTRONE"
-            },
-            {
-              "condition": "Lymphoma, Non-Hodgkin",
-              "name": "PLERIXAFOR"
-            },
-            {
-              "condition": "Carcinoma, Non-Small-Cell Lung",
-              "name": "AMRUBICIN"
-            },
-            {
-              "condition": "Nose Diseases",
-              "name": "OXYMETAZOLINE"
-            },
-            {
-              "condition": "Obesity",
-              "name": "METHAMPHETAMINE"
-            },
-            {
-              "condition": "Obesity",
-              "name": "RIMONABANT"
-            },
-            {
-              "condition": "Obesity",
-              "name": "DIRLOTAPIDE"
-            },
-            {
-              "condition": "Obsessive-Compulsive Disorder",
-              "name": "PAROXETINE"
-            },
-            {
-              "condition": "Obstetric Labor Complications",
-              "name": "CAMYLOFIN"
-            },
-            {
-              "condition": "Obstetric Labor Complications",
-              "name": "DINOPROST"
-            },
-            {
-              "condition": "Ocular Hypertension",
-              "name": "METIPRANOLOL"
-            },
-            {
-              "condition": "Ocular Hypertension",
-              "name": "TIMOLOL"
-            },
-            {
-              "condition": "Eye Infections",
-              "name": "OXYTETRACYCLINE"
-            },
-            {
-              "condition": "Onychomycosis",
-              "name": "CICLOPIROX"
-            },
-            {
-              "condition": "Onychomycosis",
-              "name": "TERBINAFINE"
-            },
-            {
-              "condition": "Opioid-Related Disorders",
-              "name": "BUPRENORPHINE"
-            },
-            {
-              "condition": "Opioid-Related Disorders",
-              "name": "NALORPHINE"
-            },
-            {
-              "condition": "Osteoarthritis",
-              "name": "NAPROXEN"
-            },
-            {
-              "condition": "Osteoarthritis",
-              "name": "FIROCOXIB"
-            },
-            {
-              "condition": "Osteoarthritis",
-              "name": "FENOPROFEN"
-            },
-            {
-              "condition": "Osteoarthritis",
-              "name": "CARPROFEN"
-            },
-            {
-              "condition": "Osteoarthritis",
-              "name": "GRAPIPRANT"
-            },
-            {
-              "condition": "Osteoarthritis",
-              "name": "ESFLURBIPROFEN"
-            },
-            {
-              "condition": "Osteoporosis",
-              "name": "OXANDROLONE"
-            },
-            {
-              "condition": "Otitis Externa",
-              "name": "FINAFLOXACIN"
-            },
-            {
-              "condition": "Otitis Media",
-              "name": "CEFACLOR"
-            },
-            {
-              "condition": "Otitis Media",
-              "name": "SULFISOXAZOLE"
-            },
-            {
-              "condition": "Otitis Media",
-              "name": "AZITHROMYCIN"
-            },
-            {
-              "condition": "Otitis Media",
-              "name": "CEFMENOXIME"
-            },
-            {
-              "condition": "Ovarian Neoplasms",
-              "name": "CARBOPLATIN"
-            },
-            {
-              "condition": "Ovarian Neoplasms",
-              "name": "SU11274"
-            },
-            {
-              "condition": "Ovarian Neoplasms",
-              "name": "PACLITAXEL"
-            },
-            {
-              "condition": "Ovarian Neoplasms",
-              "name": "OLAPARIB"
-            },
-            {
-              "condition": "Ovarian Neoplasms",
-              "name": "ALTRETAMINE"
-            },
-            {
-              "condition": "Urinary Bladder, Overactive",
-              "name": "TOLTERODINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "CYM 5442 HYDROCHLORIDE"
-            },
-            {
-              "condition": "Pain",
-              "name": "PROPOFOL"
-            },
-            {
-              "condition": "Pain",
-              "name": "HALOTHANE"
-            },
-            {
-              "condition": "Pain",
-              "name": "PROPANIDID"
-            },
-            {
-              "condition": "Pain",
-              "name": "LEVOMENTHOL"
-            },
-            {
-              "condition": "Pain",
-              "name": "TILETAMINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "KETOROLAC"
-            },
-            {
-              "condition": "Pain",
-              "name": "SALCOLEX"
-            },
-            {
-              "condition": "Pain",
-              "name": "EPTAZOCINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "FLOCTAFENINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "METHADONE"
-            },
-            {
-              "condition": "Pain",
-              "name": "BUPIVACAINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "ISOFLURANE"
-            },
-            {
-              "condition": "Pain",
-              "name": "OXYCODONE"
-            },
-            {
-              "condition": "Pain",
-              "name": "PROCAINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "ETIDOCAINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "BUTORPHANOL"
-            },
-            {
-              "condition": "Pain",
-              "name": "ENFLURANE"
-            },
-            {
-              "condition": "Pain",
-              "name": "ARTICAINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "LEVORPHANOL"
-            },
-            {
-              "condition": "Pain",
-              "name": "PROPOXYPHENE"
-            },
-            {
-              "condition": "Pain",
-              "name": "METHOHEXITAL"
-            },
-            {
-              "condition": "Pain",
-              "name": "AMFENAC"
-            },
-            {
-              "condition": "Pain",
-              "name": "PROPARACAINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "ALFENTANIL"
-            },
-            {
-              "condition": "Pain",
-              "name": "MORPHINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "PENTAZOCINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "KETAMINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "REMIFENTANIL"
-            },
-            {
-              "condition": "Pain",
-              "name": "DYCLONINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "NALBUPHINE"
-            },
-            {
-              "condition": "Pain",
-              "name": "HYDROMORPHONE"
-            },
-            {
-              "condition": "Pain",
-              "name": "ETOMIDATE"
-            },
-            {
-              "condition": "Pain",
-              "name": "SUFENTANIL"
-            },
-            {
-              "condition": "Somatoform Disorders",
-              "name": "TRAMADOL"
-            },
-            {
-              "condition": "Somatoform Disorders",
-              "name": "HEXOBARBITAL"
-            },
-            {
-              "condition": "Pain, Postoperative",
-              "name": "PARECOXIB"
-            },
-            {
-              "condition": "Pancreatic Neoplasms",
-              "name": "ERLOTINIB"
-            },
-            {
-              "condition": "Pancreatitis",
-              "name": "GABEXATE"
-            },
-            {
-              "condition": "Pancreatitis",
-              "name": "NAFAMOSTAT"
-            },
-            {
-              "condition": "Paranoid Disorders",
-              "name": "MOPERONE"
-            },
-            {
-              "condition": "Paranoid Disorders",
-              "name": "PERICIAZINE"
-            },
-            {
-              "condition": "Parasitic Diseases",
-              "name": "TRICLABENDAZOLE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "TOLCAPONE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "ROTIGOTINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "ISTRADEFYLLINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "AMANTADINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "PIMAVANSERIN"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "APOMORPHINE"
-            },
-            {
-              "condition": "Parkinson Disease, Postencephalitic",
-              "name": "BIPERIDEN"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "PIROHEPTINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "BUDIPINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "RIVASTIGMINE"
-            },
-            {
-              "condition": "Parkinson Disease",
-              "name": "SELEGILINE"
-            },
-            {
-              "condition": "Epilepsies, Partial",
-              "name": "TIAGABINE"
-            },
-            {
-              "condition": "Peptic Ulcer",
-              "name": "OXYPHENCYCLIMINE"
-            },
-            {
-              "condition": "Peptic Ulcer",
-              "name": "EGUALEN"
-            },
-            {
-              "condition": "Peptic Ulcer",
-              "name": "SOFALCONE"
-            },
-            {
-              "condition": "Peptic Ulcer",
-              "name": "HEXOCYCLIUM"
-            },
-            {
-              "condition": "Peptic Ulcer",
-              "name": "GLYCOPYRROLATE"
-            },
-            {
-              "condition": "Peptic Ulcer",
-              "name": "DIPHEMANIL"
-            },
-            {
-              "condition": "Periarthritis",
-              "name": "ZALTOPROFEN"
-            },
-            {
-              "condition": "Peripheral Arterial Disease",
-              "name": "SARPOGRELATE"
-            },
-            {
-              "condition": "Lymphoma, T-Cell, Peripheral",
-              "name": "PRALATREXATE"
-            },
-            {
-              "condition": "Lymphoma, T-Cell, Peripheral",
-              "name": "CHIDAMIDE"
-            },
-            {
-              "condition": "Peripheral Vascular Diseases",
-              "name": "BAMETHAN"
-            },
-            {
-              "condition": "Peripheral Vascular Diseases",
-              "name": "IFENPRODIL"
-            },
-            {
-              "condition": "Vertigo",
-              "name": "DIPHENIDOL"
-            },
-            {
-              "condition": "Peritonitis",
-              "name": "CEFTEZOLE"
-            },
-            {
-              "condition": "Anemia, Pernicious",
-              "name": "CYANOCOBALAMIN"
-            },
-            {
-              "condition": "Pharyngitis",
-              "name": "FENSPIRIDE"
-            },
-            {
-              "condition": "Pharyngitis",
-              "name": "CEFIXIME"
-            },
-            {
-              "condition": "Pheochromocytoma",
-              "name": "METYROSINE"
-            },
-            {
-              "condition": "Phobic Disorders",
-              "name": "VENLAFAXINE"
-            },
-            {
-              "condition": "Pigmentation Disorders",
-              "name": "ARBUTIN"
-            },
-            {
-              "condition": "Pituitary Diseases",
-              "name": "PAROXYPROPIONE"
-            },
-            {
-              "condition": "Malaria, Falciparum",
-              "name": "ARTEMOTIL"
-            },
-            {
-              "condition": "Pneumonia",
-              "name": "ASTROMICIN"
-            },
-            {
-              "condition": "Pneumonia",
-              "name": "LEVOFLOXACIN"
-            },
-            {
-              "condition": "Pneumonia",
-              "name": "NETILMICIN"
-            },
-            {
-              "condition": "Pneumonia",
-              "name": "ASPOXICILLIN"
-            },
-            {
-              "condition": "Pneumonia",
-              "name": "TIAMULIN"
-            },
-            {
-              "condition": "Pneumonia",
-              "name": "EPRAZINONE"
-            },
-            {
-              "condition": "Pneumonia, Bacterial",
-              "name": "CEFDITOREN"
-            },
-            {
-              "condition": "Pneumonia, Ventilator-Associated",
-              "name": "LINEZOLID"
-            },
-            {
-              "condition": "Polycythemia Vera",
-              "name": "RANIMUSTINE"
-            },
-            {
-              "condition": "Polycythemia Vera",
-              "name": "RUXOLITINIB"
-            },
-            {
-              "condition": "Postmenopause",
-              "name": "NORGESTIMATE"
-            },
-            {
-              "condition": "Postoperative Complications",
-              "name": "ALVIMOPAN"
-            },
-            {
-              "condition": "Postoperative Hemorrhage",
-              "name": "ERGONOVINE"
-            },
-            {
-              "condition": "Postoperative Nausea and Vomiting",
-              "name": "DOLASETRON"
-            },
-            {
-              "condition": "Postoperative Nausea and Vomiting",
-              "name": "APREPITANT"
-            },
-            {
-              "condition": "Pain, Postoperative",
-              "name": "ROBENACOXIB"
-            },
-            {
-              "condition": "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
-              "name": "CLOFARABINE"
-            },
-            {
-              "condition": "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
-              "name": "PONATINIB"
-            },
-            {
-              "condition": "Precursor T-Cell Lymphoblastic Leukemia-Lymphoma",
-              "name": "NELARABINE"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "FENPROSTALENE"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "NOMEGESTROL"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "PROSTALENE"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "ALFAPROSTOL"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "DIENOGEST"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "ETONOGESTREL"
-            },
-            {
-              "condition": "Pregnancy",
-              "name": "CHLORMADINONE"
-            },
-            {
-              "condition": "Pregnancy Complications",
-              "name": "ALLYLESTRENOL"
-            },
-            {
-              "condition": "Pregnancy, Unwanted",
-              "name": "MIFEPRISTONE"
-            },
-            {
-              "condition": "Obstetric Labor, Premature",
-              "name": "RITODRINE"
-            },
-            {
-              "condition": "Primary Ovarian Insufficiency",
-              "name": "ESTRADIOL"
-            },
-            {
-              "condition": "Prostatic Hyperplasia",
-              "name": "TERAZOSIN"
-            },
-            {
-              "condition": "Prostatic Hyperplasia",
-              "name": "SILODOSIN"
-            },
-            {
-              "condition": "Prostatic Hyperplasia",
-              "name": "FINASTERIDE"
-            },
-            {
-              "condition": "Prostatic Neoplasms",
-              "name": "AZD5363"
-            },
-            {
-              "condition": "Prostatic Neoplasms",
-              "name": "ESTRAMUSTINE"
-            },
-            {
-              "condition": "Prostatic Neoplasms",
-              "name": "GOSERELIN"
-            },
-            {
-              "condition": "Prostatic Neoplasms",
-              "name": "FLUTAMIDE"
-            },
-            {
-              "condition": "Prostatic Neoplasms",
-              "name": "ABARELIX"
-            },
-            {
-              "condition": "Prostatic Neoplasms",
-              "name": "BICALUTAMIDE"
-            },
-            {
-              "condition": "Prostatic Neoplasms, Castration-Resistant",
-              "name": "ENZALUTAMIDE"
-            },
-            {
-              "condition": "Prostatitis",
-              "name": "CARBENICILLIN"
-            },
-            {
-              "condition": "Pruritus",
-              "name": "NALFURAFINE"
-            },
-            {
-              "condition": "Psoriasis",
-              "name": "ACITRETIN"
-            },
-            {
-              "condition": "Psoriasis",
-              "name": "CALCIPOTRIENE"
-            },
-            {
-              "condition": "Psoriasis",
-              "name": "METHOXSALEN"
-            },
-            {
-              "condition": "Psoriasis",
-              "name": "ETRETINATE"
-            },
-            {
-              "condition": "Psychomotor Agitation",
-              "name": "PROMAZINE"
-            },
-            {
-              "condition": "Psychotic Disorders",
-              "name": "MESORIDAZINE"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "VILANTEROL"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "TIOTROPIUM"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "CILOMILAST"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "IPRATROPIUM"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "OLODATEROL"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "ERDOSTEINE"
-            },
-            {
-              "condition": "Pulmonary Disease, Chronic Obstructive",
-              "name": "AMBROXOL"
-            },
-            {
-              "condition": "Hypertension, Pulmonary",
-              "name": "BOSENTAN"
-            },
-            {
-              "condition": "Familial Primary Pulmonary Hypertension",
-              "name": "EPOPROSTENOL"
-            },
-            {
-              "condition": "Pulmonary Infarction",
-              "name": "FLUCYTOSINE"
-            },
-            {
-              "condition": "Pyelonephritis",
-              "name": "CEFTOLOZANE"
-            },
-            {
-              "condition": "Carcinoma, Renal Cell",
-              "name": "SUNITINIB"
-            },
-            {
-              "condition": "Renal Insufficiency",
-              "name": "GLUCARPIDASE"
-            },
-            {
-              "condition": "Reproductive Tract Infections",
-              "name": "CEFSULODIN"
-            },
-            {
-              "condition": "Respiration Disorders",
-              "name": "DOXAPRAM"
-            },
-            {
-              "condition": "Respiratory Insufficiency",
-              "name": "DIMORPHOLAMINE"
-            },
-            {
-              "condition": "Respiratory Tract Diseases",
-              "name": "BROMHEXINE"
-            },
-            {
-              "condition": "Respiratory Tract Diseases",
-              "name": "PROTOKYLOL"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "MINOCYCLINE"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "CEFMETAZOLE"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "TROLEANDOMYCIN"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "PIDOTIMOD"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "CARBOMYCIN"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "DANOFLOXACIN"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "FLUCLOXACILLIN"
-            },
-            {
-              "condition": "Restless Legs Syndrome",
-              "name": "PRAMIPEXOLE"
-            },
-            {
-              "condition": "Rhabdomyosarcoma",
-              "name": "DACTINOMYCIN"
-            },
-            {
-              "condition": "Rheumatic Diseases",
-              "name": "CORTISONE"
-            },
-            {
-              "condition": "Rheumatic Diseases",
-              "name": "PHENOCOLL"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "ETORICOXIB"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "FRENTIZOLE"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "AUROTHIOGLUCOSE"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "DICLOFENAC"
-            },
-            {
-              "condition": "Arthritis, Rheumatoid",
-              "name": "TENIDAP"
-            },
-            {
-              "condition": "Rhinitis",
-              "name": "TRAMAZOLINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic",
-              "name": "TRANILAST"
-            },
-            {
-              "condition": "Rhinitis, Allergic",
-              "name": "CLEMIZOLE"
-            },
-            {
-              "condition": "Rhinitis, Allergic",
-              "name": "RAMATROBAN"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Perennial",
-              "name": "AZELASTINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Perennial",
-              "name": "CICLESONIDE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Perennial",
-              "name": "MONTELUKAST"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "DESLORATADINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "LEVOCETIRIZINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "ACRIVASTINE"
-            },
-            {
-              "condition": "Rickets",
-              "name": "ERGOCALCIFEROL"
-            },
-            {
-              "condition": "Rickets",
-              "name": "ALFACALCIDOL"
-            },
-            {
-              "condition": "Rosacea",
-              "name": "DEXAMETHASONE"
-            },
-            {
-              "condition": "Rosacea",
-              "name": "LOTEPREDNOL"
-            },
-            {
-              "condition": "Sarcoma, Kaposi",
-              "name": "DOXORUBICIN"
-            },
-            {
-              "condition": "Scabies",
-              "name": "PERMETHRIN"
-            },
-            {
-              "condition": "Scalp Dermatoses",
-              "name": "HALOBETASOL"
-            },
-            {
-              "condition": "Schistosoma mansoni",
-              "name": "OXAMNIQUINE"
-            },
-            {
-              "condition": "Schistosomiasis",
-              "name": "STIBOPHEN"
-            },
-            {
-              "condition": "Psychotic Disorders",
-              "name": "THIOPROPERAZINE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "FLUPENTIXOL"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "BLONANSERIN"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "LENPERONE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "SETIPTILINE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "ZIPRASIDONE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "ZOTEPINE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "PENFLURIDOL"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "FLUPHENAZINE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "PERAZINE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "THIOTHIXENE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "HALOPERIDOL"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "TIMIPERONE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "AMISULPRIDE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "BREXPIPRAZOLE"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "BENPERIDOL"
-            },
-            {
-              "condition": "Schizophrenia",
-              "name": "ASENAPINE"
-            },
-            {
-              "condition": "Rhinitis, Allergic, Seasonal",
-              "name": "CARBINOXAMINE"
-            },
-            {
-              "condition": "Hyperparathyroidism, Secondary",
-              "name": "CALCIFEDIOL"
-            },
-            {
-              "condition": "Seizures",
-              "name": "EZOGABINE"
-            },
-            {
-              "condition": "Seizures",
-              "name": "DIAZEPAM"
-            },
-            {
-              "condition": "Seizures",
-              "name": "PHENYTOIN"
-            },
-            {
-              "condition": "Seizures",
-              "name": "OXCARBAZEPINE"
-            },
-            {
-              "condition": "Sepsis",
-              "name": "CEFAZOLIN"
-            },
-            {
-              "condition": "Shock",
-              "name": "METARAMINOL"
-            },
-            {
-              "condition": "Shock, Septic",
-              "name": "BYK 191023 DIHYDROCHLORIDE"
-            },
-            {
-              "condition": "Short Bowel Syndrome",
-              "name": "TEDUGLUTIDE"
-            },
-            {
-              "condition": "Sinusitis",
-              "name": "TELITHROMYCIN"
-            },
-            {
-              "condition": "Sjogren's Syndrome",
-              "name": "PILOCARPINE"
-            },
-            {
-              "condition": "Sjogren's Syndrome",
-              "name": "CEVIMELINE"
-            },
-            {
-              "condition": "Skin Neoplasms",
-              "name": "PEPLOMYCIN"
-            },
-            {
-              "condition": "Skin Diseases",
-              "name": "HALCINONIDE"
-            },
-            {
-              "condition": "Skin Diseases",
-              "name": "MOMETASONE"
-            },
-            {
-              "condition": "Skin Diseases",
-              "name": "DIFLUCORTOLONE"
-            },
-            {
-              "condition": "Skin Diseases",
-              "name": "PREDNICARBATE"
-            },
-            {
-              "condition": "Skin Diseases, Bacterial",
-              "name": "CEFOPERAZONE"
-            },
-            {
-              "condition": "Skin Diseases, Bacterial",
-              "name": "PHENETICILLIN"
-            },
-            {
-              "condition": "Skin Diseases, Bacterial",
-              "name": "CEFEPIME"
-            },
-            {
-              "condition": "Skin Diseases, Eczematous",
-              "name": "FLUMETHASONE"
-            },
-            {
-              "condition": "Skin Diseases, Infectious",
-              "name": "TROVAFLOXACIN"
-            },
-            {
-              "condition": "Skin Diseases, Infectious",
-              "name": "ORITAVANCIN"
-            },
-            {
-              "condition": "Skin Diseases, Infectious",
-              "name": "MUPIROCIN"
-            },
-            {
-              "condition": "Skin Diseases, Infectious",
-              "name": "QUINUPRISTIN"
-            },
-            {
-              "condition": "Sleep Deprivation",
-              "name": "LORMETAZEPAM"
-            },
-            {
-              "condition": "Sleep Wake Disorders",
-              "name": "ARMODAFINIL"
-            },
-            {
-              "condition": "Sleep Disorders, Intrinsic",
-              "name": "NIMETAZEPAM"
-            },
-            {
-              "condition": "Sleep Disorders, Intrinsic",
-              "name": "PERLAPINE"
-            },
-            {
-              "condition": "Sleep Disorders, Intrinsic",
-              "name": "BUTOCTAMIDE"
-            },
-            {
-              "condition": "Sleep Disorders, Intrinsic",
-              "name": "CLOXAZOLAM"
-            },
-            {
-              "condition": "Sleep Disorders, Intrinsic",
-              "name": "PHENAZEPAM"
-            },
-            {
-              "condition": "Sleep Disorders, Intrinsic",
-              "name": "RAMELTEON"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "SECOBARBITAL"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "ESZOPICLONE"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "GLUTETHIMIDE"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "ZALEPLON"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "QUAZEPAM"
-            },
-            {
-              "condition": "Sleep Initiation and Maintenance Disorders",
-              "name": "BUTABARBITAL"
-            },
-            {
-              "condition": "Smoking",
-              "name": "VARENICLINE"
-            },
-            {
-              "condition": "Soft Tissue Infections",
-              "name": "MARBOFLOXACIN"
-            },
-            {
-              "condition": "Soft Tissue Infections",
-              "name": "ORBIFLOXACIN"
-            },
-            {
-              "condition": "Spasm",
-              "name": "CLIDINIUM"
-            },
-            {
-              "condition": "Spasm",
-              "name": "BEVONIUM"
-            },
-            {
-              "condition": "Spasm",
-              "name": "MEPHENESIN"
-            },
-            {
-              "condition": "Staphylococcal Infections",
-              "name": "IBAFLOXACIN"
-            },
-            {
-              "condition": "Staphylococcal Infections",
-              "name": "NORVANCOMYCIN"
-            },
-            {
-              "condition": "Staphylococcal Infections",
-              "name": "OXACILLIN"
-            },
-            {
-              "condition": "Staphylococcal Skin Infections",
-              "name": "SULTAMICILLIN"
-            },
-            {
-              "condition": "Staphylococcal Skin Infections",
-              "name": "DAPTOMYCIN"
-            },
-            {
-              "condition": "Staphylococcal Skin Infections",
-              "name": "TIGECYCLINE"
-            },
-            {
-              "condition": "Steroid Metabolism, Inborn Errors",
-              "name": "CHOLIC ACID"
-            },
-            {
-              "condition": "Stomach Neoplasms",
-              "name": "GIMERACIL"
-            },
-            {
-              "condition": "Stomach Ulcer",
-              "name": "TETRAPRENYLACETONE"
-            },
-            {
-              "condition": "Stomach Ulcer",
-              "name": "CETRAXATE"
-            },
-            {
-              "condition": "Streptococcal Infections",
-              "name": "LINCOMYCIN"
-            },
-            {
-              "condition": "Stroke",
-              "name": "TICLOPIDINE"
-            },
-            {
-              "condition": "Subarachnoid Hemorrhage",
-              "name": "NIMODIPINE"
-            },
-            {
-              "condition": "Tachycardia",
-              "name": "INDECAINIDE"
-            },
-            {
-              "condition": "Tachycardia, Paroxysmal",
-              "name": "ADENOSINE"
-            },
-            {
-              "condition": "Tachycardia, Ventricular",
-              "name": "PIRMENOL"
-            },
-            {
-              "condition": "Tachycardia, Ventricular",
-              "name": "SOTALOL"
-            },
-            {
-              "condition": "Testicular Neoplasms",
-              "name": "ETOPOSIDE"
-            },
-            {
-              "condition": "Testicular Neoplasms",
-              "name": "IFOSFAMIDE"
-            },
-            {
-              "condition": "Testicular Neoplasms",
-              "name": "PLICAMYCIN"
-            },
-            {
-              "condition": "Testicular Neoplasms",
-              "name": "VINBLASTINE"
-            },
-            {
-              "condition": "Thrombocytopenia",
-              "name": "ARGATROBAN"
-            },
-            {
-              "condition": "Thromboembolism",
-              "name": "WARFARIN"
-            },
-            {
-              "condition": "Thromboembolism",
-              "name": "DIPYRIDAMOLE"
-            },
-            {
-              "condition": "Thromboembolism",
-              "name": "PHENPROCOUMON"
-            },
-            {
-              "condition": "Thrombophlebitis",
-              "name": "KEBUZONE"
-            },
-            {
-              "condition": "Thymoma",
-              "name": "MILCICLIB"
-            },
-            {
-              "condition": "Thyroid Neoplasms",
-              "name": "CABOZANTINIB"
-            },
-            {
-              "condition": "Thyroid Neoplasms",
-              "name": "VANDETANIB"
-            },
-            {
-              "condition": "Tinea Pedis",
-              "name": "ECONAZOLE"
-            },
-            {
-              "condition": "Tinea Pedis",
-              "name": "NAFTIFINE"
-            },
-            {
-              "condition": "Tinea Pedis",
-              "name": "SERTACONAZOLE"
-            },
-            {
-              "condition": "Tinea Versicolor",
-              "name": "BUTENAFINE"
-            },
-            {
-              "condition": "Tonsillitis",
-              "name": "CEFPODOXIME"
-            },
-            {
-              "condition": "Tonsillitis",
-              "name": "CEFTIBUTEN"
-            },
-            {
-              "condition": "Toothache",
-              "name": "EUGENOL"
-            },
-            {
-              "condition": "Tourette Syndrome",
-              "name": "PIMOZIDE"
-            },
-            {
-              "condition": "Toxoplasmosis",
-              "name": "PYRIMETHAMINE"
-            },
-            {
-              "condition": "Trichuriasis",
-              "name": "OXANTEL"
-            },
-            {
-              "condition": "Tuberculosis",
-              "name": "ISONIAZID"
-            },
-            {
-              "condition": "Tuberculosis",
-              "name": "PASINIAZID"
-            },
-            {
-              "condition": "Tuberculosis",
-              "name": "CYCLOSERINE"
-            },
-            {
-              "condition": "Tuberculosis, Multidrug-Resistant",
-              "name": "DELAMANID"
-            },
-            {
-              "condition": "Tuberculosis, Pulmonary",
-              "name": "CAPREOMYCIN"
-            },
-            {
-              "condition": "Tuberculosis, Pulmonary",
-              "name": "RIFAPENTINE"
-            },
-            {
-              "condition": "Tuberculosis, Pulmonary",
-              "name": "ETHAMBUTOL"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "DAPAGLIFLOZIN"
-            },
-            {
-              "condition": "Diabetes Mellitus, Type 2",
-              "name": "PIOGLITAZONE"
-            },
-            {
-              "condition": "Tyrosinemias",
-              "name": "NITISINONE"
-            },
-            {
-              "condition": "Colitis, Ulcerative",
-              "name": "BALSALAZIDE"
-            },
-            {
-              "condition": "Colitis, Ulcerative",
-              "name": "OLSALAZINE"
-            },
-            {
-              "condition": "Respiratory Tract Infections",
-              "name": "DIMETHINDENE"
-            },
-            {
-              "condition": "Urinary Bladder Neoplasms",
-              "name": "VALRUBICIN"
-            },
-            {
-              "condition": "Urinary Bladder, Neurogenic",
-              "name": "OXYBUTYNIN"
-            },
-            {
-              "condition": "Urinary Bladder, Overactive",
-              "name": "FESOTERODINE"
-            },
-            {
-              "condition": "Urinary Bladder, Overactive",
-              "name": "SOLIFENACIN"
-            },
-            {
-              "condition": "Urinary Bladder, Overactive",
-              "name": "DARIFENACIN"
-            },
-            {
-              "condition": "Urinary Bladder, Overactive",
-              "name": "MIRABEGRON"
-            },
-            {
-              "condition": "Urinary Bladder, Overactive",
-              "name": "TROSPIUM"
-            },
-            {
-              "condition": "Urinary Incontinence",
-              "name": "TERODILINE"
-            },
-            {
-              "condition": "Urinary Tract Infections",
-              "name": "CEFORANIDE"
-            },
-            {
-              "condition": "Urinary Tract Infections",
-              "name": "BACAMPICILLIN"
-            },
-            {
-              "condition": "Urinary Tract Infections",
-              "name": "CEFTAZIDIME"
-            },
-            {
-              "condition": "Urinary Tract Infections",
-              "name": "ERTAPENEM"
-            },
-            {
-              "condition": "Urinary Tract Infections",
-              "name": "BALOFLOXACIN"
-            },
-            {
-              "condition": "Urinary Tract Infections",
-              "name": "NITROFURANTOIN"
-            },
-            {
-              "condition": "Urticaria",
-              "name": "CLEMASTINE"
-            },
-            {
-              "condition": "Urticaria",
-              "name": "EBASTINE"
-            },
-            {
-              "condition": "Urticaria",
-              "name": "TRIPELENNAMINE"
-            },
-            {
-              "condition": "Uterine Neoplasms",
-              "name": "PIRARUBICIN"
-            },
-            {
-              "condition": "Uterine Cervicitis",
-              "name": "SPECTINOMYCIN"
-            },
-            {
-              "condition": "Uterine Hemorrhage",
-              "name": "OXYTOCIN"
-            },
-            {
-              "condition": "Uterine Inertia",
-              "name": "CARBETOCIN"
-            },
-            {
-              "condition": "Uveitis, Anterior",
-              "name": "RIMEXOLONE"
-            },
-            {
-              "condition": "Vaginitis",
-              "name": "CANDICIDIN"
-            },
-            {
-              "condition": "Trichomonas Vaginitis",
-              "name": "NIFUROXIME"
-            },
-            {
-              "condition": "Esophageal and Gastric Varices",
-              "name": "TERLIPRESSIN"
-            },
-            {
-              "condition": "Vascular Headaches",
-              "name": "METHYSERGIDE"
-            },
-            {
-              "condition": "Venous Thrombosis",
-              "name": "DABIGATRAN"
-            },
-            {
-              "condition": "Tachycardia, Ventricular",
-              "name": "ENCAINIDE"
-            },
-            {
-              "condition": "Vertigo",
-              "name": "LEVOSULPIRIDE"
-            },
-            {
-              "condition": "Vomiting",
-              "name": "RAMOSETRON"
-            },
-            {
-              "condition": "Vomiting",
-              "name": "GRANISETRON"
-            },
-            {
-              "condition": "Vomiting",
-              "name": "CLEBOPRIDE"
-            },
-            {
-              "condition": "Vomiting",
-              "name": "THIETHYLPERAZINE"
-            },
-            {
-              "condition": "Vulvar Lichen Sclerosus",
-              "name": "DIENESTROL"
-            },
-            {
-              "condition": "Candidiasis, Vulvovaginal",
-              "name": "SULFANILAMIDE"
-            },
-            {
-              "condition": "Candidiasis, Vulvovaginal",
-              "name": "TERCONAZOLE"
-            },
-            {
-              "condition": "Candidiasis, Vulvovaginal",
-              "name": "TIOCONAZOLE"
-            },
-            {
-              "condition": "Candidiasis, Vulvovaginal",
-              "name": "BUTOCONAZOLE"
-            },
-            {
-              "condition": "Warts",
-              "name": "FORMALDEHYDE"
-            },
-            {
-              "condition": "Weight Gain",
-              "name": "TRENBOLONE"
-            },
-            {
-              "condition": "Weight Loss",
-              "name": "LAIDLOMYCIN"
-            },
-            {
-              "condition": "Wolff-Parkinson-White Syndrome",
-              "name": "TOCAINIDE"
-            },
-            {
-              "condition": "Wolff-Parkinson-White Syndrome",
-              "name": "LIDOCAINE"
-            },
-            {
-              "condition": "Helminths",
-              "name": "OXIBENDAZOLE"
-            },
-            {
-              "condition": "Stress Disorders, Post-Traumatic",
-              "name": "SERTRALINE"
-            }
-          ]
+  "BUTYLSCOPOLAMINE - Abdominal Pain",
+  "ADAPALENE - Acne Vulgaris",
+  "NADIFLOXACIN - Acne Vulgaris",
+  "TAZAROTENE - Acne Vulgaris",
+  "TICAGRELOR - Acute Coronary Syndrome",
+  "TIROFIBAN - Acute Coronary Syndrome",
+  "MERCAPTOPURINE - Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+  "IDARUBICIN - Leukemia, Myeloid, Acute",
+  "NIMESULIDE - Acute Pain",
+  "TAMIBAROTENE - Leukemia, Promyelocytic, Acute",
+  "FLUDROCORTISONE - Addison Disease",
+  "DESOXYCORTONE - Addison Disease",
+  "ACAMPROSATE - Alcoholism",
+  "METADOXINE - Hepatitis, Alcoholic",
+  "NALMEFENE - Alcoholism",
+  "NEDOCROMIL - Conjunctivitis, Allergic",
+  "PROMETHAZINE - Conjunctivitis, Allergic",
+  "PYRILAMINE - Rhinitis, Allergic",
+  "RUPATADINE - Rhinitis, Allergic",
+  "TRIPROLIDINE - Hypersensitivity",
+  "METHSCOPOLAMINE - Hypersensitivity",
+  "BAMIPINE - Hypersensitivity",
+  "PHENINDAMINE - Hypersensitivity",
+  "DEXCHLORPHENIRAMINE - Hypersensitivity",
+  "TACRINE - Alzheimer Disease",
+  "MEMANTINE - Alzheimer Disease",
+  "CYCLANDELATE - Alzheimer Disease",
+  "GALANTAMINE - Alzheimer Disease",
+  "PROGESTERONE - Amenorrhea",
+  "GONADORELIN - Amenorrhea",
+  "RILUZOLE - Amyotrophic Lateral Sclerosis",
+  "ALFATRADIOL - Alopecia",
+  "FOLIC ACID - Anemia, Megaloblastic",
+  "SEVOFLURANE - Anesthesia, General",
+  "PIPEROCAINE - Anesthetics, Local",
+  "ESATENOLOL - Angina Pectoris",
+  "ETAFENONE - Angina Pectoris",
+  "TROLNITRATE - Angina Pectoris",
+  "OXYFEDRINE - Angina Pectoris",
+  "PROPRANOLOL - Angina Pectoris",
+  "EFONIDIPINE - Angina Pectoris",
+  "GLUTODINE - Angioedema",
+  "STANOZOLOL - Angioedema",
+  "ICATIBANT - Angioedemas, Hereditary",
+  "DRONABINOL - Anorexia",
+  "URIDINE - Antimetabolites, Antineoplastic",
+  "TRYPTOPHAN - Anxiety",
+  "MEPROBAMATE - Anxiety",
+  "CHLORDIAZEPOXIDE - Anxiety",
+  "HALOXAZOLAM - Anxiety",
+  "PRAZEPAM - Anxiety",
+  "FLUDIAZEPAM - Anxiety",
+  "OXYMORPHONE - Anxiety",
+  "BARBEXACLONE - Anxiety",
+  "ESCITALOPRAM - Anxiety Disorders",
+  "LORAZEPAM - Anxiety Disorders",
+  "TRIFLUOPERAZINE - Anxiety Disorders",
+  "BUSPIRONE - Anxiety Disorders",
+  "ALPRAZOLAM - Anxiety Disorders",
+  "DOXEPIN - Anxiety Disorders",
+  "NORDAZEPAM - Anxiety Disorders",
+  "XYLAZINE - Anxiety Disorders",
+  "ELTROMBOPAG - Anemia, Aplastic",
+  "MORINIDAZOLE - Appendicitis",
+  "SPARTEINE - Arrhythmias, Cardiac",
+  "DESLANOSIDE - Arrhythmias, Cardiac",
+  "FLECAINIDE - Arrhythmias, Cardiac",
+  "VERAPAMIL - Arrhythmias, Cardiac",
+  "DISOPYRAMIDE - Arrhythmias, Cardiac",
+  "INDOMETHACIN - Arthritis",
+  "PROBENECID - Arthritis, Gouty",
+  "SULFINPYRAZONE - Arthritis, Gouty",
+  "KETOPROFEN - Arthritis, Rheumatoid",
+  "PIROXICAM - Arthritis, Rheumatoid",
+  "IGURATIMOD - Arthritis, Rheumatoid",
+  "TOFACITINIB - Arthritis, Rheumatoid",
+  "SULFASALAZINE - Arthritis, Rheumatoid",
+  "CELECOXIB - Arthritis, Rheumatoid",
+  "MELOXICAM - Arthritis, Rheumatoid",
+  "MERETHOXYLLINE - Ascites",
+  "CHLORCYCLIZINE - Asthma",
+  "HEXOPRENALINE - Asthma",
+  "SERATRODAST - Asthma",
+  "BITOLTEROL - Asthma",
+  "OXITROPIUM - Asthma",
+  "PROXYPHYLLINE - Asthma",
+  "CLENBUTEROL - Asthma",
+  "TRETOQUINOL - Asthma",
+  "ZILEUTON - Asthma",
+  "CLORPRENALINE - Asthma",
+  "DYPHYLLINE - Asthma",
+  "DOXOFYLLINE - Asthma",
+  "REPIRINAST - Asthma",
+  "SALMETEROL - Asthma",
+  "CLOPIDOGREL - Atherosclerosis",
+  "PYRICARBATE - Atherosclerosis",
+  "SULCONAZOLE - Tinea Pedis",
+  "EDOXABAN - Atrial Fibrillation",
+  "OUABAIN - Atrial Fibrillation",
+  "DIGOXIN - Atrial Fibrillation",
+  "IBUTILIDE - Atrial Fibrillation",
+  "VERNAKALANT - Atrial Fibrillation",
+  "ATOMOXETINE - Attention Deficit Disorder with Hyperactivity",
+  "DEXMETHYLPHENIDATE - Attention Deficit Disorder with Hyperactivity",
+  "IBUPROFEN - Back Pain",
+  "PELUBIPROFEN - Back Pain",
+  "ROLITETRACYCLINE - Bacterial Infections",
+  "TETRACYCLINE - Bacterial Infections",
+  "CEFPIRAMIDE - Bacterial Infections",
+  "ISEPAMICIN - Bacterial Infections",
+  "CEFADROXIL - Bacterial Infections",
+  "CEFUROXIME - Bacterial Infections",
+  "SISOMICIN - Bacterial Infections",
+  "CYCLACILLIN - Bacterial Infections",
+  "LATAMOXEF - Bacterial Infections",
+  "CEFTERAM - Bacterial Infections",
+  "LENAMPICILLIN - Bacterial Infections",
+  "FLEROXACIN - Bacterial Infections",
+  "MEZLOCILLIN - Bacterial Infections",
+  "AZLOCILLIN - Bacterial Infections",
+  "CEPHALEXIN - Bacterial Infections",
+  "LORACARBEF - Bacterial Infections",
+  "AMPICILLIN - Bacterial Infections",
+  "SULFAMERAZINE - Bacterial Infections",
+  "CEFALONIUM - Bacterial Infections",
+  "SECNIDAZOLE - Vaginosis, Bacterial",
+  "LISDEXAMFETAMINE - Binge-Eating Disorder",
+  "ZUCLOPENTHIXOL - Bipolar Disorder",
+  "LITHIUM - Bipolar Disorder",
+  "CISPLATIN - Urinary Bladder Neoplasms",
+  "FRAMYCETIN - Blepharitis",
+  "PRANOPROFEN - Blepharitis",
+  "DICUMAROL - Blood Coagulation",
+  "GAMITHROMYCIN - Bovine Respiratory Disease Complex",
+  "TRILOSTANE - Breast Neoplasms",
+  "TESTOLACTONE - Breast Neoplasms",
+  "ELLIPTINIUM - Breast Neoplasms",
+  "EPIRUBICIN - Breast Neoplasms",
+  "THIOTEPA - Breast Neoplasms",
+  "LAPATINIB - Breast Neoplasms",
+  "METHOTREXATE - Breast Neoplasms",
+  "ANASTROZOLE - Breast Neoplasms",
+  "PALBOCICLIB - Breast Neoplasms",
+  "LETROZOLE - Breast Neoplasms",
+  "MEPITIOSTANE - Breast Neoplasms",
+  "EPITIOSTANOL - Breast Neoplasms",
+  "TULOBUTEROL - Asthma",
+  "METAPROTERENOL - Asthma",
+  "FUDOSTEINE - Bronchiectasis",
+  "SULFALENE - Bronchitis",
+  "JOSAMYCIN - Bronchitis",
+  "PRULIFLOXACIN - Bronchitis, Chronic",
+  "ETAFEDRINE - Bronchitis, Chronic",
+  "FLUOXETINE - Bulimia Nervosa",
+  "SUXIBUZONE - Bursitis",
+  "PD173955 - Neoplasms",
+  "HELVOLIC ACID - Candidiasis",
+  "POSACONAZOLE - Candidiasis",
+  "FLUCONAZOLE - Candidiasis",
+  "OCTREOTIDE - Carcinoid Tumor",
+  "SONIDEGIB - Carcinoma, Basal Cell",
+  "VISMODEGIB - Carcinoma, Basal Cell",
+  "IMIQUIMOD - Carcinoma, Basal Cell",
+  "GOLVATINIB - Carcinoma, Hepatocellular",
+  "OSIMERTINIB - Carcinoma, Non-Small-Cell Lung",
+  "VINORELBINE - Carcinoma, Non-Small-Cell Lung",
+  "ALECTINIB - Carcinoma, Non-Small-Cell Lung",
+  "CERITINIB - Carcinoma, Non-Small-Cell Lung",
+  "GEFITINIB - Carcinoma, Non-Small-Cell Lung",
+  "AFATINIB - Carcinoma, Non-Small-Cell Lung",
+  "SORAFENIB - Carcinoma, Renal Cell",
+  "SAVOLITINIB - Carcinoma, Renal Cell",
+  "AXITINIB - Carcinoma, Renal Cell",
+  "PAZOPANIB - Carcinoma, Renal Cell",
+  "TEMSIROLIMUS - Carcinoma, Renal Cell",
+  "VINFLUNINE - Carcinoma, Transitional Cell",
+  "NOREPINEPHRINE - Heart Arrest",
+  "SIMVASTATIN - Cardiovascular Diseases",
+  "PANTETHINE - Cardiovascular Diseases",
+  "BENDAZAC - Cataract",
+  "PIRENOXINE - Cataract",
+  "BENZNIDAZOLE - Chagas Disease",
+  "NIFURTIMOX - Chagas Disease",
+  "TIEMONIUM - Cholecystitis",
+  "TREPIBUTONE - Cholelithiasis",
+  "DEHYDROCHOLIC ACID - Cholestasis",
+  "VERTEPORFIN - Choroidal Neovascularization",
+  "ISOETHARINE - Bronchitis, Chronic",
+  "GEMIFLOXACIN - Bronchitis, Chronic",
+  "CEFDINIR - Bronchitis, Chronic",
+  "GLYCAMIL - Hepatitis C, Chronic",
+  "DACLATASVIR - Hepatitis C, Chronic",
+  "ELBASVIR - Hepatitis C, Chronic",
+  "FLUTROPIUM - Pulmonary Disease, Chronic Obstructive",
+  "CAMOSTAT - Pancreatitis, Chronic",
+  "AVILAMYCIN - Clostridium Infections",
+  "SEMDURAMICIN - Coccidiosis",
+  "NITROMIDE - Coccidiosis",
+  "ETHOPABATE - Coccidiosis",
+  "ROBENIDINE - Coccidiosis",
+  "NICARBAZIN - Coccidiosis",
+  "NOOPEPT - Cognition Disorders",
+  "VALETHAMATE - Colic",
+  "JNJ-38877605 - Colorectal Neoplasms",
+  "RALTITREXED - Colorectal Neoplasms",
+  "REGORAFENIB - Colorectal Neoplasms",
+  "BROMPHENIRAMINE - Common Cold",
+  "METOLAZONE - Heart Failure",
+  "NORFLOXACIN - Conjunctivitis",
+  "EPINASTINE - Conjunctivitis, Allergic",
+  "MEDRYSONE - Conjunctivitis, Allergic",
+  "LEVOCABASTINE - Conjunctivitis, Allergic",
+  "PRUCALOPRIDE - Constipation",
+  "NALOXONE - Constipation",
+  "PHENOLPHTHALEIN - Constipation",
+  "LUBIPROSTONE - Constipation",
+  "PERINDOPRIL - Coronary Artery Disease",
+  "CHROMONAR - Coronary Artery Disease",
+  "DOCONEXENT - Coronary Disease",
+  "ETHYLMORPHINE - Cough",
+  "PHOLCODINE - Cough",
+  "PASIREOTIDE - Pituitary ACTH Hypersecretion",
+  "KETOCONAZOLE - Candidiasis, Cutaneous",
+  "IVACAFTOR - Cystic Fibrosis",
+  "FLAVOXATE - Cystitis",
+  "MICRONOMICIN - Cystitis",
+  "VALGANCICLOVIR HCL - Cytomegalovirus Retinitis",
+  "GANCICLOVIR - Cytomegalovirus Retinitis",
+  "CIDOFOVIR - Cytomegalovirus Retinitis",
+  "FOSCARNET - Cytomegalovirus Retinitis",
+  "ATIPAMEZOLE - Deep Sedation",
+  "OXIRACETAM - Dementia",
+  "XYLITOL - Dental Caries",
+  "PHENTOLAMINE - Stomatognathic Diseases",
+  "DIBENZEPIN - Depression",
+  "IMIPRAMINE - Depression",
+  "ISOCARBOXAZID - Depression",
+  "LOFEPRAMINE - Depression",
+  "AMITRIPTYLINE - Depressive Disorder",
+  "ORVEPITANT - Depressive Disorder, Major",
+  "ARIPIPRAZOLE - Depressive Disorder, Major",
+  "VILAZODONE - Depressive Disorder, Major",
+  "VORTIOXETINE - Depressive Disorder, Major",
+  "CLOBETASOL - Dermatitis",
+  "UFENAMATE - Dermatitis",
+  "DAPSONE - Dermatitis Herpetiformis",
+  "SULFOXONE - Dermatitis Herpetiformis",
+  "THENALIDINE - Dermatitis, Atopic",
+  "AMOROLFINE - Dermatomycoses",
+  "TOLNAFTATE - Tinea",
+  "HYDROCORTAMATE - Skin Diseases",
+  "LYPRESSIN - Diabetes Insipidus",
+  "CANAGLIFLOZIN - Diabetes Mellitus, Type 2",
+  "GLYBURIDE - Diabetes Mellitus, Type 2",
+  "EMPAGLIFLOZIN - Diabetes Mellitus, Type 2",
+  "MIGLITOL - Diabetes Mellitus, Type 2",
+  "TOLBUTAMIDE - Diabetes Mellitus, Type 2",
+  "GLIPIZIDE - Diabetes Mellitus, Type 2",
+  "TOFOGLIFLOZIN - Diabetes Mellitus, Type 2",
+  "GLIMEPIRIDE - Diabetes Mellitus, Type 2",
+  "ALOGLIPTIN - Diabetes Mellitus, Type 2",
+  "TENELIGLIPTIN - Diabetes Mellitus, Type 2",
+  "EPALRESTAT - Diabetic Neuropathies",
+  "UZARIN - Diarrhea",
+  "UZARIGENIN - Diarrhea",
+  "FIDAXOMICIN - Diarrhea",
+  "RIFAXIMIN - Diarrhea",
+  "LOPERAMIDE - Diarrhea",
+  "DIFENOXIN - Diarrhea",
+  "GEMEPROST - Dilatation and Curettage",
+  "LEVLOFEXIDINE - Substance-Related Disorders",
+  "FLUMAZENIL - Drug Overdose",
+  "DIQUAFOSOL - Dry Eye Syndromes",
+  "OXIGLUTATIONE - Dry Eye Syndromes",
+  "PIRENZEPINE - Duodenal Ulcer",
+  "LEVOLANSOPRAZOLE - Duodenal Ulcer",
+  "BENZILONIUM - Duodenal Ulcer",
+  "RABEPRAZOLE - Duodenal Ulcer",
+  "ROSUVASTATIN - Hyperlipoproteinemia Type III",
+  "VALNEMULIN - Dysentery",
+  "ORMELOXIFENE - Metrorrhagia",
+  "TIAPRIDE - Dyskinesias",
+  "ALBENDAZOLE - Echinococcosis",
+  "OXATOMIDE - Eczema",
+  "VANCOMYCIN - Endocarditis, Bacterial",
+  "NAFARELIN - Endometriosis",
+  "BUSERELIN - Endometriosis",
+  "DYDROGESTERONE - Endometriosis",
+  "GESTRINONE - Endometriosis",
+  "PRIFINIUM - Endoscopy, Gastrointestinal",
+  "ETHOTOIN - Epilepsy",
+  "METHARBITAL - Epilepsy",
+  "FELBAMATE - Epilepsy",
+  "METHSUXIMIDE - Epilepsy",
+  "BRIVARACETAM - Epilepsy",
+  "VIGABATRIN - Epilepsy",
+  "MIRODENAFIL - Erectile Dysfunction",
+  "SULFOMYXIN - Escherichia coli Infections",
+  "IMIPENEM - Escherichia coli Infections",
+  "CLOPROSTENOL - Estrous Cycle",
+  "SULFACETAMIDE - Eye Infections, Bacterial",
+  "BACITRACIN - Eye Infections, Bacterial",
+  "MIGALASTAT - Fabry Disease",
+  "TAFAMIDIS - Amyloid Neuropathies, Familial",
+  "COLCHICINE - Familial Mediterranean Fever",
+  "CAPROMORELIN - Feeding and Eating Disorders",
+  "CP 154526 HYDROCHLORIDE - Fever",
+  "ACETAMINOPHEN - Fever",
+  "NIFURPIRINOL - Fish Diseases",
+  "IDEBENONE - Friedreich Ataxia",
+  "OXAPIUM - Gallbladder Diseases",
+  "REVAPRAZAN - Gastritis",
+  "TIQUIZIUM - Gastritis",
+  "TROXIPIDE - Gastritis",
+  "ROXATIDINE - Gastritis",
+  "REBAMIPIDE - Gastritis",
+  "ITOPRIDE - Gastritis",
+  "MEPREDNISONE - Gastrointestinal Diseases",
+  "FLOXURIDINE - Gastrointestinal Neoplasms",
+  "METOCLOPRAMIDE - Gastroparesis",
+  "MIGLUSTAT - Gaucher Disease",
+  "ELIGLUSTAT - Gaucher Disease",
+  "TICARCILLIN - Reproductive Tract Infections",
+  "ACECLIDINE - Glaucoma",
+  "PHYSOSTIGMINE - Glaucoma",
+  "RIPASUDIL - Glaucoma",
+  "BUPRANOLOL - Glaucoma",
+  "METHAZOLAMIDE - Glaucoma",
+  "LATANOPROST - Glaucoma, Open-Angle",
+  "ACETAZOLAMIDE - Glaucoma, Open-Angle",
+  "DIPIVEFRIN - Glaucoma, Open-Angle",
+  "BRIMONIDINE - Glaucoma, Open-Angle",
+  "DEMECARIUM - Glaucoma, Open-Angle",
+  "ML299 - Glioblastoma",
+  "VELIPARIB - Glioblastoma",
+  "LEVOTHYROXINE - Goiter",
+  "CEFOTAXIME - Gonorrhea",
+  "ALLOPURINOL - Gout",
+  "KANAMYCIN - Gram-Negative Bacterial Infections",
+  "PROFLAVINE - Gram-Positive Bacterial Infections",
+  "GUSPERIMUS - Granulomatosis with Polyangiitis",
+  "ALCLOMETASONE - Hand Dermatoses",
+  "CROMOLYN - Rhinitis, Allergic, Seasonal",
+  "MEQUITAZINE - Rhinitis, Allergic, Seasonal",
+  "CHLORPHENIRAMINE - Rhinitis, Allergic, Seasonal",
+  "TEGAFUR - Head and Neck Neoplasms",
+  "ASPIRIN - Headache",
+  "FONAZINE - Headache Disorders, Secondary",
+  "DOBUTAMINE - Heart Diseases",
+  "TRAPIDIL - Heart Diseases",
+  "DERENOFYLLINE - Heart Failure",
+  "ENALAPRIL - Heart Failure",
+  "IVABRADINE - Heart Failure",
+  "INAMRINONE - Heart Failure",
+  "XAMOTEROL - Heart Failure",
+  "NITROGLYCERIN - Heart Failure",
+  "DENOPAMINE - Heart Failure",
+  "LOSARTAN - Heart Failure",
+  "PIMOBENDAN - Heart Failure",
+  "OLPRINONE - Heart Failure",
+  "CARVEDILOL - Heart Failure",
+  "VESNARINONE - Heart Failure",
+  "ENOXIMONE - Heart Failure",
+  "SITAXENTAN - Heart Failure, Diastolic",
+  "HALOXON - Helminthiasis",
+  "THENIUM - Helminthiasis",
+  "DICHLORVOS - Helminthiasis",
+  "FAMPHUR - Helminthiasis",
+  "CYCLOBENDAZOLE - Helminthiasis",
+  "TICARBODINE - Helminthiasis",
+  "EMODEPSIDE - Helminthiasis",
+  "TIOXIDAZOLE - Helminthiasis",
+  "CAMBENDAZOLE - Helminthiasis",
+  "ORNIPRESSIN - Hemorrhage",
+  "ETHAMSYLATE - Hemorrhage",
+  "PAROMOMYCIN - Hepatic Encephalopathy",
+  "NEOMYCIN - Hepatic Encephalopathy",
+  "ENTECAVIR - Hepatitis B",
+  "ADEFOVIR - Hepatitis B",
+  "CLEVUDINE - Hepatitis B, Chronic",
+  "TELBIVUDINE - Hepatitis B, Chronic",
+  "VELPATASVIR - Hepatitis C",
+  "DASABUVIR - Hepatitis C, Chronic",
+  "BOCEPREVIR - Hepatitis C, Chronic",
+  "TELAPREVIR - Hepatitis C, Chronic",
+  "VX-11E - Carcinoma, Hepatocellular",
+  "PENCICLOVIR - Herpes Labialis",
+  "DOCOSANOL - Herpes Labialis",
+  "ACYCLOVIR - Herpes Simplex",
+  "EFLORNITHINE - Hirsutism",
+  "ITRACONAZOLE - Histoplasmosis",
+  "COBICISTAT - HIV Infections",
+  "EFAVIRENZ - HIV Infections",
+  "LAMIVUDINE - HIV Infections",
+  "INDINAVIR - HIV Infections",
+  "RALTEGRAVIR - HIV Infections",
+  "TIPRANAVIR - HIV Infections",
+  "ETRAVIRINE - HIV Infections",
+  "DIDANOSINE - HIV Infections",
+  "LOPINAVIR - HIV Infections",
+  "MARAVIROC - HIV Infections",
+  "ZALCITABINE - HIV Infections",
+  "NELFINAVIR - HIV Infections",
+  "ABACAVIR - HIV Infections",
+  "STAVUDINE - HIV Infections",
+  "EMTRICITABINE - HIV Infections",
+  "ATAZANAVIR - HIV Infections",
+  "RITONAVIR - HIV Infections",
+  "AMPRENAVIR - HIV Infections",
+  "MECHLORETHAMINE - Hodgkin Disease",
+  "BAZEDOXIFENE - Hot Flashes",
+  "VERALIPRIDE - Hot Flashes",
+  "PF-2545920 - Huntington Disease",
+  "TETRABENAZINE - Huntington Disease",
+  "NICLOSAMIDE - Hymenolepiasis",
+  "CINACALCET - Hypercalcemia",
+  "COLESTIPOL - Hypercholesterolemia",
+  "LOMITAPIDE - Hypercholesterolemia",
+  "PROBUCOL - Hypercholesterolemia",
+  "FENOFIBRATE - Hypercholesterolemia",
+  "IMATINIB - Hypereosinophilic Syndrome",
+  "BEZAFIBRATE - Hyperlipidemias",
+  "CIPROFIBRATE - Hyperlipidemias",
+  "ATORVASTATIN - Hyperlipidemias",
+  "SIMFIBRATE - Hyperlipidemias",
+  "LOVASTATIN - Hyperlipidemias",
+  "GEMFIBROZIL - Hyperlipidemias",
+  "PARICALCITOL - Hyperparathyroidism, Secondary",
+  "DOXERCALCIFEROL - Hyperparathyroidism, Secondary",
+  "METHDILAZINE - Hypersensitivity",
+  "IRBESARTAN - Hypertension",
+  "BETAXOLOL - Hypertension",
+  "TOCOPHEROL - Hypertension",
+  "PENTOLINIUM - Hypertension",
+  "PRAZOSIN - Hypertension",
+  "FIMASARTAN - Hypertension",
+  "SPIRONOLACTONE - Hypertension",
+  "CELIPROLOL - Hypertension",
+  "MERSALYL - Hypertension",
+  "DILEVALOL - Hypertension",
+  "TELMISARTAN - Hypertension",
+  "MEFRUSIDE - Hypertension",
+  "MOEXIPRIL - Hypertension",
+  "TRICHLORMETHIAZIDE - Hypertension",
+  "NADOLOL - Hypertension",
+  "AMOSULALOL - Hypertension",
+  "LABETALOL - Hypertension",
+  "INDORAMIN - Hypertension",
+  "PINDOLOL - Hypertension",
+  "GUANETHIDINE - Hypertension",
+  "FUROSEMIDE - Hypertension",
+  "HYDROFLUMETHIAZIDE - Hypertension",
+  "AMILORIDE - Hypertension",
+  "RESCINNAMINE - Hypertension",
+  "BOPINDOLOL - Hypertension",
+  "CLEVIDIPINE - Hypertension",
+  "LISINOPRIL - Hypertension",
+  "DESERPIDINE - Hypertension",
+  "CILNIDIPINE - Hypertension",
+  "SPIRAPRIL - Hypertension",
+  "GALLOPAMIL - Hypertension",
+  "FELODIPINE - Hypertension",
+  "TALINOLOL - Hypertension",
+  "VALSARTAN - Hypertension",
+  "BUDRALAZINE - Hypertension",
+  "GUANABENZ - Hypertension",
+  "QUINETHAZONE - Hypertension",
+  "GUANADREL - Hypertension",
+  "PARGYLINE - Hypertension",
+  "EPLERENONE - Hypertension",
+  "EPROSARTAN - Hypertension",
+  "BUNAZOSIN - Hypertension",
+  "CAPOZIDE - Hypertension",
+  "INDAPAMIDE - Hypertension",
+  "FENOLDOPAM - Hypertension",
+  "CANRENONE - Hypertension",
+  "GUANFACINE - Hypertension",
+  "LERCANIDIPINE - Hypertension",
+  "TREPROSTINIL - Hypertension, Pulmonary",
+  "SELEXIPAG - Hypertension, Pulmonary",
+  "AMBRISENTAN - Hypertension, Pulmonary",
+  "SILDENAFIL - Hypertension, Pulmonary",
+  "MACITENTAN - Hypertension, Pulmonary",
+  "DIPYRONE - Fever",
+  "LIOTHYRONINE - Hyperthyroidism",
+  "ETOFIBRATE - Hypertriglyceridemia",
+  "ICOSAPENT - Hypertriglyceridemia",
+  "AMINOPENTAMIDE - Gastritis, Hypertrophic",
+  "TALBUTAL - Hypnotics and Sedatives",
+  "CALCITRIOL - Hypocalcemia",
+  "CONIVAPTAN - Hyponatremia",
+  "TOLVAPTAN - Hyponatremia",
+  "EPHEDRINE - Hypotension",
+  "AMEZINIUM - Hypotension",
+  "NORFENEFRINE - Hypotension",
+  "MIDODRINE - Hypotension, Orthostatic",
+  "RASAGILINE - Parkinson Disease",
+  "NINTEDANIB - Idiopathic Pulmonary Fibrosis",
+  "DEFLAZACORT - Immune System Diseases",
+  "CLOMIPHENE - Infertility, Female",
+  "MESTEROLONE - Infertility, Male",
+  "TINORIDINE - Inflammation",
+  "BROMFENAC - Inflammation",
+  "LANINAMIVIR - Influenza, Human",
+  "PERAMIVIR - Influenza, Human",
+  "OSELTAMIVIR - Influenza, Human",
+  "CLOTIAZEPAM - Sleep Initiation and Maintenance Disorders",
+  "FLUNITRAZEPAM - Sleep Initiation and Maintenance Disorders",
+  "NITRAZEPAM - Sleep Initiation and Maintenance Disorders",
+  "ZOPICLONE - Sleep Initiation and Maintenance Disorders",
+  "CILOSTAZOL - Intermittent Claudication",
+  "FENBENDAZOLE - Intestinal Diseases, Parasitic",
+  "CASPOFUNGIN - Abdominal Abscess",
+  "CEFTRIAXONE - Intraabdominal Infections",
+  "CEFOTETAN - Intraabdominal Infections",
+  "PAZUFLOXACIN - Intraabdominal Infections",
+  "DORIPENEM - Intraabdominal Infections",
+  "ISAVUCONAZOLE - Invasive Pulmonary Aspergillosis",
+  "DEFERIPRONE - Iron Overload",
+  "FERROCHOLINATE - Iron, Dietary",
+  "LINACLOTIDE - Irritable Bowel Syndrome",
+  "ALOSETRON - Irritable Bowel Syndrome",
+  "ELUXADOLINE - Irritable Bowel Syndrome",
+  "DICYCLOMINE - Irritable Bowel Syndrome",
+  "CIMETROPIUM - Irritable Bowel Syndrome",
+  "LEUPROLIDE - Leiomyoma",
+  "RUFINAMIDE - Lennox Gastaut Syndrome",
+  "THALIDOMIDE - Leprosy, Lepromatous",
+  "CLOFAZIMINE - Leprosy, Lepromatous",
+  "RN-1 - Leukemia",
+  "NIMUSTINE - Leukemia",
+  "AZ-960 - Leukemia-Lymphoma, Adult T-Cell",
+  "PENTOSTATIN - Leukemia, Hairy Cell",
+  "CLADRIBINE - Leukemia, Hairy Cell",
+  "IDELALISIB - Leukemia, Lymphocytic, Chronic, B-Cell",
+  "CHLORAMBUCIL - Leukemia, Lymphocytic, Chronic, B-Cell",
+  "FLUDARABINE - Leukemia, Lymphocytic, Chronic, B-Cell",
+  "VENETOCLAX - Leukemia, Lymphocytic, Chronic, B-Cell",
+  "VINCRISTINE - Leukemia, Lymphoid",
+  "BOSUTINIB - Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
+  "BUSULFAN - Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
+  "DASATINIB - Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
+  "NILOTINIB - Leukemia, Myelogenous, Chronic, BCR-ABL Positive",
+  "TIAZOFURIN - Leukemia, Myeloid",
+  "THIOGUANINE - Leukemia, Myeloid, Acute",
+  "ENOCITABINE - Leukemia, Myeloid, Acute",
+  "ROMURTIDE - Leukopenia",
+  "TEFLUBENZURON - Lice Infestations",
+  "LUSUTROMBOPAG - Liver Diseases",
+  "PROTOPORPHYRIN - Liver Diseases",
+  "LOXOPROFEN - Low Back Pain",
+  "HYDROXYCHLOROQUINE - Lupus Erythematosus, Systemic",
+  "NSC-350625 - Lymphoma, Non-Hodgkin",
+  "TRANYLCYPROMINE - Depressive Disorder, Major",
+  "TRAZODONE - Depressive Disorder, Major",
+  "MEFLOQUINE - Malaria",
+  "ARTEMETHER - Malaria",
+  "ARTEMISININ - Malaria, Falciparum",
+  "QUININE - Malaria, Falciparum",
+  "CEFQUINOME - Mastitis, Bovine",
+  "EPIHETACILLIN - Mastitis, Bovine",
+  "MASITINIB - Mastocytoma",
+  "DABRAFENIB - Melanoma",
+  "VEMURAFENIB - Melanoma",
+  "CYTARABINE - Meningitis",
+  "CEFTIZOXIME - Meningitis, Haemophilus",
+  "TIBOLONE - Menopause",
+  "NORETHYNODREL - Menstrual Cycle",
+  "CLOTHIAPINE - Mental Disorders",
+  "UNITHIOL - Mercury Poisoning",
+  "ARBEKACIN - Methicillin-Resistant Staphylococcus aureus",
+  "ALMOTRIPTAN - Migraine Disorders",
+  "SUMATRIPTAN - Migraine without Aura",
+  "FROVATRIPTAN - Migraine without Aura",
+  "ZOLMITRIPTAN - Migraine without Aura",
+  "SULBACTAM - Moraxella (Branhamella) catarrhalis",
+  "BUCLIZINE - Motion Sickness",
+  "FLUNARIZINE - Motion Sickness",
+  "CINNARIZINE - Motion Sickness",
+  "PHENIRAMINE - Motion Sickness",
+  "MECLIZINE - Motion Sickness",
+  "MAROPITANT - Motion Sickness",
+  "TRIHEXYPHENIDYL - Movement Disorders",
+  "BENZTROPINE - Movement Disorders",
+  "CPI203 - Multiple Myeloma",
+  "CARMUSTINE - Multiple Myeloma",
+  "IXAZOMIB - Multiple Myeloma",
+  "LENALIDOMIDE - Multiple Myeloma",
+  "MELPHALAN - Multiple Myeloma",
+  "POMALIDOMIDE - Multiple Myeloma",
+  "PANOBINOSTAT - Multiple Myeloma",
+  "LAQUINIMOD - Multiple Sclerosis, Relapsing-Remitting",
+  "TRIETHYLGALLAMINE - Muscle Contraction",
+  "ATRACURIUM - Muscle Relaxation",
+  "CISATRACURIUM - Muscle Relaxation",
+  "TIMEPIDIUM - Spasm",
+  "PRIDINOL - Spasm",
+  "TIZANIDINE - Muscle Spasticity",
+  "CARISOPRODOL - Muscular Diseases",
+  "MIVACURIUM - Musculoskeletal Manipulations",
+  "ORPHENADRINE - Musculoskeletal Pain",
+  "AMBENONIUM - Myasthenia Gravis",
+  "VIOMYCIN - Mycobacterium tuberculosis",
+  "STREPTOMYCIN - Mycobacterium tuberculosis",
+  "GRISEOFULVIN - Mycoses",
+  "CLOTRIMAZOLE - Mycoses",
+  "BIFONAZOLE - Mycoses",
+  "DAPIPRAZOLE - Mydriasis",
+  "VATALANIB - Myelodysplastic Syndromes",
+  "DECITABINE - Myelodysplastic Syndromes",
+  "AZACITIDINE - Myelodysplastic Syndromes",
+  "RAMIPRIL - Myocardial Infarction",
+  "LEVETIRACETAM - Myoclonic Epilepsy, Juvenile",
+  "MODAFINIL - Narcolepsy",
+  "TETRAHYDROZOLINE - Nasal Obstruction",
+  "INDISETRON - Nausea",
+  "NABILONE - Nausea",
+  "EPERISONE - Neck Pain",
+  "GNE-493 - Neoplasms",
+  "PCI-34051 - Neoplasms",
+  "OMIPALISIB - Neoplasms",
+  "CYSTEAMINE - Cystinosis",
+  "ISOMETHEPTENE - Neuralgia",
+  "CAPSAICIN - Neuralgia, Postherpetic",
+  "FABOMOTIZOLE - Neurasthenia",
+  "I-BET726 - Neuroblastoma",
+  "METHANTHELINE - Urinary Bladder, Neurogenic",
+  "PIXANTRONE - Lymphoma, Non-Hodgkin",
+  "PLERIXAFOR - Lymphoma, Non-Hodgkin",
+  "AMRUBICIN - Carcinoma, Non-Small-Cell Lung",
+  "OXYMETAZOLINE - Nose Diseases",
+  "METHAMPHETAMINE - Obesity",
+  "RIMONABANT - Obesity",
+  "DIRLOTAPIDE - Obesity",
+  "PAROXETINE - Obsessive-Compulsive Disorder",
+  "CAMYLOFIN - Obstetric Labor Complications",
+  "DINOPROST - Obstetric Labor Complications",
+  "METIPRANOLOL - Ocular Hypertension",
+  "TIMOLOL - Ocular Hypertension",
+  "OXYTETRACYCLINE - Eye Infections",
+  "CICLOPIROX - Onychomycosis",
+  "TERBINAFINE - Onychomycosis",
+  "BUPRENORPHINE - Opioid-Related Disorders",
+  "NALORPHINE - Opioid-Related Disorders",
+  "NAPROXEN - Osteoarthritis",
+  "FIROCOXIB - Osteoarthritis",
+  "FENOPROFEN - Osteoarthritis",
+  "CARPROFEN - Osteoarthritis",
+  "GRAPIPRANT - Osteoarthritis",
+  "ESFLURBIPROFEN - Osteoarthritis",
+  "OXANDROLONE - Osteoporosis",
+  "FINAFLOXACIN - Otitis Externa",
+  "CEFACLOR - Otitis Media",
+  "SULFISOXAZOLE - Otitis Media",
+  "AZITHROMYCIN - Otitis Media",
+  "CEFMENOXIME - Otitis Media",
+  "CARBOPLATIN - Ovarian Neoplasms",
+  "SU11274 - Ovarian Neoplasms",
+  "PACLITAXEL - Ovarian Neoplasms",
+  "OLAPARIB - Ovarian Neoplasms",
+  "ALTRETAMINE - Ovarian Neoplasms",
+  "TOLTERODINE - Urinary Bladder, Overactive",
+  "CYM 5442 HYDROCHLORIDE - Pain",
+  "PROPOFOL - Pain",
+  "HALOTHANE - Pain",
+  "PROPANIDID - Pain",
+  "LEVOMENTHOL - Pain",
+  "TILETAMINE - Pain",
+  "KETOROLAC - Pain",
+  "SALCOLEX - Pain",
+  "EPTAZOCINE - Pain",
+  "FLOCTAFENINE - Pain",
+  "METHADONE - Pain",
+  "BUPIVACAINE - Pain",
+  "ISOFLURANE - Pain",
+  "OXYCODONE - Pain",
+  "PROCAINE - Pain",
+  "ETIDOCAINE - Pain",
+  "BUTORPHANOL - Pain",
+  "ENFLURANE - Pain",
+  "ARTICAINE - Pain",
+  "LEVORPHANOL - Pain",
+  "PROPOXYPHENE - Pain",
+  "METHOHEXITAL - Pain",
+  "AMFENAC - Pain",
+  "PROPARACAINE - Pain",
+  "ALFENTANIL - Pain",
+  "MORPHINE - Pain",
+  "PENTAZOCINE - Pain",
+  "KETAMINE - Pain",
+  "REMIFENTANIL - Pain",
+  "DYCLONINE - Pain",
+  "NALBUPHINE - Pain",
+  "HYDROMORPHONE - Pain",
+  "ETOMIDATE - Pain",
+  "SUFENTANIL - Pain",
+  "TRAMADOL - Somatoform Disorders",
+  "HEXOBARBITAL - Somatoform Disorders",
+  "PARECOXIB - Pain, Postoperative",
+  "ERLOTINIB - Pancreatic Neoplasms",
+  "GABEXATE - Pancreatitis",
+  "NAFAMOSTAT - Pancreatitis",
+  "MOPERONE - Paranoid Disorders",
+  "PERICIAZINE - Paranoid Disorders",
+  "TRICLABENDAZOLE - Parasitic Diseases",
+  "TOLCAPONE - Parkinson Disease",
+  "ROTIGOTINE - Parkinson Disease",
+  "ISTRADEFYLLINE - Parkinson Disease",
+  "AMANTADINE - Parkinson Disease",
+  "PIMAVANSERIN - Parkinson Disease",
+  "APOMORPHINE - Parkinson Disease",
+  "BIPERIDEN - Parkinson Disease, Postencephalitic",
+  "PIROHEPTINE - Parkinson Disease",
+  "BUDIPINE - Parkinson Disease",
+  "RIVASTIGMINE - Parkinson Disease",
+  "SELEGILINE - Parkinson Disease",
+  "TIAGABINE - Epilepsies, Partial",
+  "OXYPHENCYCLIMINE - Peptic Ulcer",
+  "EGUALEN - Peptic Ulcer",
+  "SOFALCONE - Peptic Ulcer",
+  "HEXOCYCLIUM - Peptic Ulcer",
+  "GLYCOPYRROLATE - Peptic Ulcer",
+  "DIPHEMANIL - Peptic Ulcer",
+  "ZALTOPROFEN - Periarthritis",
+  "SARPOGRELATE - Peripheral Arterial Disease",
+  "PRALATREXATE - Lymphoma, T-Cell, Peripheral",
+  "CHIDAMIDE - Lymphoma, T-Cell, Peripheral",
+  "BAMETHAN - Peripheral Vascular Diseases",
+  "IFENPRODIL - Peripheral Vascular Diseases",
+  "DIPHENIDOL - Vertigo",
+  "CEFTEZOLE - Peritonitis",
+  "CYANOCOBALAMIN - Anemia, Pernicious",
+  "FENSPIRIDE - Pharyngitis",
+  "CEFIXIME - Pharyngitis",
+  "METYROSINE - Pheochromocytoma",
+  "VENLAFAXINE - Phobic Disorders",
+  "ARBUTIN - Pigmentation Disorders",
+  "PAROXYPROPIONE - Pituitary Diseases",
+  "ARTEMOTIL - Malaria, Falciparum",
+  "ASTROMICIN - Pneumonia",
+  "LEVOFLOXACIN - Pneumonia",
+  "NETILMICIN - Pneumonia",
+  "ASPOXICILLIN - Pneumonia",
+  "TIAMULIN - Pneumonia",
+  "EPRAZINONE - Pneumonia",
+  "CEFDITOREN - Pneumonia, Bacterial",
+  "LINEZOLID - Pneumonia, Ventilator-Associated",
+  "RANIMUSTINE - Polycythemia Vera",
+  "RUXOLITINIB - Polycythemia Vera",
+  "NORGESTIMATE - Postmenopause",
+  "ALVIMOPAN - Postoperative Complications",
+  "ERGONOVINE - Postoperative Hemorrhage",
+  "DOLASETRON - Postoperative Nausea and Vomiting",
+  "APREPITANT - Postoperative Nausea and Vomiting",
+  "ROBENACOXIB - Pain, Postoperative",
+  "CLOFARABINE - Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+  "PONATINIB - Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+  "NELARABINE - Precursor T-Cell Lymphoblastic Leukemia-Lymphoma",
+  "FENPROSTALENE - Pregnancy",
+  "NOMEGESTROL - Pregnancy",
+  "PROSTALENE - Pregnancy",
+  "ALFAPROSTOL - Pregnancy",
+  "DIENOGEST - Pregnancy",
+  "ETONOGESTREL - Pregnancy",
+  "CHLORMADINONE - Pregnancy",
+  "ALLYLESTRENOL - Pregnancy Complications",
+  "MIFEPRISTONE - Pregnancy, Unwanted",
+  "RITODRINE - Obstetric Labor, Premature",
+  "ESTRADIOL - Primary Ovarian Insufficiency",
+  "TERAZOSIN - Prostatic Hyperplasia",
+  "SILODOSIN - Prostatic Hyperplasia",
+  "FINASTERIDE - Prostatic Hyperplasia",
+  "AZD5363 - Prostatic Neoplasms",
+  "ESTRAMUSTINE - Prostatic Neoplasms",
+  "GOSERELIN - Prostatic Neoplasms",
+  "FLUTAMIDE - Prostatic Neoplasms",
+  "ABARELIX - Prostatic Neoplasms",
+  "BICALUTAMIDE - Prostatic Neoplasms",
+  "ENZALUTAMIDE - Prostatic Neoplasms, Castration-Resistant",
+  "CARBENICILLIN - Prostatitis",
+  "NALFURAFINE - Pruritus",
+  "ACITRETIN - Psoriasis",
+  "CALCIPOTRIENE - Psoriasis",
+  "METHOXSALEN - Psoriasis",
+  "ETRETINATE - Psoriasis",
+  "PROMAZINE - Psychomotor Agitation",
+  "MESORIDAZINE - Psychotic Disorders",
+  "VILANTEROL - Pulmonary Disease, Chronic Obstructive",
+  "TIOTROPIUM - Pulmonary Disease, Chronic Obstructive",
+  "CILOMILAST - Pulmonary Disease, Chronic Obstructive",
+  "IPRATROPIUM - Pulmonary Disease, Chronic Obstructive",
+  "OLODATEROL - Pulmonary Disease, Chronic Obstructive",
+  "ERDOSTEINE - Pulmonary Disease, Chronic Obstructive",
+  "AMBROXOL - Pulmonary Disease, Chronic Obstructive",
+  "BOSENTAN - Hypertension, Pulmonary",
+  "EPOPROSTENOL - Familial Primary Pulmonary Hypertension",
+  "FLUCYTOSINE - Pulmonary Infarction",
+  "CEFTOLOZANE - Pyelonephritis",
+  "SUNITINIB - Carcinoma, Renal Cell",
+  "GLUCARPIDASE - Renal Insufficiency",
+  "CEFSULODIN - Reproductive Tract Infections",
+  "DOXAPRAM - Respiration Disorders",
+  "DIMORPHOLAMINE - Respiratory Insufficiency",
+  "BROMHEXINE - Respiratory Tract Diseases",
+  "PROTOKYLOL - Respiratory Tract Diseases",
+  "MINOCYCLINE - Respiratory Tract Infections",
+  "CEFMETAZOLE - Respiratory Tract Infections",
+  "TROLEANDOMYCIN - Respiratory Tract Infections",
+  "PIDOTIMOD - Respiratory Tract Infections",
+  "CARBOMYCIN - Respiratory Tract Infections",
+  "DANOFLOXACIN - Respiratory Tract Infections",
+  "FLUCLOXACILLIN - Respiratory Tract Infections",
+  "PRAMIPEXOLE - Restless Legs Syndrome",
+  "DACTINOMYCIN - Rhabdomyosarcoma",
+  "CORTISONE - Rheumatic Diseases",
+  "PHENOCOLL - Rheumatic Diseases",
+  "ETORICOXIB - Arthritis, Rheumatoid",
+  "FRENTIZOLE - Arthritis, Rheumatoid",
+  "AUROTHIOGLUCOSE - Arthritis, Rheumatoid",
+  "DICLOFENAC - Arthritis, Rheumatoid",
+  "TENIDAP - Arthritis, Rheumatoid",
+  "TRAMAZOLINE - Rhinitis",
+  "TRANILAST - Rhinitis, Allergic",
+  "CLEMIZOLE - Rhinitis, Allergic",
+  "RAMATROBAN - Rhinitis, Allergic",
+  "AZELASTINE - Rhinitis, Allergic, Perennial",
+  "CICLESONIDE - Rhinitis, Allergic, Perennial",
+  "MONTELUKAST - Rhinitis, Allergic, Perennial",
+  "DESLORATADINE - Rhinitis, Allergic, Seasonal",
+  "LEVOCETIRIZINE - Rhinitis, Allergic, Seasonal",
+  "ACRIVASTINE - Rhinitis, Allergic, Seasonal",
+  "ERGOCALCIFEROL - Rickets",
+  "ALFACALCIDOL - Rickets",
+  "DEXAMETHASONE - Rosacea",
+  "LOTEPREDNOL - Rosacea",
+  "DOXORUBICIN - Sarcoma, Kaposi",
+  "PERMETHRIN - Scabies",
+  "HALOBETASOL - Scalp Dermatoses",
+  "OXAMNIQUINE - Schistosoma mansoni",
+  "STIBOPHEN - Schistosomiasis",
+  "THIOPROPERAZINE - Psychotic Disorders",
+  "FLUPENTIXOL - Schizophrenia",
+  "BLONANSERIN - Schizophrenia",
+  "LENPERONE - Schizophrenia",
+  "SETIPTILINE - Schizophrenia",
+  "ZIPRASIDONE - Schizophrenia",
+  "ZOTEPINE - Schizophrenia",
+  "PENFLURIDOL - Schizophrenia",
+  "FLUPHENAZINE - Schizophrenia",
+  "PERAZINE - Schizophrenia",
+  "THIOTHIXENE - Schizophrenia",
+  "HALOPERIDOL - Schizophrenia",
+  "TIMIPERONE - Schizophrenia",
+  "AMISULPRIDE - Schizophrenia",
+  "BREXPIPRAZOLE - Schizophrenia",
+  "BENPERIDOL - Schizophrenia",
+  "ASENAPINE - Schizophrenia",
+  "CARBINOXAMINE - Rhinitis, Allergic, Seasonal",
+  "CALCIFEDIOL - Hyperparathyroidism, Secondary",
+  "EZOGABINE - Seizures",
+  "DIAZEPAM - Seizures",
+  "PHENYTOIN - Seizures",
+  "OXCARBAZEPINE - Seizures",
+  "CEFAZOLIN - Sepsis",
+  "METARAMINOL - Shock",
+  "BYK 191023 DIHYDROCHLORIDE - Shock, Septic",
+  "TEDUGLUTIDE - Short Bowel Syndrome",
+  "TELITHROMYCIN - Sinusitis",
+  "PILOCARPINE - Sjogren's Syndrome",
+  "CEVIMELINE - Sjogren's Syndrome",
+  "PEPLOMYCIN - Skin Neoplasms",
+  "HALCINONIDE - Skin Diseases",
+  "MOMETASONE - Skin Diseases",
+  "DIFLUCORTOLONE - Skin Diseases",
+  "PREDNICARBATE - Skin Diseases",
+  "CEFOPERAZONE - Skin Diseases, Bacterial",
+  "PHENETICILLIN - Skin Diseases, Bacterial",
+  "CEFEPIME - Skin Diseases, Bacterial",
+  "FLUMETHASONE - Skin Diseases, Eczematous",
+  "TROVAFLOXACIN - Skin Diseases, Infectious",
+  "ORITAVANCIN - Skin Diseases, Infectious",
+  "MUPIROCIN - Skin Diseases, Infectious",
+  "QUINUPRISTIN - Skin Diseases, Infectious",
+  "LORMETAZEPAM - Sleep Deprivation",
+  "ARMODAFINIL - Sleep Wake Disorders",
+  "NIMETAZEPAM - Sleep Disorders, Intrinsic",
+  "PERLAPINE - Sleep Disorders, Intrinsic",
+  "BUTOCTAMIDE - Sleep Disorders, Intrinsic",
+  "CLOXAZOLAM - Sleep Disorders, Intrinsic",
+  "PHENAZEPAM - Sleep Disorders, Intrinsic",
+  "RAMELTEON - Sleep Disorders, Intrinsic",
+  "SECOBARBITAL - Sleep Initiation and Maintenance Disorders",
+  "ESZOPICLONE - Sleep Initiation and Maintenance Disorders",
+  "GLUTETHIMIDE - Sleep Initiation and Maintenance Disorders",
+  "ZALEPLON - Sleep Initiation and Maintenance Disorders",
+  "QUAZEPAM - Sleep Initiation and Maintenance Disorders",
+  "BUTABARBITAL - Sleep Initiation and Maintenance Disorders",
+  "VARENICLINE - Smoking",
+  "MARBOFLOXACIN - Soft Tissue Infections",
+  "ORBIFLOXACIN - Soft Tissue Infections",
+  "CLIDINIUM - Spasm",
+  "BEVONIUM - Spasm",
+  "MEPHENESIN - Spasm",
+  "IBAFLOXACIN - Staphylococcal Infections",
+  "NORVANCOMYCIN - Staphylococcal Infections",
+  "OXACILLIN - Staphylococcal Infections",
+  "SULTAMICILLIN - Staphylococcal Skin Infections",
+  "DAPTOMYCIN - Staphylococcal Skin Infections",
+  "TIGECYCLINE - Staphylococcal Skin Infections",
+  "CHOLIC ACID - Steroid Metabolism, Inborn Errors",
+  "GIMERACIL - Stomach Neoplasms",
+  "TETRAPRENYLACETONE - Stomach Ulcer",
+  "CETRAXATE - Stomach Ulcer",
+  "LINCOMYCIN - Streptococcal Infections",
+  "TICLOPIDINE - Stroke",
+  "NIMODIPINE - Subarachnoid Hemorrhage",
+  "INDECAINIDE - Tachycardia",
+  "ADENOSINE - Tachycardia, Paroxysmal",
+  "PIRMENOL - Tachycardia, Ventricular",
+  "SOTALOL - Tachycardia, Ventricular",
+  "ETOPOSIDE - Testicular Neoplasms",
+  "IFOSFAMIDE - Testicular Neoplasms",
+  "PLICAMYCIN - Testicular Neoplasms",
+  "VINBLASTINE - Testicular Neoplasms",
+  "ARGATROBAN - Thrombocytopenia",
+  "WARFARIN - Thromboembolism",
+  "DIPYRIDAMOLE - Thromboembolism",
+  "PHENPROCOUMON - Thromboembolism",
+  "KEBUZONE - Thrombophlebitis",
+  "MILCICLIB - Thymoma",
+  "CABOZANTINIB - Thyroid Neoplasms",
+  "VANDETANIB - Thyroid Neoplasms",
+  "ECONAZOLE - Tinea Pedis",
+  "NAFTIFINE - Tinea Pedis",
+  "SERTACONAZOLE - Tinea Pedis",
+  "BUTENAFINE - Tinea Versicolor",
+  "CEFPODOXIME - Tonsillitis",
+  "CEFTIBUTEN - Tonsillitis",
+  "EUGENOL - Toothache",
+  "PIMOZIDE - Tourette Syndrome",
+  "PYRIMETHAMINE - Toxoplasmosis",
+  "OXANTEL - Trichuriasis",
+  "ISONIAZID - Tuberculosis",
+  "PASINIAZID - Tuberculosis",
+  "CYCLOSERINE - Tuberculosis",
+  "DELAMANID - Tuberculosis, Multidrug-Resistant",
+  "CAPREOMYCIN - Tuberculosis, Pulmonary",
+  "RIFAPENTINE - Tuberculosis, Pulmonary",
+  "ETHAMBUTOL - Tuberculosis, Pulmonary",
+  "DAPAGLIFLOZIN - Diabetes Mellitus, Type 2",
+  "PIOGLITAZONE - Diabetes Mellitus, Type 2",
+  "NITISINONE - Tyrosinemias",
+  "BALSALAZIDE - Colitis, Ulcerative",
+  "OLSALAZINE - Colitis, Ulcerative",
+  "DIMETHINDENE - Respiratory Tract Infections",
+  "VALRUBICIN - Urinary Bladder Neoplasms",
+  "OXYBUTYNIN - Urinary Bladder, Neurogenic",
+  "FESOTERODINE - Urinary Bladder, Overactive",
+  "SOLIFENACIN - Urinary Bladder, Overactive",
+  "DARIFENACIN - Urinary Bladder, Overactive",
+  "MIRABEGRON - Urinary Bladder, Overactive",
+  "TROSPIUM - Urinary Bladder, Overactive",
+  "TERODILINE - Urinary Incontinence",
+  "CEFORANIDE - Urinary Tract Infections",
+  "BACAMPICILLIN - Urinary Tract Infections",
+  "CEFTAZIDIME - Urinary Tract Infections",
+  "ERTAPENEM - Urinary Tract Infections",
+  "BALOFLOXACIN - Urinary Tract Infections",
+  "NITROFURANTOIN - Urinary Tract Infections",
+  "CLEMASTINE - Urticaria",
+  "EBASTINE - Urticaria",
+  "TRIPELENNAMINE - Urticaria",
+  "PIRARUBICIN - Uterine Neoplasms",
+  "SPECTINOMYCIN - Uterine Cervicitis",
+  "OXYTOCIN - Uterine Hemorrhage",
+  "CARBETOCIN - Uterine Inertia",
+  "RIMEXOLONE - Uveitis, Anterior",
+  "CANDICIDIN - Vaginitis",
+  "NIFUROXIME - Trichomonas Vaginitis",
+  "TERLIPRESSIN - Esophageal and Gastric Varices",
+  "METHYSERGIDE - Vascular Headaches",
+  "DABIGATRAN - Venous Thrombosis",
+  "ENCAINIDE - Tachycardia, Ventricular",
+  "LEVOSULPIRIDE - Vertigo",
+  "RAMOSETRON - Vomiting",
+  "GRANISETRON - Vomiting",
+  "CLEBOPRIDE - Vomiting",
+  "THIETHYLPERAZINE - Vomiting",
+  "DIENESTROL - Vulvar Lichen Sclerosus",
+  "SULFANILAMIDE - Candidiasis, Vulvovaginal",
+  "TERCONAZOLE - Candidiasis, Vulvovaginal",
+  "TIOCONAZOLE - Candidiasis, Vulvovaginal",
+  "BUTOCONAZOLE - Candidiasis, Vulvovaginal",
+  "FORMALDEHYDE - Warts",
+  "TRENBOLONE - Weight Gain",
+  "LAIDLOMYCIN - Weight Loss",
+  "TOCAINIDE - Wolff-Parkinson-White Syndrome",
+  "LIDOCAINE - Wolff-Parkinson-White Syndrome",
+  "OXIBENDAZOLE - Helminths",
+  "SERTRALINE - Stress Disorders, Post-Traumatic"
+];
