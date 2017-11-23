@@ -203,10 +203,21 @@
       methods: {
         change_q: function(key, keyPath) {
           console.log(key, keyPath);
+          this.current_q = key;
           if (this.current_q == 'q1'){
               this.leftpanel_list = q1_list;
+              console.log("switch to q1");
+              //this.render_middle_table();
+              //this.render_end_table();
           }else {
-              this.leftpanel_list = q2_list;
+              this.leftpanel_list = q2_list.filter(function(current_item){
+                var key = q2_list.indexOf(current_item) + '_' +
+                  current_item.replace(' - ', '_').replace(/\s/g, '') + '_path3.txt.gz';
+                return q2res[key] != undefined;
+              });
+              console.log("left_list:", this.leftpanel_list.length);
+              console.log("switch to q2");
+              //this.render_middle_table();
           }
         },
         render_item: function(item_idx){
@@ -250,7 +261,8 @@
       created: function(){
         this.leftpanel_list = q1_list;
         this.current_item = this.leftpanel_list[0];
-        this.render_table();
+        this.render_middle_table();
+        this.render_end_table();
       },
       computed: {
         computed_key: function(){
@@ -262,7 +274,7 @@
           }
           else if (this.current_q == "q2" && q2_list){
             key = q2_list.indexOf(this.current_item) + '_' +
-                  this.current_item.replace(' - ', '_').replace(/\s/g, '') + 'path3.txt.gz';
+                  this.current_item.replace(' - ', '_').replace(/\s/g, '') + '_path3.txt.gz';
           }
           console.log('key:', key);
           return key;
