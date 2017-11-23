@@ -35,7 +35,7 @@
       background-color: #E9EEF3;
       color: #333;
       text-align: center;
-      line-height: 160px;
+      /*line-height: 160px;*/
     }
     body > .el-container {
       /*margin-bottom: 40px;*/
@@ -60,14 +60,14 @@
       <el-row>
         <el-col :span="6">
           <div class="grid-content bg-purple">
-            <h1>TraPP (a NCATS Reasoner) Prototype</h1>
+            <h1>TraPP (A NCATS Reasoner) Prototype</h1>
           </div>
         </el-col>
         <el-col :span="18">
           <div class="grid-content bg-purple-light">
-            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-              <el-menu-item index="1">Explore Q1</el-menu-item>
-              <el-menu-item index="2">Explore Q2</el-menu-item>
+            <el-menu :default-active="current_q" class="el-menu-demo" mode="horizontal" @select="change_q">
+              <el-menu-item index="q1">Explore Q1</el-menu-item>
+              <el-menu-item index="q2">Explore Q2</el-menu-item>
             </el-menu>
           </div>
         </el-col>
@@ -80,12 +80,13 @@
       <el-aside width="400px">
 
         <el-menu
-              default-active="1"
-              class="el-menu-vertical">
+              default-active="0"
+              class="el-menu-vertical"
+              @select="render_item">
               <!-- @open="handleOpen"
               @close="handleClose"> -->
 
-              <el-menu-item v-for="(item, index) in leftpanel_list">
+              <el-menu-item v-for="(item, index) in leftpanel_list" v-bind:index="index.toString()">
                 <span>{{item}}</span>
               </el-menu-item>
             </el-menu>
@@ -99,7 +100,7 @@
           <el-col :span="10">
             <h5>Filter by paths:</h5>
         <div style="text-align: left">
-          <el-radio-group v-model="table1_selctor" v-on:change="change_selector">
+          <el-radio-group v-model="table1_selector" v-on:change="render_middle_table">
             <el-radio-button label="By Node Name" name="node_name"></el-radio-button>
             <el-radio-button label="By Node Type" name="node_type"></el-radio-button>
             <el-radio-button label="By Edge Type" name="edge_type"></el-radio-button>
@@ -115,7 +116,7 @@
               <el-table-column
                 prop="value"
                 label="Name"
-                width="180">
+                width="200">
               </el-table-column>
               <el-table-column
                 prop="count"
@@ -135,7 +136,7 @@
           <div v-if="current_q=='q1'">
           <h5>Filter by end nodes:</h5>
           <div style="text-align: left">
-            <el-radio-group v-model="table2_selctor">
+            <el-radio-group v-model="table2_selector">
               <el-radio-button label="By Node Name"></el-radio-button>
               <el-radio-button label="By Node Type"></el-radio-button>
             </el-radio-group>
@@ -185,50 +186,103 @@
   <script src="./q2_results.js"></script>
 
   <script>
-    new Vue({
+    vue_app = new Vue({
       el: '#app',
       data: {
         leftpanel_list: [],
         current_q: "q1",
         current_item: "",
-        table1_selctor: "By Node Name",
+        current_table: "middle",  //middle or end
+        table1_selector: "By Node Name",
         table1_data: [],
-        table2_selctor: "By Node Name",
-        table2_data: [],
-        tableData: [
-                 {name: 'antibiotics', count: 18730},
-                 {name: 'inflammation', count: 9549},
-                 {name: 'microbicides', count: 8894},
-                 {name: 'tumor necrosis factor-alpha', count: 8286},
-                 {name: 'dna', count: 6712},
-                 {name: 'pathogenesis', count: 5279},
-                 {name: 'tnf gene', count: 5273},
-                 {name: 'anti-bacterial agents', count: 4959},
-                 {name: 'iron', count: 4815},
-                 {name: 'septicemia', count: 4685}]
+        table2_selector: "By Node Name",
+        table2_data: []
       // function() {
       //   return { visible: false }
       },
       methods: {
-        render_item: function(){
-          //called when an item from side panel is clicked
+        change_q: function(key, keyPath) {
+          console.log(key, keyPath);
           if (this.current_q == 'q1'){
-
+              this.leftpanel_list = q1_list;
+          }else {
+              this.leftpanel_list = q2_list;
           }
         },
-        render_table: function(event){
+        render_item: function(item_idx){
+          //called when an item from side panel is clicked
+          this.current_item = this.leftpanel_list[item_idx];
+          this.render_middle_table();
+          if (this.current_q == 'q1'){
+          }
+        },
+        render_table: function(){
           var res = this.current_q=='q1'?q1res:q2res;
-          var key = "q1_0_Osteoporosis_path3b.txt.gz";
+          var table_selector = this.current_q=='q1'?this.table1_selector:this.table2_selector;
+          //var key = "q1_0_Osteoporosis_path3b.txt.gz";
+          var key = this.computed_key;
+          var datatype = this.computed_datatype;
+          var table_data;
+          console.log(key, datatype, table_selector);
+          if (table_selector == 'By Node Name'){
+            table_data = res[key][datatype]['name'];
+            console.log(1, "table_data", table_data.length);
+          }else if (table_selector == 'By Node Type'){
+            table_data = res[key][datatype]['type'];
+            console.log(2, "table_data", table_data.length);
+          }else if (table_selector == 'By Edge Type'){
+            table_data = res[key][datatype];
+            console.log(3, "table_data", table_data.length);
+          }
 
-          this.table1_data = res[key]['middle_nodes']['name'].slice(0,100);
+          this.table1_data = table_data.slice(0,100);
+        },
+        render_middle_table: function(){
+            this.current_table = "middle";
+            this.render_table();
         },
         change_selector: function(){
-          console.log(this.table1_selctor);
+          console.log(this.table1_selector);
         }
       },
       created: function(){
         this.leftpanel_list = q1_list;
+        this.current_item = this.leftpanel_list[0];
         this.render_table();
+      },
+      computed: {
+        computed_key: function(){
+          // the key under q1res and q2res
+          var key;
+          if (this.current_q == "q1" && q1_list){
+            key = 'q1_' + q1_list.indexOf(this.current_item) + '_' +
+                  this.current_item.replace(/\s/g, '') + '_path3b.txt.gz';
+          }
+          else if (this.current_q == "q2" && q2_list){
+            key = q2_list.indexOf(this.current_item) + '_' +
+                  this.current_item.replace(' - ', '_').replace(/\s/g, '') + 'path3.txt.gz';
+          }
+          console.log('key:', key);
+          return key;
+        },
+        computed_datatype: function(){
+          // middle_notes, end_notes, edge_types
+          // key under q?res[computed_key]
+          var data_type;
+          if (this.current_table=='middle'){
+            if (this.table1_selector == "By Edge Type"){
+              data_type = 'edge_types';
+            }else{
+              data_type = 'middle_nodes';
+            }
+          }else{
+            // this.current_table=='end'
+            data_type = 'end_nodes';
+          }
+          console.log('data_type:', data_type);
+          return data_type;
+        }
+
       }
 
     })
