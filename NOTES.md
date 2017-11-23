@@ -149,10 +149,10 @@ match (n:Procedures) detach delete n
 match (n:Anatomy) detach delete n
 
 # delete high degree nodes
-MATCH (a)<-->() with a,count(*) as degree where degree > 5000 RETURN a, degree
+MATCH (a)<-->() with a,count(*) as degree where degree > 5000 RETURN a.name, degree ORDER BY degree DESC
 MATCH (a)<-->() with a,count(*) as degree where degree > 5000 detach delete a
-MATCH (a)<-->() with a,count(*) as degree where degree > 2500 AND not labels(a) in ["Disorders"] RETURN a, degree
-MATCH (a)<-->() with a,count(*) as degree where degree > 2500 AND not labels(a) in ["Disorders"] detach delete a
+MATCH (a)<-->() with a,count(*) as degree where degree > 2500 AND not "Disorders" in labels(a) RETURN a.name, degree ORDER BY degree DESC
+MATCH (a)<-->() with a,count(*) as degree where degree > 2500 AND not "Disorders" in labels(a) detach delete a
 
 
 #create indexes
@@ -257,21 +257,21 @@ gzip -cd output/1000_IMATINIB_Asthma_path3.yaml.gz | grep '^    type:' | sed 's/
 
 # require intermediate node to have "physiology" (pathway)
 # 16455 paths
-python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and (labels(i1) in ["Physiology"] OR labels (i2) in ["Physiology"]) return path' > output/1000_IMATINIB_Asthma_path3.b.yaml
+python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) return path' > output/1000_IMATINIB_Asthma_path3.b.yaml
 cat output/1000_IMATINIB_Asthma_path3.b.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.b.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.b.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 
 # require there to be an edge of type "INHIBITS"
 # 1072 paths
-python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and (labels(i1) in ["Physiology"] OR labels (i2) in ["Physiology"]) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' > output/1000_IMATINIB_Asthma_path3.c.yaml
+python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' > output/1000_IMATINIB_Asthma_path3.c.yaml
 cat output/1000_IMATINIB_Asthma_path3.c.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.c.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.c.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 
 # require there to be a node type of "Genes & Molecular Sequences"
 # 610 paths
-python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and (labels(i1) in ["Physiology"] OR labels (i2) in ["Physiology"]) AND (labels(i1) in ["Genes & Molecular Sequences"] OR labels (i2) in ["Genes & Molecular Sequences"])AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return count(path)' > output/1000_IMATINIB_Asthma_path3.d.yaml
+python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) AND ("Genes & Molecular Sequences" in labels(i1) OR "Genes & Molecular Sequences" in labels(i2) ) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' > output/1000_IMATINIB_Asthma_path3.d.yaml
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
