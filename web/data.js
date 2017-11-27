@@ -1008,5 +1008,6 @@ q2_list =  [
   "TOCAINIDE - Wolff-Parkinson-White Syndrome",
   "LIDOCAINE - Wolff-Parkinson-White Syndrome",
   "OXIBENDAZOLE - Helminths",
-  "SERTRALINE - Stress Disorders, Post-Traumatic"
+  "SERTRALINE - Stress Disorders, Post-Traumatic",
+  "IMATINIB - Asthma"
 ];
