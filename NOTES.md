@@ -286,3 +286,25 @@ MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disord
 
 # longer path? -- taking too long to finish...
 MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(i3)-[r4]-(target:Disorders)) where source.name starts with "imatinib" AND target.name starts with"asthma" AND (i1.name=~".*kit.*" OR i2.name=~".*kit.*" OR i3.name=~".*kit.*") AND (i1.name starts with "mast cell" OR i2.name starts with "mast cell" OR i3.name starts with "mast cell") return path
+
+
+### 
+### sort asthma-imatinib by various bibliometrics
+
+python3 sum_pmids.py  -i output/1000_IMATINIB_Asthma_path3.txt.gz > tt1
+
+### in python
+import numpy as np
+import pandas as pd
+
+header=['path','sum','mean','geomean']
+
+# read data file
+d = pd.read_csv('tt1', sep='\t', header=None, names=header)
+
+# sort by sum decreasing
+d['sumRank'] = d['sum'].rank(ascending=False)
+d['meanRank'] = d['mean'].rank(ascending=False)
+d['geomeanRank'] = d['geomean'].rank(ascending=False)
+
+

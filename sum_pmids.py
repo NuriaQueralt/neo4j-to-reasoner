@@ -25,4 +25,5 @@ with gzip.open(args.inputfile,'rt') as f:
         pmidCounts = []
         for edge in data['Edges']:
             pmidCounts.append(edge['n_pmids'])
-        print(line.rstrip()+"\t"+str(np.sum(pmidCounts))+"\t"+str(np.mean(pmidCounts))+"\t"+str(geo_mean_overflow(pmidCounts)))
+            edge.pop('pmids',None)
+        print(json.dumps(data)+"\t"+str(np.sum(pmidCounts))+"\t"+str(np.mean(pmidCounts))+"\t"+str(geo_mean_overflow(pmidCounts)))
