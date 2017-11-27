@@ -118,7 +118,7 @@
           <!-- :before-close="handleClose"> -->
           <pre><code>{{current_query}}</code></pre>
           <span slot="footer" class="dialog-footer">
-            <!-- <el-button @click="dialogVisible = false">Cancel</el-button> -->
+            <el-button @click="copy_text(current_query)">Copy To Clipboard</el-button>
             <el-button type="primary" @click="dialogVisible = false">OK</el-button>
           </span>
         </el-dialog>
@@ -296,30 +296,50 @@
             if (tablex == "table1"){
               options = {
                 q: this.current_q,
-                start_node: this.current_item,
-                middle_node: row.value
+                start_node: this.current_item.toLowerCase(),
+                middle_node: row.value.toLowerCase()
               }
             }else{
               //table2
               options = {
                 q: this.current_q,
-                start_node: this.current_item,
-                end_node: row.value
+                start_node: this.current_item.toLowerCase(),
+                end_node: row.value.toLowerCase()
               }
             }
           }else{
             //q2
-            var items = this.current_item.split(' - ');
+            var items = this.current_item.toLowerCase().split(' - ');
             options = {
               q: this.current_q,
               start_node: items[0],
-              middle_node: row.value,
+              middle_node: row.value.toLowerCase(),
               end_node: items[1],
             }
           }
           console.log(options);
           this.current_query = get_cypher_query(options);
           this.dialogVisible = true;
+        },
+        copy_text: function(text){
+          function selectElementText(element) {
+            if (document.selection) {
+              var range = document.body.createTextRange();
+              range.moveToElementText(element);
+              range.select();
+            } else if (window.getSelection) {
+              var range = document.createRange();
+              range.selectNode(element);
+              window.getSelection().removeAllRanges();
+              window.getSelection().addRange(range);
+            }
+          }
+          var element = document.createElement('DIV');
+          element.textContent = text;
+          document.body.appendChild(element);
+          selectElementText(element);
+          document.execCommand('copy');
+          element.remove();
         }
 
       },
@@ -402,7 +422,7 @@
         // var start_node = "adapalene";
         // var end_node = "acne vulgaris";
         // var middle_node = "tretinoin";
-        return `MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND (i1.name="${middle_node}" OR i2.name="${middle_node}") return path limit 1000000 UNION MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(target:Disorders) where source.name = "adapalene" AND target.name = "${end_node}" AND i1.name="${middle_node}" return path`;
+        return `MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND (i1.name="${middle_node}" OR i2.name="${middle_node}") return path limit 1000000 UNION MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND i1.name="${middle_node}" return path`;
     };
 
   </script>
