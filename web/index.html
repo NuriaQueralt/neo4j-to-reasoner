@@ -12,6 +12,11 @@
       margin: 5px;
       display: block;
     }
+    h4 {
+      text-align: left;
+      margin: 5px;
+      display: block;
+    }
     h5 {
       text-align: left;
       margin: 5px;
@@ -128,6 +133,7 @@
           </span>
         </el-dialog>
 
+        <h4>Total paths: {{total_paths.toLocaleString()}}</h4>
         <el-row  :gutter="50">
           <el-col :span="12">
             <h5>Filter by paths:</h5>
@@ -265,6 +271,7 @@
         leftpanel_active: "0",
         current_q: "q1",
         current_item: "",
+        total_paths: 0,
         current_table: "middle",  //middle or end
         table1_selector: "By Node Name",
         table1_data_all: [],
@@ -319,6 +326,7 @@
           var key = this.computed_key;
           var datatype = this.computed_datatype;
           var table_data;
+          this.total_paths = res[key]["total"];
           if (table_selector == 'By Node Name'){
             table_data = res[key][datatype]['name'];
           }else if (table_selector == 'By Node Type'){
