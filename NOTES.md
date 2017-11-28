@@ -253,28 +253,34 @@ python3 q2-neo4j-to-reasoner.py -s C0935989 -e C0004096 -t cui -f json_text -p 3
 gzip -cd output/1000_IMATINIB_Asthma_path3.yaml.gz | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 gzip -cd output/1000_IMATINIB_Asthma_path3.yaml.gz | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 gzip -cd output/1000_IMATINIB_Asthma_path3.yaml.gz | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
+python3 print_edges.py -i output/1000_IMATINIB_Asthma_path3.txt.gz | sort | uniq -c | sort -k1nr | sed 's/\([,-]\)/\\\1/g' |  awk 'BEGIN{print "Edge v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 
 # require intermediate node to have "physiology" (pathway)
 # 16455 paths
 python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) return path' > output/1000_IMATINIB_Asthma_path3.b.yaml
+python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) return path' -f json_text > output/1000_IMATINIB_Asthma_path3.b.txt
 cat output/1000_IMATINIB_Asthma_path3.b.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.b.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.b.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
+python3 print_edges.py -i output/1000_IMATINIB_Asthma_path3.b.txt.gz | sort | uniq -c | sort -k1nr | sed 's/\([,-]\)/\\\1/g' |  awk 'BEGIN{print "Edge v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 
 # require there to be an edge of type "INHIBITS"
 # 1072 paths
 python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' > output/1000_IMATINIB_Asthma_path3.c.yaml
+python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' -f json_text > output/1000_IMATINIB_Asthma_path3.c.txt
 cat output/1000_IMATINIB_Asthma_path3.c.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.c.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.c.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
+python3 print_edges.py -i output/1000_IMATINIB_Asthma_path3.c.txt.gz | sort | uniq -c | sort -k1nr | sed 's/\([,-]\)/\\\1/g' |  awk 'BEGIN{print "Edge v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 
 # require there to be a node type of "Genes & Molecular Sequences"
 # 610 paths
 python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) AND ("Genes & Molecular Sequences" in labels(i1) OR "Genes & Molecular Sequences" in labels(i2) ) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' > output/1000_IMATINIB_Asthma_path3.d.yaml
+python3 cypher-to-reasoner.py -q 'MATCH path=(source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(target:Disorders) where source.cui="C0935989" and target.cui = "C0004096" and ("Physiology" in labels(i1) OR "Physiology" in labels(i2)) AND ("Genes & Molecular Sequences" in labels(i1) OR "Genes & Molecular Sequences" in labels(i2) ) AND (type(r1) starts with "INHIBITS" OR type(r2) starts with "INHIBITS" OR type(r3) starts with "INHIBITS") return path' -f json_text > output/1000_IMATINIB_Asthma_path3.d.txt
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^    name:' | sort | uniq -c | sort -k1nr | sed 's/name://;s/\([,-]\)/\\\1/g' | awk 'BEGIN{print "Node v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^  - label:' | sort | uniq -c | sort -k1nr | sed 's/- label://' | awk 'BEGIN{print "Node Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}'
 cat output/1000_IMATINIB_Asthma_path3.d.yaml | grep '^    type:' | sed 's/_[^_]*$//' | sort | uniq -c | sort -k1nr | sed 's/type://' | awk 'BEGIN{print "Edge Type v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
-
+python3 print_edges.py -i output/1000_IMATINIB_Asthma_path3.d.txt.gz | sort | uniq -c | sort -k1nr | sed 's/\([,-]\)/\\\1/g' |  awk 'BEGIN{print "Edge v^,Count v^"}{first=$1;$1="";print substr($0,2)","first}' | head -30
 
 ### exploring alternate versions of imatinib-asthma gold standard
 
@@ -307,4 +313,5 @@ d['sumRank'] = d['sum'].rank(ascending=False)
 d['meanRank'] = d['mean'].rank(ascending=False)
 d['geomeanRank'] = d['geomean'].rank(ascending=False)
 
-
+# view heads
+d.sort_values(['geomeanRank']).head(20)["path"]
