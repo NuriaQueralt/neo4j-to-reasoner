@@ -25,7 +25,12 @@
       word-wrap: break-word;
       border: 1px;
       max-height: 300px;
-      margin-bottom: 200px;
+      padding: 16px;
+      overflow: auto;
+      font-size: 85%;
+      line-height: 1.45;
+      background-color: #f7f7f7;
+      border-radius: 3px;
     }
     code {
       max-height: 300px;
@@ -153,6 +158,7 @@
               <el-table-column
                 label="Query">
                 <template  slot-scope="scope">
+                  <el-button @click="copy_query(scope.row, 'table1')" type="text" size="small">Copy</el-button>
                   <el-button @click="view_query(scope.row, 'table1')" type="text" size="small">View</el-button>
                 </template>
               </el-table-column>
@@ -189,6 +195,7 @@
                 <el-table-column
                   label="Query">
                   <template  slot-scope="scope">
+                    <el-button @click="copy_query(scope.row, 'table2')" type="text" size="small">Copy</el-button>
                     <el-button @click="view_query(scope.row, 'table2')" type="text" size="small">View</el-button>
                   </template>
                 </el-table-column>
@@ -197,7 +204,6 @@
             </div>
           </div>
         </el-col>
-
         </el-row>
 
 
@@ -290,7 +296,7 @@
             this.current_table = "end";
             this.render_table();
         },
-        view_query: function(row, tablex){
+        get_query: function(row, tablex){
           var options;
           if (this.current_q == 'q1'){
             if (tablex == "table1"){
@@ -317,9 +323,7 @@
               end_node: items[1],
             }
           }
-          console.log(options);
-          this.current_query = get_cypher_query(options);
-          this.dialogVisible = true;
+          return get_cypher_query(options);
         },
         copy_text: function(text){
           function selectElementText(element) {
@@ -340,8 +344,18 @@
           selectElementText(element);
           document.execCommand('copy');
           element.remove();
+          this.$message({
+            message: 'Copied to the clipboard!',
+            duration: 1000
+          });
+        },
+        copy_query: function(row, index){
+          this.copy_text(this.get_query(row, index));
+        },
+        view_query: function(row, index){
+          this.current_query = this.get_query(row, index);
+          this.dialogVisible = true;
         }
-
       },
       created: function(){
         this.leftpanel_list = q1_list;
