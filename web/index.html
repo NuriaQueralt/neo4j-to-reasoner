@@ -97,7 +97,7 @@
 
     <el-container>
 
-      <el-aside width="400px">
+      <el-aside :span="3">
 
         <el-menu
               default-active="0"
@@ -114,7 +114,7 @@
       </el-aside>
 
 
-      <el-main>
+      <el-main :span="21">
 
         <el-dialog
           title="Cypher Query"
@@ -128,8 +128,8 @@
           </span>
         </el-dialog>
 
-        <el-row  :gutter="150">
-          <el-col :span="10">
+        <el-row  :gutter="50">
+          <el-col :span="12">
             <h5>Filter by paths:</h5>
         <div style="text-align: left">
           <el-radio-group v-model="table1_selector" v-on:change="render_middle_table">
@@ -141,14 +141,23 @@
 
         <div>
           <template>
+            <el-pagination
+              small
+              @size-change="table1_size_change"
+              @current-change="table1_change_page"
+              :current-page.sync="table1_current_page"
+              :page-size="table1_page_size"
+              layout="total, sizes, prev, pager, next"
+              :total="table1_total">
+            </el-pagination>
+
             <el-table
               :data="table1_data"
               border
               style="width: 100%">
               <el-table-column
                 prop="value"
-                label="Name"
-                width="220">
+                label="Name">
               </el-table-column>
               <el-table-column
                 prop="count"
@@ -156,18 +165,26 @@
                 width="100">
               </el-table-column>
               <el-table-column
-                label="Query">
+                label="Query"
+                width="150">
                 <template  slot-scope="scope">
                   <el-button @click="copy_query(scope.row, 'table1')" type="text" size="small">Copy</el-button>
                   <el-button @click="view_query(scope.row, 'table1')" type="text" size="small">View</el-button>
                 </template>
               </el-table-column>
             </el-table>
+            <el-pagination
+              @current-change="table1_change_page"
+              :current-page.sync="table1_current_page"
+              :page-size="table1_page_size"
+              layout="total, prev, pager, next"
+              :total="table1_total">
+            </el-pagination>
           </template>
           </div>
         </el-col>
 
-        <el-col :span="10">
+        <el-col :span="12">
           <div v-if="current_q=='q1'">
           <h5>Filter by end nodes:</h5>
           <div style="text-align: left">
@@ -178,14 +195,22 @@
           </div>
           <div>
             <template>
+              <el-pagination
+                small
+                @size-change="table2_size_change"
+                @current-change="table2_change_page"
+                :current-page.sync="table2_current_page"
+                :page-size="table2_page_size"
+                layout="total, sizes, prev, pager, next"
+                :total="table2_total">
+              </el-pagination>
               <el-table
                 :data="table2_data"
                 border
                 style="width: 100%">
                 <el-table-column
                   prop="value"
-                  label="Name"
-                  width="220">
+                  label="Name">
                 </el-table-column>
                 <el-table-column
                   prop="count"
@@ -193,13 +218,21 @@
                   width="100">
                 </el-table-column>
                 <el-table-column
-                  label="Query">
+                  label="Query"
+                  width="150">
                   <template  slot-scope="scope">
                     <el-button @click="copy_query(scope.row, 'table2')" type="text" size="small">Copy</el-button>
                     <el-button @click="view_query(scope.row, 'table2')" type="text" size="small">View</el-button>
                   </template>
                 </el-table-column>
               </el-table>
+              <el-pagination
+                @current-change="table2_change_page"
+                :current-page.sync="table2_current_page"
+                :page-size="table2_page_size"
+                layout="total, prev, pager, next"
+                :total="table2_total">
+              </el-pagination>
             </template>
             </div>
           </div>
@@ -215,14 +248,16 @@
   </div>
 </body>
   <!-- import Vue before Element -->
-  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <script src="//unpkg.com/vue/dist/vue.js"></script>
   <!-- import JavaScript -->
-  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="//unpkg.com/element-ui/lib/index.js"></script>
+  <script src="//unpkg.com/element-ui/lib/umd/locale/en.js"></script>
   <script src="./data.js"></script>
   <script src="./q1_results.js"></script>
   <script src="./q2_results.js"></script>
 
   <script>
+    ELEMENT.locale(ELEMENT.lang.en);
     vue_app = new Vue({
       el: '#app',
       data: {
@@ -231,9 +266,17 @@
         current_item: "",
         current_table: "middle",  //middle or end
         table1_selector: "By Node Name",
+        table1_data_all: [],
         table1_data: [],
+        table1_total: 0,
+        table1_current_page: 1,
+        table1_page_size: 100,
         table2_selector: "By Node Name",
+        table2_data_all: [],
         table2_data: [],
+        table2_total: 0,
+        table2_current_page: 1,
+        table2_page_size: 100,
         dialogVisible: false,
         current_query: ""
       // function() {
@@ -283,9 +326,15 @@
             table_data = res[key][datatype];
           }
           if (this.current_table == "middle"){
-            this.table1_data = table_data.slice(0,100);
+            this.table1_data_all = table_data;
+            // this.table1_data = table_data.slice(0,100);
+            this.table1_total = table_data.length;
+            this.table1_change_page(1);
           }else {
-            this.table2_data = table_data.slice(0,100);
+            this.table2_data_all = table_data;
+            // this.table2_data = table_data.slice(0,100);
+            this.table2_total = table_data.length;
+            this.table2_change_page(1);
           }
         },
         render_middle_table: function(){
@@ -295,6 +344,24 @@
         render_end_table: function(){
             this.current_table = "end";
             this.render_table();
+        },
+        table1_change_page: function(page_no){
+            this.table1_data = this.table1_data_all.slice(
+              (page_no-1)*this.table1_page_size, page_no*this.table1_page_size
+            );
+        },
+        table2_change_page: function(page_no){
+            this.table2_data = this.table2_data_all.slice(
+              (page_no-1)*this.table2_page_size, page_no*this.table2_page_size
+            );
+        },
+        table1_size_change: function(page_size){
+            this.table1_page_size = page_size;
+            this.table1_change_page(this.table1_current_page);
+        },
+        table2_size_change: function(page_size){
+            this.table2_page_size = page_size;
+            this.table2_change_page(this.table2_current_page);
         },
         get_query: function(row, tablex){
           var options;
