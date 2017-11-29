@@ -135,7 +135,7 @@ MATCH path=((source)-[rels*..3]-(target)) with path, reduce(t=0, r IN rels | t +
 # copied edges_condensed_filtered_neo4j.csv and nodes_condensed_filtered_neo4j.csv from ~mmayers/projects/semmed/data/
 
 # lowercase node labels
-cat input/nodes_condensed_filtered_neo4j.csv | gawks '{$2=tolower($2);print $0}' > input/nodes_2017-11-03.csv
+python3 lowercase_nodes.py input/nodes_condensed_filtered_neo4j.csv > input/nodes_2017-11-28.csv
 cat input/edges_condensed_filtered_neo4j.csv | gawks '$4>1' > input/edges_2017-11-05.csv
 
 # to load new data
