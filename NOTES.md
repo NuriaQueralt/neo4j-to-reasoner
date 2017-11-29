@@ -135,7 +135,7 @@ MATCH path=((source)-[rels*..3]-(target)) with path, reduce(t=0, r IN rels | t +
 # copied edges_condensed_filtered_neo4j.csv and nodes_condensed_filtered_neo4j.csv from ~mmayers/projects/semmed/data/
 
 # lowercase node labels
-cat input/nodes_condensed_filtered_neo4j.csv | gawks '{$2=tolower($2);print $0}' > input/nodes_2017-11-03.csv
+python3 lowercase_nodes.py input/nodes_condensed_filtered_neo4j.csv > input/nodes_2017-11-28.csv
 cat input/edges_condensed_filtered_neo4j.csv | gawks '$4>1' > input/edges_2017-11-05.csv
 
 # to load new data
@@ -297,7 +297,10 @@ MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(i3)-[r4]-(tar
 ### 
 ### sort asthma-imatinib by various bibliometrics
 
-python3 sum_pmids.py  -i output/1000_IMATINIB_Asthma_path3.txt.gz > tt1
+python3 sum_pmids.py  -i output/1000_IMATINIB_Asthma_path3.d.txt.gz > tt1
+
+# sort by mean PMIDs
+sort -t$'\t' -k3nr tt1 | sed 's/\([,-]\)/\\\1/g' | cat -n | gawkt 'BEGIN{print "Rank,Path v^,PMID Count v^"}{print $1","$2","$4}' | sed 's/^[ ]*//' | head -110
 
 ### in python
 import numpy as np

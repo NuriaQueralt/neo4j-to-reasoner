@@ -30,4 +30,4 @@ with gzip.open(args.inputfile,'rt') as f:
         for node in data['Nodes']:
             nodes.append(node['name'])
         path = " -> ".join(nodes)
-        print(path+"\t"+str(np.sum(pmidCounts))+"\t"+str(np.mean(pmidCounts))+"\t"+str(geo_mean_overflow(pmidCounts)))
+        print(path+"\t"+str(np.sum(pmidCounts))+"\t"+str(int(round(np.mean(pmidCounts))))+"\t"+str(int(round(geo_mean_overflow(pmidCounts)))))
