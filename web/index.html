@@ -300,11 +300,12 @@
               this.table2_page_size = 100;
               this.table2_current_page = 1;
           }else {
-              this.leftpanel_list = q2_list.filter(function(current_item){
-                var key = q2_list.indexOf(current_item) + '_' +
-                  current_item.label.replace(' - ', '_').replace(/\s/g, '') + '_path3.txt.gz';
-                return q2res[key] != undefined;
-              });
+              this.leftpanel_list = q2_list;
+              // this.leftpanel_list = q2_list.filter(function(current_item){
+              //   var key = q2_list.indexOf(current_item) + '_' +
+              //     current_item.label.replace(' - ', '_').replace(/\s/g, '') + '_path3.txt.gz';
+              //   return q2res[key] != undefined;
+              // });
               this.table1_page_size = 100;
               this.table1_current_page = 1;
           }
@@ -323,10 +324,11 @@
           var res = this.current_q=='q1'?q1res:q2res;
           var table_selector = (this.current_q=='q1' && this.current_table=="end")?this.table2_selector:this.table1_selector;
           //var key = "q1_0_Osteoporosis_path3b.txt.gz";
-          var key = this.computed_key;
+          // var key = this.computed_key;
+          var key = this.current_item.key;
           var datatype = this.computed_datatype;
           var table_data;
-          // console.log(key)
+          console.log(key)
           this.total_paths = res[key]["total"];
           if (table_selector == 'By Node Name'){
             table_data = res[key][datatype]['name'];
@@ -392,12 +394,11 @@
             }
           }else{
             //q2
-            var items = this.current_item.label.toLowerCase().split(' - ');
             options = {
               q: this.current_q,
-              start_node: items[0],
+              start_node: this.current_item.start_name.toLowerCase(),
               middle_node: row.value.toLowerCase(),
-              end_node: items[1],
+              end_node: this.current_item.end_name.toLowerCase()
             }
           }
           return get_cypher_query(options);
@@ -441,19 +442,19 @@
         this.render_end_table();
       },
       computed: {
-        computed_key: function(){
-          // the key under q1res and q2res
-          var key;
-          if (this.current_q == "q1" && q1_list){
-            key = 'q1_' + q1_list.indexOf(this.current_item) + '_' +
-                  this.current_item.label.replace(/\s/g, '') + '_path3b.txt.gz';
-          }
-          else if (this.current_q == "q2" && q2_list){
-            key = q2_list.indexOf(this.current_item) + '_' +
-                  this.current_item.label.replace(' - ', '_').replace(/\s/g, '') + '_path3.txt.gz';
-          }
-          return key;
-        },
+        // computed_key: function(){
+        //   // the key under q1res and q2res
+        //   var key;
+        //   if (this.current_q == "q1" && q1_list){
+        //     key = 'q1_' + q1_list.indexOf(this.current_item) + '_' +
+        //           this.current_item.label.replace(/\s/g, '') + '_path3b.txt.gz';
+        //   }
+        //   else if (this.current_q == "q2" && q2_list){
+        //     key = q2_list.indexOf(this.current_item) + '_' +
+        //           this.current_item.label.replace(' - ', '_').replace(/\s/g, '') + '_path3.txt.gz';
+        //   }
+        //   return key;
+        // },
         computed_datatype: function(){
           // middle_notes, end_notes, edge_types
           // key under q?res[computed_key]
