@@ -173,7 +173,7 @@
               <el-table-column
                 label="Query"
                 width="150">
-                <template  slot-scope="scope">
+                <template  slot-scope="scope" v-if="table1_selector=='By Node Name'">
                   <el-button @click="copy_query(scope.row, 'table1')" type="text" size="small">Copy</el-button>
                   <el-button @click="view_query(scope.row, 'table1')" type="text" size="small">View</el-button>
                 </template>
@@ -326,7 +326,7 @@
           var key = this.computed_key;
           var datatype = this.computed_datatype;
           var table_data;
-          console.log(key)
+          // console.log(key)
           this.total_paths = res[key]["total"];
           if (table_selector == 'By Node Name'){
             table_data = res[key][datatype]['name'];
