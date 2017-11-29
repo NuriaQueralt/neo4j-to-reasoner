@@ -297,7 +297,10 @@ MATCH path=((source:`Chemicals & Drugs`)-[r1]-(i1)-[r2]-(i2)-[r3]-(i3)-[r4]-(tar
 ### 
 ### sort asthma-imatinib by various bibliometrics
 
-python3 sum_pmids.py  -i output/1000_IMATINIB_Asthma_path3.txt.gz > tt1
+python3 sum_pmids.py  -i output/1000_IMATINIB_Asthma_path3.d.txt.gz > tt1
+
+# sort by mean PMIDs
+sort -t$'\t' -k3nr tt1 | sed 's/\([,-]\)/\\\1/g' | cat -n | gawkt 'BEGIN{print "Rank,Path v^,PMID Count v^"}{print $1","$2","$4}' | sed 's/^[ ]*//' | head -110
 
 ### in python
 import numpy as np
