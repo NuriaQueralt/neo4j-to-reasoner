@@ -525,7 +525,7 @@
         // var start_node = "adapalene";
         // var end_node = "acne vulgaris";
         // var middle_node_label = "Physiology";
-        return `MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND ("${middle_node_label}" in labels(i1) OR "${middle_node_label}" in labels(i2)) return path limit 1000000 UNION MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND "${middle_node}" in labels(i1) return path`;
+        return `MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(i2)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND ("${middle_node_label}" in labels(i1) OR "${middle_node_label}" in labels(i2)) return path limit 1000000 UNION MATCH path=(source:\`Chemicals & Drugs\`)-[]-(i1)-[]-(target:Disorders) where source.name = "${start_node}" AND target.name = "${end_node}" AND "${middle_node_label}" in labels(i1) return path`;
     };
 
   </script>
