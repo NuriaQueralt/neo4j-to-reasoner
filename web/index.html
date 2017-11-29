@@ -173,7 +173,7 @@
               <el-table-column
                 label="Query"
                 width="150">
-                <template  slot-scope="scope" v-if="table1_selector=='By Node Name'">
+                <template  slot-scope="scope" v-if="table1_selector!='By Edge Type'">
                   <el-button @click="copy_query(scope.row, 'table1')" type="text" size="small">Copy</el-button>
                   <el-button @click="view_query(scope.row, 'table1')" type="text" size="small">View</el-button>
                 </template>
@@ -379,10 +379,19 @@
           var options;
           if (this.current_q == 'q1'){
             if (tablex == "table1"){
-              options = {
-                q: this.current_q,
-                start_node: this.current_item.name.toLowerCase(),
-                middle_node: row.value.toLowerCase()
+              if (this.table1_selector == 'By Node Name'){
+                options = {
+                  q: this.current_q,
+                  start_node: this.current_item.name.toLowerCase(),
+                  middle_node: row.value.toLowerCase()
+                }
+              }else{
+                // .table1_selector == 'By Node Type'
+                options = {
+                  q: this.current_q,
+                  start_node: this.current_item.name.toLowerCase(),
+                  middle_node_label: row.value.toLowerCase()
+                }
               }
             }else{
               //table2
@@ -394,11 +403,21 @@
             }
           }else{
             //q2
-            options = {
-              q: this.current_q,
-              start_node: this.current_item.start_name.toLowerCase(),
-              middle_node: row.value.toLowerCase(),
-              end_node: this.current_item.end_name.toLowerCase()
+            if (this.table1_selector == 'By Node Name'){
+              options = {
+                q: this.current_q,
+                start_node: this.current_item.start_name.toLowerCase(),
+                middle_node: row.value.toLowerCase(),
+                end_node: this.current_item.end_name.toLowerCase()
+              }
+            }else{
+              // .table1_selector == 'By Node Type'
+              options = {
+                q: this.current_q,
+                start_node: this.current_item.start_name.toLowerCase(),
+                middle_node_label: row.value.toLowerCase(),
+                end_node: this.current_item.end_name.toLowerCase()
+              }
             }
           }
           return get_cypher_query(options);
@@ -480,13 +499,20 @@
       if (options.q == "q1"){
         if (options.middle_node){
           return get_cypher_query_q1_middle(options.start_node, options.middle_node);
+        }else if (options.middle_node_label){
+          return get_cypher_query_q1_middle_label(options.start_node, options.middle_node_label);
         }else{
           //end_node
           return get_cypher_query_q1_end(options.start_node, options.end_node);
         }
       }else{
           //q2
-          return get_cypher_query_q2_middle(options.start_node, options.middle_node, options.end_node);
+          if (options.middle_node){
+            return get_cypher_query_q2_middle(options.start_node, options.middle_node, options.end_node);
+          }else{
+            // middle_node_label provided
+            return get_cypher_query_q2_middle_label(options.start_node, options.middle_node_label, options.end_node);
+          }
       }
     };
 
