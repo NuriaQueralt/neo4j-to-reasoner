@@ -1,12 +1,97 @@
-q1_list = ["Osteoporosis", "Human Immunodeficiency Virus Infection",
-          "Cholera", "Ebola Virus Infection", "Malaria", "Osteomalacia",
-          "Hypercholesterolemia", "Diabetes Mellitus, Type 2", "Asthma",
-          "Chronic Pancreatitis", "Alzheimer Disease", "Myocardial Infarction",
-          "Duchenne Muscular Dystrophy", "Deficiency of N-glycanase 1",
-          "Alcohol Dependence", "Major Depression", "Niemann Pick Type C",
-          "Huntington Disease", "Alkaptonuria", "Sickle Cell Disease",
-          "Post-Traumatic Stress Disorder"];
-
+// q1_list = ["Osteoporosis", "Human Immunodeficiency Virus Infection",
+//           "Cholera", "Ebola Virus Infection", "Malaria", "Osteomalacia",
+//           "Hypercholesterolemia", "Diabetes Mellitus, Type 2", "Asthma",
+//           "Chronic Pancreatitis", "Alzheimer Disease", "Myocardial Infarction",
+//           "Duchenne Muscular Dystrophy", "Deficiency of N-glycanase 1",
+//           "Alcohol Dependence", "Major Depression", "Niemann Pick Type C",
+//           "Huntington Disease", "Alkaptonuria", "Sickle Cell Disease",
+//           "Post-Traumatic Stress Disorder"];
+q1_list =[
+    {
+      "name": "osteoporosis",
+      "label": "Osteoporosis"
+    },
+    {
+      "name": "hiv infections",
+      "label": "Human Immunodeficiency Virus Infection"
+    },
+    {
+      "name": "cholera",
+      "label": "Cholera"
+    },
+    {
+      "name": "hemorrhagic fever, Ebola",
+      "label": "Ebola Virus Infection"
+    },
+    {
+      "name": "malaria",
+      "label": "Malaria"
+    },
+    {
+      "name": "osteoma lacia",
+      "label": "Osteomalacia"
+    },
+    {
+      "name": "hypercholesterolemia",
+      "label": "Hypercholesterolemia"
+    },
+    {
+      "name": "diabetes mellitus, Non-Insulin-Dependent ",
+      "label": "Diabetes Mellitus, Type 2"
+    },
+    {
+      "name": "asthma",
+      "label": "Asthma"
+    },
+    {
+      "name": "pancreatitis, Chronic",
+      "label": "Chronic Pancreatitis"
+    },
+    {
+      "name": "alzheimer's disease",
+      "label": "Alzheimer Disease"
+    },
+    {
+      "name": "myocardial infarction",
+      "label": "Myocardial Infarction"
+    },
+    {
+      "name": "muscular dystrophy, Duchenne",
+      "label": "Duchenne Muscular Dystrophy"
+    },
+    {
+      "name": "ngly1",
+      "label": "Deficiency of N-glycanase 1"
+    },
+    {
+      "name": "alcoholic intoxication, Chronic",
+      "label": "Alcohol Dependence"
+    },
+    {
+      "name": "major depressive disorder",
+      "label": "Major Depression"
+    },
+    {
+      "name": "niemann-pick disease, Type C",
+      "label": "Niemann Pick Type C"
+    },
+    {
+      "name": "huntington disease",
+      "label": "Huntington Disease"
+    },
+    {
+      "name": "alkaptonuria",
+      "label": "Alkaptonuria"
+    },
+    {
+      "name": "sickle cell anemia",
+      "label": "Sickle Cell Disease"
+    },
+    {
+      "name": "stress disorders, Post-Traumatic",
+      "label": "Post-Traumatic Stress Disorder"
+    }
+]
 
 q2_list =  [
   "BUTYLSCOPOLAMINE - Abdominal Pain",
@@ -1011,3 +1096,7 @@ q2_list =  [
   "SERTRALINE - Stress Disorders, Post-Traumatic",
   "IMATINIB - Asthma"
 ];
+
+q2_list = q2_list.forEach(function(x){
+  return {label: x};
+});
